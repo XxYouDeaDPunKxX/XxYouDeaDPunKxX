@@ -21,6 +21,9 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 - [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA-PVP)  
   AI-native decision protocol built for forced verdicts, executable steps, probes, and debt under uncertainty.
 
+- [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/signal-rail)  
+  Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work.
+
 ## Why I share my work
 
 Because if something solved a real problem for me, there is a good chance it can help someone else too.
