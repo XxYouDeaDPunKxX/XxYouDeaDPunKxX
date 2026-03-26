@@ -1,6 +1,6 @@
 ﻿# MaRCoRe
 
-I’m not a professional programmer. I’m a cook, but also a lifelong geek and gamer.
+I’m not a professional programmer, but i am a lifelong geek and gamer.
 
 I usually have too many ideas in my head. When I can, I try to turn some of them into something real and share them for free. Most of my projects start as solutions to problems I actually have, and that is exactly why they can sometimes be useful to other people too.
 
