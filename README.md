@@ -15,9 +15,6 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 
 ## Featured projects
 
-- [`GPT-PF`](https://github.com/XxYouDeaDPunKxX/GPT-PF)  
-  Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts.
-
 - [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode)  
   Spec-first protocol for deterministic depth control and bounded epistemic output in AI chat.
 
@@ -30,6 +27,9 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 - [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio)  
   Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work.
 
+- [`GPT-PF_Chat GPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF)  
+  Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts.
+  
 ## Why I share my work
 
 Because if something solved a real problem for me, there is a good chance it can help someone else too.
