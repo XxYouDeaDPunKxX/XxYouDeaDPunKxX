@@ -24,6 +24,9 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 - [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/signal-rail)  
   Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work.
 
+- [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP)  
+  Three-file protocol kit for keeping shared operational best practices separate from host instructions in Codex environments.
+
 - [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio)  
   Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work.
 
