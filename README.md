@@ -18,19 +18,19 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 - [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode)  
   Spec-first protocol for deterministic depth control and bounded epistemic output in AI chat.
 
-- [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA-PVP)  
+- [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol)  
   AI-native decision protocol built for forced verdicts, executable steps, probes, and debt under uncertainty.
 
-- [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/signal-rail)  
+- [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail)  
   Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work.
 
-- [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP)  
+- [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice)  
   Three-file protocol kit for keeping shared operational best practices separate from host instructions in Codex environments.
 
 - [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio)  
   Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work.
 
-- [`GPT-PF_Chat GPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF)  
+- [`GPT-PF_Chat GPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge)  
   Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts.
   
 ## Why I share my work
