@@ -1,39 +1,37 @@
-﻿# MaRCoRe
+# Hello, i' m MaRCoRe.
 
-I’m not a professional programmer, but i am a lifelong geek and gamer.
+I’m not a professional programmer, but I’m a lifelong geek and gamer.
 
-I usually have too many ideas in my head. When I can, I try to turn some of them into something real and share them for free. Most of my projects start as solutions to problems I actually have, and that is exactly why they can sometimes be useful to other people too.
+I usually have too many ideas in my head. When I can, I try to turn some of them into something real and share them for free. Most of my projects start as solutions to problems I actually have, which is exactly why they can sometimes be useful to other people too.
 
 I don’t build things just to have a portfolio. I build when an idea feels real, when it solves something for me, and when it seems worth shaping into something other people can try, inspect, or reuse.
 
-## What I build
+Usually i create Personal tools, AI protocols, and practical systems built from real use.
+
+---
+
+## 🛠️ What I build
 
 - ideas shaped into usable things
 - practical systems for real problems
 - experiments that try to become tools
 - projects made first for my own needs, then shared for others
 
-## Featured projects
+## 📌 Featured projects
 
-- [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode)  
-  Spec-first protocol for deterministic depth control and bounded epistemic output in AI chat.
+A few projects I use, test, or keep shaping:
 
-- [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol)  
-  AI-native decision protocol built for forced verdicts, executable steps, probes, and debt under uncertainty.
+| Project | What it is |
+| --- | --- |
+| [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode) | Spec-first protocol for deterministic depth control and bounded epistemic output in AI chat. |
+| [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol) | AI-native decision protocol built for forced verdicts, executable steps, probes, and debt under uncertainty. |
+| [`PA-PVP mini`](https://github.com/XxYouDeaDPunKxX/PA-PVP-mini) | Lightweight adversarial review protocol for stress-testing ideas, plans, prompts, procedures, code, and AI outputs. It finds gaps, weak logic, missing constraints, and shaky fixes, then lets another AI challenge both the original work and the previous review. |
+| [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail) | Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work. |
+| [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice) | Three-file protocol kit for keeping shared operational best practices separate from host instructions in Codex environments. |
+| [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work. |
+| [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts. |
 
-- [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail)  
-  Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work.
-
-- [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice)  
-  Three-file protocol kit for keeping shared operational best practices separate from host instructions in Codex environments.
-
-- [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio)  
-  Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work.
-
-- [`GPT-PF_Chat GPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge)  
-  Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts.
-  
-## Why I share my work
+## 📡 Why I share my work
 
 Because if something solved a real problem for me, there is a good chance it can help someone else too.
 
