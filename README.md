@@ -23,13 +23,13 @@ A few projects I use, test, or keep shaping:
 
 | Project | What it is |
 | --- | --- |
-| [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode) | Spec-first protocol for deterministic depth control and bounded epistemic output in AI chat. |
-| [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol) | AI-native decision protocol built for forced verdicts, executable steps, probes, and debt under uncertainty. |
+| [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode) | A.D.A.M. helps keep AI chats at the right depth, so simple questions stay simple and complex work doesn’t become unclear or overloaded. |
+| [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol) | PA-PVP helps turn vague plans, artifacts, or stuck decisions into a clear verdict, one next action, and a continuation point instead of another open-ended discussion. |
 | [`PA-PVP mini`](https://github.com/XxYouDeaDPunKxX/PA-PVP-mini) | Lightweight adversarial review protocol for stress-testing ideas, plans, prompts, procedures, code, and AI outputs. It finds gaps, weak logic, missing constraints, and shaky fixes, then lets another AI challenge both the original work and the previous review. |
-| [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail) | Text-first governance system for keeping project context, decisions, and technical reality readable in AI-assisted work. |
-| [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice) | Three-file protocol kit for keeping shared operational best practices separate from host instructions in Codex environments. |
-| [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | Compact operational contract for more disciplined, bounded, and reviewable AI behavior in real technical work. |
-| [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge for ChatGPT Projects: a preparation system for opening downstream projects from explicit structure and controlled artifacts. |
+| [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail) | Signal Rail helps keep live project material in the right place, so decisions, open work, ideas, constraints, and handoff notes do not collapse into one messy document. |
+| [`CSBP - Codex Shared Best Practice`](https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice) | CSBP is a small companion layer for Codex practices that are worth reusing, but not strong enough to become project rules. |
+| [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | SensecraftXStudio helps keep AI-assisted technical work grounded before the assistant acts, so the target, context, assumptions, and final state stay visible for the operator and clear for the agent. |
+| [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge prepares the starting files for a ChatGPT Project, so scope, sources, constraints, and starting basis are clear before the real work begins. |
 
 ## 📡 Why I share my work
 
