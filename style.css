@@ -32,6 +32,11 @@ body {
   overflow: hidden;
 }
 
+body:has(.raw-manifest[open]) {
+  height: auto;
+  overflow-y: auto;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -131,8 +136,8 @@ body::before {
 
 .shell {
   width: min(1840px, calc(100vw - 20px));
-  height: calc(100vh - 40px);
-  margin: 20px auto;
+  height: calc(100vh - 86px);
+  margin: 16px auto 10px;
   display: grid;
   grid-template-columns: 220px minmax(420px, 0.9fr) minmax(560px, 1.15fr);
   gap: 12px;
@@ -269,9 +274,7 @@ body::before {
     rgba(12, 12, 9, 0.82);
 }
 
-.machine-room {
-  margin-top: auto;
-}
+.machine-room { margin-top: auto; }
 
 .machine-window {
   position: relative;
@@ -495,6 +498,75 @@ body::before {
   border: 1px solid var(--line);
 }
 
+.raw-manifest {
+  width: min(1840px, calc(100vw - 20px));
+  margin: 0 auto 12px;
+  border: 1px solid var(--line);
+  background: rgba(14, 14, 11, 0.86);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.28), inset 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+.raw-manifest summary {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  color: var(--hot);
+  cursor: pointer;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.raw-manifest-body {
+  padding: 0 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.raw-project {
+  border: 1px solid rgba(228, 223, 200, 0.1);
+  background: rgba(0,0,0,0.16);
+  padding: 12px;
+}
+
+.raw-project h2 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.raw-project dl {
+  margin: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.raw-project div {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.raw-project dt {
+  color: var(--hot);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+.raw-project dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.raw-project a {
+  color: var(--text);
+}
+
 @keyframes pulse {
   0%, 100% { opacity: 0.55; }
   50% { opacity: 1; }
@@ -551,6 +623,10 @@ body::before {
   .inspector {
     grid-column: 1 / -1;
   }
+
+  .raw-manifest-body {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
@@ -558,6 +634,10 @@ body::before {
     width: min(100vw - 18px, 560px);
     margin-top: 9px;
     grid-template-columns: 1fr;
+  }
+
+  .raw-manifest {
+    width: min(100vw - 18px, 560px);
   }
 
   .side {
