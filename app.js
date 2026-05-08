@@ -1,7 +1,5 @@
 const grid = document.getElementById("moduleGrid");
 const inspector = document.getElementById("inspector");
-const seoList = document.getElementById("seoList");
-const seoProjects = document.querySelector(".seo-projects");
 
 const iconMap = {
   dial: "◉",
@@ -69,18 +67,7 @@ function openProject(project) {
   });
 }
 
-function renderSeoFallback() {
-  seoList.innerHTML = PROJECTS.map(project => `
-    <li>
-      <a href="${project.repo}">${project.title}</a>: ${project.job}
-    </li>
-  `).join("");
-
-  seoProjects?.setAttribute("hidden", "");
-}
-
 renderModules();
-renderSeoFallback();
 
 setTimeout(() => {
   document.getElementById("boot")?.classList.add("hidden");
