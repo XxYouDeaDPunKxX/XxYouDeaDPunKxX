@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#0d0d0a">
   <meta property="og:title" content="DeadPunk OS — XxYouDeaDPunKxX">
   <meta property="og:description" content="A handmade mini operating system for weird ideas, real problems, AI protocols, and practical systems.">
-  <link rel="stylesheet" href="style.css?v=20260508c">
+  <link rel="icon" href="favicon.svg?v=20260508d" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20260508d">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -30,25 +31,36 @@
   </div>
 
   <main class="shell" id="app">
-    <aside class="side panel" aria-label="System navigation">
+    <aside class="side panel" aria-label="DeadPunk OS control panel">
       <div class="brand">
-        <span class="led"></span>
+        <span class="led led-green"></span>
         <div>
           <strong>DEADPUNK_OS</strong>
           <small>profile mounted</small>
         </div>
       </div>
 
-      <nav>
-        <a href="#modules" class="nav-link active">&gt; modules</a>
-        <a href="#contact" class="nav-link">contact</a>
-      </nav>
+      <section class="control-block" aria-label="System control checks">
+        <h2>CONTROL</h2>
+        <ul class="check-list">
+          <li><span>[✓]</span> profile mounted somehow</li>
+          <li><span>[✓]</span> modules loaded: 8-ish</li>
+          <li><span>[✓]</span> runtime still breathing</li>
+          <li><span>[✓]</span> landing page missing, good</li>
+        </ul>
+      </section>
 
-      <section class="status" aria-label="System status">
+      <section class="status" aria-label="Analog system status">
         <h2>STATUS</h2>
-        <p><span>Build:</span> handmade</p>
-        <p><span>Stack:</span> held by tape</p>
-        <p><span>Mood:</span> weird ideas, real problems</p>
+        <p><span class="mini-led led-green"></span><strong>Build</strong> handmade</p>
+        <p><span class="mini-led led-amber"></span><strong>Stack</strong> held by tape</p>
+        <p><span class="mini-led led-red"></span><strong>Mood</strong> weird ideas, real problems</p>
+      </section>
+
+      <section class="ports" aria-label="External ports">
+        <h2>PORTS</h2>
+        <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noreferrer">github.profile</a>
+        <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noreferrer">repositories.index</a>
       </section>
     </aside>
 
@@ -67,11 +79,7 @@
     </aside>
   </main>
 
-  <footer id="contact" class="footer">
-    <a href="https://github.com/XxYouDeaDPunKxX">GitHub</a>
-  </footer>
-
-  <script src="projects.js?v=20260508c"></script>
-  <script src="app.js?v=20260508c"></script>
+  <script src="projects.js?v=20260508d"></script>
+  <script src="app.js?v=20260508d"></script>
 </body>
 </html>
