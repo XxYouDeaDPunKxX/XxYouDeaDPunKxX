@@ -2,14 +2,14 @@ const grid = document.getElementById("moduleGrid");
 const inspector = document.getElementById("inspector");
 
 const iconMap = {
-  dial: "◉",
-  tape: "▣",
+  dial: "◎",
+  tape: "◈",
   scale: "⚖",
   lens: "⌕",
   rail: "╫",
   filter: "⌬",
   frame: "▤",
-  boot: "▰"
+  boot: "⚒"
 };
 
 function renderModules() {
