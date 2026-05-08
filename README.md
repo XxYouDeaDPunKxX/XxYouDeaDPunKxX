@@ -24,6 +24,7 @@ A few projects I use, test, or keep shaping:
 | Project | What it is |
 | --- | --- |
 | [`A.D.A.M. - Adaptive Depth and Mode`](https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode) | A.D.A.M. helps keep AI chats at the right depth, so simple questions stay simple and complex work doesn’t become unclear or overloaded. |
+| [`Memory-Assisted Shaping`](https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping) | Memory-Assisted Shaping helps keep long idea-shaping sessions coherent, so decisions, gates, discarded paths, and source boundaries do not get lost before the final artifact is ready. |
 | [`PA-PVP`](https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol) | PA-PVP helps turn vague plans, artifacts, or stuck decisions into a clear verdict, one next action, and a continuation point instead of another open-ended discussion. |
 | [`PA-PVP mini`](https://github.com/XxYouDeaDPunKxX/PA-PVP-mini) | Lightweight adversarial review protocol for stress-testing ideas, plans, prompts, procedures, code, and AI outputs. It finds gaps, weak logic, missing constraints, and shaky fixes, then lets another AI challenge both the original work and the previous review. |
 | [`Signal Rail`](https://github.com/XxYouDeaDPunKxX/Signal-Rail) | Signal Rail helps keep live project material in the right place, so decisions, open work, ideas, constraints, and handoff notes do not collapse into one messy document. |
