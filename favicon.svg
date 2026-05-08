@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DeadPunk OS favicon">
+  <rect width="64" height="64" rx="10" fill="#0d0d0a"/>
+  <rect x="9" y="12" width="46" height="36" rx="4" fill="#181813" stroke="#4a4638" stroke-width="2"/>
+  <path d="M15 20h34M15 28h22M15 36h28" stroke="#d6a64a" stroke-width="3" stroke-linecap="square"/>
+  <circle cx="48" cy="42" r="4" fill="#8aa36f"/>
+  <path d="M13 51h38" stroke="#4a4638" stroke-width="3" stroke-linecap="round"/>
+  <path d="M25 8l4 6M39 8l-4 6" stroke="#b15d4f" stroke-width="3" stroke-linecap="round"/>
+</svg>
