@@ -1,0 +1,70 @@
+# DeadPunk OS
+
+URL: https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
+GitHub: https://github.com/XxYouDeaDPunKxX
+
+## Projects
+
+### A.D.A.M.
+Type: AI control protocol
+Job: Keeps AI chats at the right depth.
+Problem: Simple questions stay simple. Complex work does not become unclear or overloaded.
+Output: LOW / MID / DEEP response control.
+Note: overthinking containment unit
+Repository: https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode
+
+### Memory-Assisted Shaping
+Type: AI continuity protocol
+Job: Keeps long idea-shaping sessions coherent.
+Problem: Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.
+Output: Cleaner final artifacts after controlled shaping.
+Note: drift repellent, probably flammable
+Repository: https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping
+
+### PA-PVP
+Type: Decision loop
+Job: Turns vague plans, artifacts, or stuck decisions into an operational next move.
+Problem: Open-ended discussion keeps replacing closure.
+Output: Verdict, one next action, and a continuation point.
+Note: argues so you do not have to
+Repository: https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol
+
+### PA-PVP mini
+Type: Review protocol
+Job: Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.
+Problem: Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.
+Output: Concrete findings and structural fixes.
+Note: small, sharp, mildly annoying
+Repository: https://github.com/XxYouDeaDPunKxX/PA-PVP-mini
+
+### Signal Rail
+Type: Document routing system
+Job: Keeps live project material in the right place.
+Problem: Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.
+Output: Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.
+Note: keeps mess on tracks
+Repository: https://github.com/XxYouDeaDPunKxX/Signal-Rail
+
+### CSBP
+Type: Practice filter
+Job: Keeps reusable Codex practices explicit, reviewed, and controlled.
+Problem: Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.
+Output: A small companion layer for practices worth reusing, but not strong enough to become project rules.
+Note: not a rule, not a vibe
+Repository: https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice
+
+### SensecraftXStudio
+Type: Grounding frame
+Job: Keeps AI-assisted technical work grounded before the assistant acts.
+Problem: The assistant can stay plausible after the frame has drifted.
+Output: Visible target, context, assumptions, action boundary, and final state.
+Note: confidence not trusted here
+Repository: https://github.com/XxYouDeaDPunKxX/SensecraftXStudio
+
+### GPT-PF / ChatGPT Project Forge
+Type: Project bootloader
+Job: Prepares starting files for a ChatGPT Project.
+Problem: Projects start from memory, chat momentum, or informal notes instead of explicit files.
+Output: Scope, sources, constraints, and starting basis before the real work begins.
+Note: boots before it pretends
+Repository: https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge
