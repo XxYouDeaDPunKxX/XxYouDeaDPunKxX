@@ -519,7 +519,7 @@ body::before {
 }
 
 .raw-manifest-body {
-  padding: 0 14px 16px;
+  padding: 0 14px 12px;
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 1fr));
   gap: 12px;
@@ -565,6 +565,27 @@ body::before {
 
 .raw-project a {
   color: var(--text);
+}
+
+.raw-links {
+  margin: 0;
+  padding: 0 14px 14px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.raw-links a {
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.raw-links span {
+  color: var(--line);
+  margin: 0 4px;
 }
 
 @keyframes pulse {
