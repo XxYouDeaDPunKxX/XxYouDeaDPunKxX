@@ -1,206 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MaRCoRe / XxYouDeaDPunKxX — DeadPunk OS</title>
-  <meta name="description" content="Personal tools, AI protocols, and practical systems built from real use by MaRCoRe / XxYouDeaDPunKxX.">
+  <title>MaRCoRe / XxYouDeaDPunKxX - DeadPunk OS</title>
+  <meta name="description" content="DeadPunk OS is a handmade profile interface for personal tools, AI protocols, and practical systems built from real use.">
   <meta name="theme-color" content="#0d0d0a">
-  <meta property="og:title" content="DeadPunk OS — XxYouDeaDPunKxX">
-  <meta property="og:description" content="A handmade mini operating system for weird ideas, real problems, AI protocols, and practical systems.">
+  <link rel="canonical" href="https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/">
+  <meta property="og:title" content="DeadPunk OS - XxYouDeaDPunKxX">
+  <meta property="og:description" content="A scrapped-together operating system for weird ideas, real problems, AI protocols, and practical systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/">
   <link rel="icon" href="favicon.svg?v=20260508f" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20260508h">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable profile index">
+  <link rel="alternate" type="application/json" href="raw-manifest.json" title="Raw project manifest">
+  <link rel="stylesheet" href="style.css?v=rebuild-001">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "DeadPunk OS",
+      "url": "https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/",
+      "description": "A handmade profile interface for personal tools, AI protocols, and practical systems built from real use.",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "MaRCoRe",
+        "alternateName": "XxYouDeaDPunKxX",
+        "url": "https://github.com/XxYouDeaDPunKxX"
+      },
+      "keywords": "AI protocols, personal tools, plain text systems, behavioral contracts, project governance, DeadPunk OS"
+    }
+  </script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="boot" id="boot" aria-hidden="true">
-    <div class="boot-box">
+  <a class="skip-link" href="#system">Skip boot sequence</a>
+
+  <div class="boot-screen" id="bootScreen" aria-hidden="true">
+    <div class="boot-terminal" role="presentation">
       <p class="boot-title">DEADPUNK_OS v0.WTH</p>
-      <ul class="boot-lines">
-        <li><span>[OK]</span> profile loaded, against all odds</li>
-        <li><span>[OK]</span> modules loaded? no questions please</li>
+      <ol class="boot-log">
+        <li><span>[OK]</span> profile mounted with questionable screws</li>
+        <li><span>[OK]</span> modules loaded, no warranty attached</li>
         <li><span>[?]</span> runtime making noises, nice</li>
         <li><span>[WARN]</span> template tried something, failed</li>
         <li><span>[OK]</span> tape logic doing its best</li>
         <li><span>[BOOT]</span> booting, thanks god</li>
-      </ul>
-      <div class="boot-progress" aria-hidden="true">
-        <div class="boot-progress-fill"></div>
-      </div>
+      </ol>
+      <div class="boot-meter" aria-hidden="true"><span></span></div>
     </div>
   </div>
 
-  <main class="shell" id="app">
-    <aside class="side panel" aria-label="DeadPunk OS control panel">
-      <div class="brand">
-        <span class="led led-green"></span>
-        <div>
-          <strong>DEADPUNK_OS</strong>
-          <small>profile mounted</small>
-        </div>
+  <header class="top-strip" aria-label="DeadPunk OS status bar">
+    <a class="brand" href="#system" aria-label="DeadPunk OS home">
+      <span class="status-light" aria-hidden="true"></span>
+      <span>
+        <strong>DEADPUNK_OS</strong>
+        <small>profile mounted</small>
+      </span>
+    </a>
+    <nav class="system-nav" aria-label="External links">
+      <a href="https://github.com/XxYouDeaDPunKxX" rel="noreferrer">github.profile</a>
+      <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" rel="noreferrer">repositories.index</a>
+    </nav>
+  </header>
+
+  <main class="system-shell" id="system">
+    <section class="desk" aria-labelledby="deskTitle">
+      <div class="desk-copy">
+        <p class="eyebrow">SCRAP DESKTOP / BOOT DISK</p>
+        <h1 id="deskTitle">No portfolio cards installed.</h1>
+        <p>
+          Personal tools, AI protocols, and practical systems built from real use.
+          The shell is patched together on purpose; the modules underneath are real.
+        </p>
       </div>
 
-      <section class="outputs" aria-label="External outputs">
-        <h2>OUTPUTS</h2>
-        <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noreferrer">github.profile</a>
-        <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noreferrer">repositories.index</a>
-      </section>
-
-      <section class="control-block" aria-label="System control checks">
+      <section class="control-panel" aria-label="System diagnostics">
         <h2>CONTROL</h2>
-        <ul class="check-list">
-          <li><span>[✓]</span> profile mounted somehow</li>
-          <li><span>[✓]</span> modules loaded: 8-ish</li>
+        <ul>
+          <li><span>[OK]</span> profile mounted somehow</li>
+          <li><span>[OK]</span> modules loaded: <strong id="moduleCount">0</strong></li>
           <li><span>[?]</span> runtime still breathing</li>
           <li><span>[!]</span> landing page missing, good</li>
         </ul>
       </section>
-
-      <section class="status" aria-label="Analog system status">
-        <h2>STATUS</h2>
-        <p><span class="mini-led led-green"></span><strong>Build</strong> handmade</p>
-        <p><span class="mini-led led-amber"></span><strong>Stack</strong> held by tape</p>
-        <p><span class="mini-led led-red"></span><strong>Mood</strong> weird ideas, real problems</p>
-      </section>
-
-      <section class="machine-room" aria-label="Machine room animation">
-        <div class="machine-window" aria-hidden="true">
-          <div class="machine-belt"></div>
-          <div class="gear gear-a"></div>
-          <div class="gear gear-b"></div>
-          <div class="tape-strip"></div>
-          <div class="spark-dot"></div>
-        </div>
-      </section>
-    </aside>
-
-    <section class="workbench panel" id="modules" aria-label="Installed project modules">
-      <header class="topbar">
-        <p>BOOT DISK</p>
-        <p>8 files</p>
-      </header>
-      <div class="module-grid" id="moduleGrid"></div>
     </section>
 
-    <aside class="inspector panel" id="inspector" aria-live="polite">
-      <p class="stamp">SELECT A MODULE</p>
-      <h1>No portfolio cards installed.</h1>
-      <p class="muted">Choose a module from the workbench. This thing opens projects like patched hardware, not like a landing page.</p>
-    </aside>
+    <section class="os-board" aria-label="DeadPunk OS work area">
+      <aside class="module-rail" aria-labelledby="moduleTitle">
+        <div class="panel-head">
+          <p>BOOT DISK</p>
+          <p><span id="diskCount">0</span> files</p>
+        </div>
+        <h2 id="moduleTitle" class="sr-only">Project modules</h2>
+        <ul class="module-list" id="moduleList"></ul>
+      </aside>
+
+      <section class="screen-stack" aria-label="Selected module">
+        <article class="window inspector-window" id="inspector" aria-live="polite">
+          <p class="stamp">SELECT A MODULE</p>
+          <h2>System waiting for modules.</h2>
+          <p class="muted">If JavaScript failed, use the raw manifest below.</p>
+        </article>
+
+        <aside class="window terminal-window" aria-labelledby="terminalTitle">
+          <div class="panel-head">
+            <h2 id="terminalTitle">Runtime log</h2>
+            <span>held by tape</span>
+          </div>
+          <ol id="eventLog" class="event-log">
+            <li><span>00</span> analog shell initialized</li>
+            <li><span>01</span> spare wires pretending to be architecture</li>
+          </ol>
+        </aside>
+      </section>
+    </section>
+
+    <details class="maintenance-hatch">
+      <summary>RAW MANIFEST</summary>
+      <div class="manifest-grid">
+        <article>
+          <h2>A.D.A.M.</h2>
+          <p>AI control protocol. Keeps AI chats at the right depth.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode">repository</a>
+        </article>
+        <article>
+          <h2>Memory-Assisted Shaping</h2>
+          <p>AI continuity protocol. Keeps long idea-shaping sessions coherent.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping">repository</a>
+        </article>
+        <article>
+          <h2>PA-PVP</h2>
+          <p>Decision loop. Turns vague plans or stuck decisions into a next move.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol">repository</a>
+        </article>
+        <article>
+          <h2>PA-PVP mini</h2>
+          <p>Review protocol. Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/PA-PVP-mini">repository</a>
+        </article>
+        <article>
+          <h2>Signal Rail</h2>
+          <p>Document routing system. Keeps live project material in the right place.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/Signal-Rail">repository</a>
+        </article>
+        <article>
+          <h2>CSBP</h2>
+          <p>Practice filter. Keeps reusable Codex practices explicit, reviewed, and controlled.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice">repository</a>
+        </article>
+        <article>
+          <h2>SensecraftXStudio</h2>
+          <p>Grounding frame. Keeps AI-assisted technical work grounded before the assistant acts.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/SensecraftXStudio">repository</a>
+        </article>
+        <article>
+          <h2>GPT-PF / ChatGPT Project Forge</h2>
+          <p>Project bootloader. Prepares starting files for a ChatGPT Project.</p>
+          <a href="https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge">repository</a>
+        </article>
+      </div>
+      <p class="crawler-files">
+        CRAWLER FILES:
+        <a href="llms.txt">llms.txt</a>
+        <span>/</span>
+        <a href="robots.txt">robots.txt</a>
+        <span>/</span>
+        <a href="sitemap.xml">sitemap.xml</a>
+        <span>/</span>
+        <a href="raw-manifest.json">raw-manifest.json</a>
+      </p>
+    </details>
   </main>
 
-  <details class="raw-manifest">
-    <summary>RAW MANIFEST</summary>
-    <div class="raw-manifest-body">
-      <article class="raw-project">
-        <h2>A.D.A.M.</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>AI control protocol</dd></div>
-          <div><dt>JOB</dt><dd>Keeps AI chats at the right depth.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Simple questions stay simple. Complex work does not become unclear or overloaded.</dd></div>
-          <div><dt>OUTPUT</dt><dd>LOW / MID / DEEP response control.</dd></div>
-          <div><dt>NOTE</dt><dd>overthinking containment unit</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode">https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>Memory-Assisted Shaping</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>AI continuity protocol</dd></div>
-          <div><dt>JOB</dt><dd>Keeps long idea-shaping sessions coherent.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Cleaner final artifacts after controlled shaping.</dd></div>
-          <div><dt>NOTE</dt><dd>drift repellent, probably flammable</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping">https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>PA-PVP</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Decision loop</dd></div>
-          <div><dt>JOB</dt><dd>Turns vague plans, artifacts, or stuck decisions into an operational next move.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Open-ended discussion keeps replacing closure.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Verdict, one next action, and a continuation point.</dd></div>
-          <div><dt>NOTE</dt><dd>argues so you do not have to</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol">https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>PA-PVP mini</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Review protocol</dd></div>
-          <div><dt>JOB</dt><dd>Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Concrete findings and structural fixes.</dd></div>
-          <div><dt>NOTE</dt><dd>small, sharp, mildly annoying</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/PA-PVP-mini">https://github.com/XxYouDeaDPunKxX/PA-PVP-mini</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>Signal Rail</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Document routing system</dd></div>
-          <div><dt>JOB</dt><dd>Keeps live project material in the right place.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.</dd></div>
-          <div><dt>NOTE</dt><dd>keeps mess on tracks</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/Signal-Rail">https://github.com/XxYouDeaDPunKxX/Signal-Rail</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>CSBP</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Practice filter</dd></div>
-          <div><dt>JOB</dt><dd>Keeps reusable Codex practices explicit, reviewed, and controlled.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.</dd></div>
-          <div><dt>OUTPUT</dt><dd>A small companion layer for practices worth reusing, but not strong enough to become project rules.</dd></div>
-          <div><dt>NOTE</dt><dd>not a rule, not a vibe</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice">https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>SensecraftXStudio</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Grounding frame</dd></div>
-          <div><dt>JOB</dt><dd>Keeps AI-assisted technical work grounded before the assistant acts.</dd></div>
-          <div><dt>PROBLEM</dt><dd>The assistant can stay plausible after the frame has drifted.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Visible target, context, assumptions, action boundary, and final state.</dd></div>
-          <div><dt>NOTE</dt><dd>confidence not trusted here</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/SensecraftXStudio">https://github.com/XxYouDeaDPunKxX/SensecraftXStudio</a></dd></div>
-        </dl>
-      </article>
-
-      <article class="raw-project">
-        <h2>GPT-PF / ChatGPT Project Forge</h2>
-        <dl>
-          <div><dt>TYPE</dt><dd>Project bootloader</dd></div>
-          <div><dt>JOB</dt><dd>Prepares starting files for a ChatGPT Project.</dd></div>
-          <div><dt>PROBLEM</dt><dd>Projects start from memory, chat momentum, or informal notes instead of explicit files.</dd></div>
-          <div><dt>OUTPUT</dt><dd>Scope, sources, constraints, and starting basis before the real work begins.</dd></div>
-          <div><dt>NOTE</dt><dd>boots before it pretends</dd></div>
-          <div><dt>REPO</dt><dd><a href="https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge">https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge</a></dd></div>
-        </dl>
-      </article>
-    </div>
-    <p class="raw-links">
-      CRAWLER FILES:
-      <a href="llms.txt">llms.txt</a>
-      <span>/</span>
-      <a href="robots.txt">robots.txt</a>
-      <span>/</span>
-      <a href="sitemap.xml">sitemap.xml</a>
-      <span>/</span>
-      <a href="raw-manifest.json">raw-manifest.json</a>
-    </p>
-  </details>
-
-  <script src="projects.js?v=20260508f"></script>
-  <script src="app.js?v=20260508h"></script>
+  <script src="projects.js?v=rebuild-001"></script>
+  <script src="app.js?v=rebuild-001"></script>
 </body>
 </html>

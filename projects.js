@@ -1,4 +1,4 @@
-const PROJECTS = [
+window.DEADPUNK_PROJECTS = [
   {
     id: "adam",
     module: "ADAM.depth",
