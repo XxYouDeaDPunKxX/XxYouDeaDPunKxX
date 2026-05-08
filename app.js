@@ -1,6 +1,7 @@
 const grid = document.getElementById("moduleGrid");
 const inspector = document.getElementById("inspector");
 const seoList = document.getElementById("seoList");
+const seoProjects = document.querySelector(".seo-projects");
 
 const iconMap = {
   dial: "◉",
@@ -45,24 +46,25 @@ function openProject(project) {
       <div><dt>JOB</dt><dd>${project.job}</dd></div>
       <div><dt>PROBLEM</dt><dd>${project.problem}</dd></div>
       <div><dt>OUTPUT</dt><dd>${project.output}</dd></div>
-      <div><dt>STATUS</dt><dd>${project.status}</dd></div>
+      <div><dt>NOTE</dt><dd>${project.note}</dd></div>
     </dl>
 
     <div class="actions">
       <a href="${project.repo}" target="_blank" rel="noreferrer">open repo</a>
-      <button type="button" id="copyModule">copy module name</button>
+      <a href="${project.repo}/stargazers" target="_blank" rel="noreferrer">star project</a>
+      <button type="button" id="copyRepo">copy repo url</button>
     </div>
   `;
 
-  const copyButton = document.getElementById("copyModule");
+  const copyButton = document.getElementById("copyRepo");
   copyButton?.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(project.module);
+      await navigator.clipboard.writeText(project.repo);
       copyButton.textContent = "copied";
-      setTimeout(() => copyButton.textContent = "copy module name", 1200);
+      setTimeout(() => copyButton.textContent = "copy repo url", 1200);
     } catch {
       copyButton.textContent = "copy failed";
-      setTimeout(() => copyButton.textContent = "copy module name", 1200);
+      setTimeout(() => copyButton.textContent = "copy repo url", 1200);
     }
   });
 }
@@ -73,6 +75,8 @@ function renderSeoFallback() {
       <a href="${project.repo}">${project.title}</a>: ${project.job}
     </li>
   `).join("");
+
+  seoProjects?.setAttribute("hidden", "");
 }
 
 renderModules();
