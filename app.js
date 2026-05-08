@@ -80,7 +80,7 @@ renderSeoFallback();
 
 setTimeout(() => {
   document.getElementById("boot")?.classList.add("hidden");
-}, 1700);
+}, 4000);
 
 if (PROJECTS[0]) {
   const first = document.querySelector(".module");
