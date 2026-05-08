@@ -9,7 +9,7 @@ const PROJECTS = [
     problem: "Simple questions stay simple. Complex work does not become unclear or overloaded.",
     output: "LOW / MID / DEEP response control.",
     repo: "https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode",
-    status: "public",
+    note: "overthinking containment unit",
     icon: "dial"
   },
   {
@@ -22,7 +22,7 @@ const PROJECTS = [
     problem: "Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.",
     output: "Cleaner final artifacts after controlled shaping.",
     repo: "https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping",
-    status: "public",
+    note: "drift repellent, probably flammable",
     icon: "tape"
   },
   {
@@ -35,7 +35,7 @@ const PROJECTS = [
     problem: "Open-ended discussion keeps replacing closure.",
     output: "Verdict, one next action, and a continuation point.",
     repo: "https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol",
-    status: "public",
+    note: "argues so you do not have to",
     icon: "scale"
   },
   {
@@ -48,7 +48,7 @@ const PROJECTS = [
     problem: "Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.",
     output: "Concrete findings and structural fixes.",
     repo: "https://github.com/XxYouDeaDPunKxX/PA-PVP-mini",
-    status: "public",
+    note: "small, sharp, mildly annoying",
     icon: "lens"
   },
   {
@@ -61,7 +61,7 @@ const PROJECTS = [
     problem: "Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.",
     output: "Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.",
     repo: "https://github.com/XxYouDeaDPunKxX/Signal-Rail",
-    status: "public",
+    note: "keeps mess on tracks",
     icon: "rail"
   },
   {
@@ -74,7 +74,7 @@ const PROJECTS = [
     problem: "Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.",
     output: "A small companion layer for practices worth reusing, but not strong enough to become project rules.",
     repo: "https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice",
-    status: "public",
+    note: "not a rule, not a vibe",
     icon: "filter"
   },
   {
@@ -87,7 +87,7 @@ const PROJECTS = [
     problem: "The assistant can stay plausible after the frame has drifted.",
     output: "Visible target, context, assumptions, action boundary, and final state.",
     repo: "https://github.com/XxYouDeaDPunKxX/SensecraftXStudio",
-    status: "public",
+    note: "confidence not trusted here",
     icon: "frame"
   },
   {
@@ -100,7 +100,7 @@ const PROJECTS = [
     problem: "Projects start from memory, chat momentum, or informal notes instead of explicit files.",
     output: "Scope, sources, constraints, and starting basis before the real work begins.",
     repo: "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge",
-    status: "public",
+    note: "boots before it pretends",
     icon: "boot"
   }
 ];
