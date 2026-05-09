@@ -115,6 +115,7 @@
   function selectProject(projectId, focusInspector) {
     const project = projects.find((item) => item.id === projectId) || projects[0];
     if (!project || !inspector || !inspectorBody) return;
+    const pageUrl = getProjectPageUrl(project.repo);
 
     updateSelection(project.id);
     inspector.classList.add("is-open");
@@ -132,7 +133,7 @@
       </dl>
       <div class="actions">
         <a href="${escapeText(project.repo)}" target="_blank" rel="noopener noreferrer">open repo</a>
-        <a href="${escapeText(project.repo)}/stargazers" target="_blank" rel="noopener noreferrer">star project</a>
+        ${pageUrl ? `<a href="${escapeText(pageUrl)}" target="_blank" rel="noopener noreferrer">gh-page</a>` : ""}
         <button type="button" data-copy="${escapeText(project.repo)}">copy repo url</button>
       </div>
     `;
@@ -140,6 +141,18 @@
     const copyButton = inspectorBody.querySelector("[data-copy]");
     if (copyButton) copyButton.addEventListener("click", () => copyRepo(copyButton));
     if (focusInspector) inspector.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  function getProjectPageUrl(repoUrl) {
+    try {
+      const url = new URL(repoUrl);
+      if (url.hostname !== "github.com") return "";
+      const [, owner, repo] = url.pathname.split("/");
+      if (!owner || !repo) return "";
+      return `https://${owner.toLowerCase()}.github.io/${repo.replace(/\/$/, "")}/`;
+    } catch {
+      return "";
+    }
   }
 
   function renderReadme(focusInspector) {

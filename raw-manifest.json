@@ -7,6 +7,8 @@
   "description": "A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
   "identity": "text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.",
   "not_a_portfolio": true,
+  "github_pages_pattern": "https://xxyoudeadpunkxx.github.io/{repository-name}/",
+  "github_pages_derivation": "Each project GitHub Page uses the standard repository Pages URL derived from its GitHub repository URL.",
   "readme": [
     "Not a portfolio.",
     "A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",

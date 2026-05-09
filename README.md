@@ -105,6 +105,8 @@ Adding a normal project should not require layout edits.
 
 Keep `llms.txt` and `raw-manifest.json` aligned with `projects.js` when project descriptions, routing, or categories change.
 
+The GitHub Pages derivation rule is also exposed in `llms.txt` and `raw-manifest.json`.
+
 ## ⚙️ Runtime Structure
 
 <details>
@@ -150,6 +152,10 @@ On load, it reads the project list, creates desktop icons, creates Start menu ap
 
 It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, and fake reboot animation.
 
+It derives each project GitHub Pages URL from the project repository URL when rendering the inspector action links.
+
+The derived URL follows the standard GitHub Pages repository pattern: `https://{owner}.github.io/{repository-name}/`.
+
 ### 🟢 Initial State
 
 The page opens with the inspector in a README state.
@@ -174,7 +180,7 @@ The inspector is a reusable window, not a separate block for every project.
 
 When a project is selected, the inspector body is replaced with markup generated from that project object.
 
-The rendered project view contains module, title, subtitle, category, type, job, problem, output, note, and repository actions.
+The rendered project view contains module, title, subtitle, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
 
 ### 🗂️ Start Menu
 

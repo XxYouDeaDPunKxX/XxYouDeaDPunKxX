@@ -17,6 +17,13 @@ I built these tools to reduce drift, force useful decisions, and keep messy AI-a
 
 text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.
 
+## GitHub Pages
+
+Each project repository has a GitHub Page using the standard repository Pages URL pattern:
+https://xxyoudeadpunkxx.github.io/{repository-name}/
+
+The project page URL is derivable from the repository URL.
+
 ## Project routing
 
 AI response misses depth or starts hallucinating -> A.D.A.M.
