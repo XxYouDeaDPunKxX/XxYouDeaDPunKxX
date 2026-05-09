@@ -18,6 +18,8 @@ Usually i create Personal tools, AI protocols, and practical systems built from 
 - projects made first for my own needs, then shared for others
 
 ## 📌 Featured projects
+ 
+ # Try [DeadPunk OS](https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/) — it’s not broken, it’s ‘avant-garde’.
 
 A few projects I use, test, or keep shaping:
 
@@ -32,7 +34,7 @@ A few projects I use, test, or keep shaping:
 | [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | SensecraftXStudio helps keep AI-assisted technical work grounded before the assistant acts, so the target, context, assumptions, and final state stay visible for the operator and clear for the agent. |
 | [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge prepares the starting files for a ChatGPT Project, so scope, sources, constraints, and starting basis are clear before the real work begins. |
 
- Try [DeadPunk OS](https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/) — it’s not broken, it’s ‘avant-garde’.
+
 
 ## 📡 Why I share my work
 
