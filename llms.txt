@@ -30,19 +30,18 @@ new ChatGPT project starts from fog -> GPT-PF / ChatGPT Project Forge
 
 ## Categories
 
-- AI control protocol
-- AI continuity protocol
-- decision protocol
-- adversarial review protocol
-- document governance system
+- AI protocols
+- decision systems
+- review systems
+- document governance
 - Codex environment discipline
-- agent behavior contract
-- project bootloader
+- agent contracts
+- ChatGPT project setup hygiene
 
 ## Projects
 
 ### A.D.A.M.
-Category: AI control protocol
+Category: AI protocols
 Type: AI control protocol
 Route: AI response misses depth or starts hallucinating
 Job: Keeps AI chats at the right depth.
@@ -52,7 +51,7 @@ Note: overthinking containment unit
 Repository: https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode
 
 ### Memory-Assisted Shaping
-Category: AI continuity protocol
+Category: AI protocols
 Type: AI continuity protocol
 Route: long idea-shaping session starts drifting
 Job: Keeps long idea-shaping sessions coherent.
@@ -62,8 +61,8 @@ Note: drift repellent, probably flammable
 Repository: https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping
 
 ### PA-PVP
-Category: decision protocol
-Type: Decision loop
+Category: decision systems
+Type: Decision protocol
 Route: indecision keeps the work moving without deciding
 Job: Turns vague plans, artifacts, or stuck decisions into an operational next move.
 Problem: Open-ended discussion keeps replacing closure.
@@ -72,8 +71,8 @@ Note: argues so you do not have to
 Repository: https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol
 
 ### PA-PVP mini
-Category: adversarial review protocol
-Type: Review protocol
+Category: review systems
+Type: Adversarial review protocol
 Route: idea or output looks plausible but structurally weak
 Job: Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.
 Problem: Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.
@@ -82,7 +81,7 @@ Note: small, sharp, mildly annoying
 Repository: https://github.com/XxYouDeaDPunKxX/PA-PVP-mini
 
 ### Signal Rail
-Category: document governance system
+Category: document governance
 Type: Document routing system
 Route: project documents become a pile
 Job: Keeps live project material in the right place.
@@ -93,7 +92,7 @@ Repository: https://github.com/XxYouDeaDPunKxX/Signal-Rail
 
 ### CSBP
 Category: Codex environment discipline
-Type: Practice filter
+Type: Practice governance
 Route: Codex keeps making the same mistakes; discipline the work environment
 Job: Keeps reusable Codex practices explicit, reviewed, and controlled.
 Problem: Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.
@@ -102,8 +101,8 @@ Note: not a rule, not a vibe
 Repository: https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice
 
 ### SensecraftXStudio
-Category: agent behavior contract
-Type: Grounding frame
+Category: agent contracts
+Type: Agent behavior contract
 Route: Codex needs to slow down and clear the frame before touching the work
 Job: Keeps AI-assisted technical work grounded before the assistant acts.
 Problem: The assistant can stay plausible after the frame has drifted.
@@ -112,8 +111,8 @@ Note: confidence not trusted here
 Repository: https://github.com/XxYouDeaDPunKxX/SensecraftXStudio
 
 ### GPT-PF / ChatGPT Project Forge
-Category: project bootloader
-Type: Project bootloader
+Category: ChatGPT project setup hygiene
+Type: ChatGPT project bootloader
 Route: new ChatGPT project starts from fog
 Job: Prepares starting files for a ChatGPT Project.
 Problem: Projects start from memory, chat momentum, or informal notes instead of explicit files.

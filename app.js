@@ -17,6 +17,8 @@
   const startButton = document.getElementById("startButton");
   const startMenu = document.getElementById("startMenu");
   const startApps = document.getElementById("startApps");
+  const powerButton = document.getElementById("powerButton");
+  const powerMenu = document.getElementById("powerMenu");
   const bootScreen = document.getElementById("bootScreen");
   const microToast = document.getElementById("microToast");
   let toastTimer = 0;
@@ -212,6 +214,12 @@
     searchButton.setAttribute("aria-expanded", open ? "true" : "false");
   }
 
+  function setPowerMenu(open) {
+    if (!powerButton || !powerMenu) return;
+    powerMenu.hidden = !open;
+    powerButton.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
   function toggleStartMenu() {
     if (!startMenu) return;
     setStartMenu(startMenu.hidden);
@@ -220,6 +228,11 @@
   function toggleSearchPanel() {
     if (!searchPanel) return;
     setSearchPanel(searchPanel.hidden);
+  }
+
+  function togglePowerMenu() {
+    if (!powerMenu) return;
+    setPowerMenu(powerMenu.hidden);
   }
 
   function closeInspectorWindow() {
@@ -257,15 +270,17 @@
     rebootTimer = window.setTimeout(restoreTerminal, 5200);
   }
 
-  function showMicroToast(target) {
+  function showMicroToast(target, message = "nice try...") {
     if (!microToast) return;
 
     const rect = target.getBoundingClientRect();
-    const left = Math.min(window.innerWidth - 120, Math.max(8, rect.left + rect.width / 2 - 48));
+    const toastWidth = Math.min(352, window.innerWidth - 16);
+    const left = Math.min(window.innerWidth - toastWidth - 8, Math.max(8, rect.left + rect.width / 2 - toastWidth / 2));
     const top = Math.min(window.innerHeight - 64, Math.max(8, rect.bottom + 8));
 
     microToast.style.left = `${left}px`;
     microToast.style.top = `${top}px`;
+    microToast.textContent = message;
     microToast.hidden = false;
     microToast.classList.remove("is-visible");
 
@@ -279,7 +294,7 @@
       window.setTimeout(() => {
         microToast.hidden = true;
       }, 120);
-    }, 740);
+    }, 1600);
   }
 
   function bindGlobalActions() {
@@ -288,6 +303,7 @@
     if (searchButton) searchButton.addEventListener("click", toggleSearchPanel);
     if (closeSearch) closeSearch.addEventListener("click", () => setSearchPanel(false));
     if (closeInspector) closeInspector.addEventListener("click", closeInspectorWindow);
+    if (powerButton) powerButton.addEventListener("click", togglePowerMenu);
     document.addEventListener("click", (event) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
@@ -302,11 +318,41 @@
       });
     });
 
+    document.querySelectorAll("[data-toast]").forEach((control) => {
+      control.addEventListener("click", () => {
+        showMicroToast(control, control.dataset.toast || "nice try...");
+      });
+    });
+
+    document.querySelectorAll("[data-power-action]").forEach((control) => {
+      control.addEventListener("click", () => {
+        const messages = {
+          restart: "Restart? Don't push your luck.",
+          sleep: "Sleep? I'll just close my eyes and hope the tape holds.",
+          hibernate: "Hibernate? Bold of you to assume I can wake up.",
+          shutdown: "shutdown sold separately"
+        };
+        const message = messages[control.dataset.powerAction] || "nice try...";
+        setPowerMenu(false);
+        showMicroToast(powerButton || control, message);
+      });
+    });
+
     document.addEventListener("click", (event) => {
       if (!startMenu || !startButton || startMenu.hidden) return;
       const target = event.target;
       if (!(target instanceof Node)) return;
-      if (!startMenu.contains(target) && !startButton.contains(target)) setStartMenu(false);
+      if (!startMenu.contains(target) && !startButton.contains(target)) {
+        setStartMenu(false);
+        setPowerMenu(false);
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!powerMenu || !powerButton || powerMenu.hidden) return;
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      if (!powerMenu.contains(target) && !powerButton.contains(target)) setPowerMenu(false);
     });
 
     document.addEventListener("click", (event) => {
@@ -320,6 +366,7 @@
       if (event.key !== "Escape") return;
       setStartMenu(false);
       setSearchPanel(false);
+      setPowerMenu(false);
       closeInspectorWindow();
     });
   }
@@ -328,7 +375,7 @@
     if (terminalBody) terminalHome = terminalBody.innerHTML;
     renderProjectButtons();
     bindGlobalActions();
-    selectProject(projects[0]?.id, false);
+    renderReadme(false);
     window.setTimeout(hideBoot, 4000);
   }
 

@@ -16,6 +16,11 @@
   <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable profile index">
   <link rel="alternate" type="application/json" href="raw-manifest.json" title="Raw project manifest">
   <link rel="stylesheet" href="style.css?v=rebuild-002">
+  <noscript>
+    <style>
+      .boot-screen { display: none !important; }
+    </style>
+  </noscript>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -122,7 +127,7 @@
             "item": {
               "@type": "CreativeWork",
               "name": "GPT-PF / ChatGPT Project Forge",
-              "description": "Project bootloader for starting ChatGPT projects from explicit files.",
+              "description": "ChatGPT project bootloader for starting projects from explicit files.",
               "url": "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"
             }
           }
@@ -157,7 +162,7 @@
     </a>
 
     <nav class="public-index" aria-label="Public index files">
-      <span>PUBLIC INDEX:</span>
+      <span>RAW BUS:</span>
       <a href="llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a>
       <a href="robots.txt" target="_blank" rel="noopener noreferrer">robots.txt</a>
       <a href="sitemap.xml" target="_blank" rel="noopener noreferrer">sitemap.xml</a>
@@ -207,6 +212,11 @@ weird ideas, real problem</pre>
         </div>
       </section>
 
+      <button class="system-trash" type="button" data-toast="[WARN] I like this garbage, it's structural now.">
+        <span class="trash-can" aria-hidden="true"></span>
+        <span>Trash</span>
+      </button>
+
       <section class="inspector-window is-open" id="inspector" aria-live="polite" aria-label="Inspecting project">
         <div class="window-bar">
           <span class="window-bolts" aria-hidden="true"></span>
@@ -244,18 +254,32 @@ weird ideas, real problem</pre>
 
   <aside class="start-menu" id="startMenu" aria-labelledby="startTitle" hidden>
     <div class="start-head">
-      <h2 id="startTitle">DEADPUNK OS</h2>
-      <p>weird apps, some files, questionable projects</p>
+      <h2 id="startTitle">DEADPUNK OS v0.WTH</h2>
+      <p>weird apps / some files / questionable projects</p>
     </div>
-    <nav class="start-links" aria-label="Profile links">
-      <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
-      <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a>
-      <a href="raw-manifest.json" target="_blank" rel="noopener noreferrer">Raw manifest</a>
-      <a href="llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a>
-    </nav>
+    <section class="start-section" aria-labelledby="startSystemTitle">
+      <h3 id="startSystemTitle">SYSTEM</h3>
+      <nav class="start-links" aria-label="Profile links">
+        <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer"><span class="system-icon system-user" aria-hidden="true"></span>GitHub profile</a>
+        <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer"><span class="system-icon system-folder" aria-hidden="true"></span>Repositories</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer"><span class="system-icon system-doc" aria-hidden="true"></span>This page repo</a>
+      </nav>
+    </section>
     <div class="start-apps">
-      <h3>Apps</h3>
+      <h3>INSTALLED</h3>
       <div id="startApps"></div>
+    </div>
+    <div class="start-power">
+      <button class="power-button" id="powerButton" type="button" aria-controls="powerMenu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        POWER
+      </button>
+      <div class="power-menu" id="powerMenu" hidden>
+        <button type="button" data-power-action="restart">restart</button>
+        <button type="button" data-power-action="sleep">sleep</button>
+        <button type="button" data-power-action="hibernate">hibernate</button>
+        <button type="button" data-power-action="shutdown">power off</button>
+      </div>
     </div>
   </aside>
 
@@ -268,6 +292,22 @@ weird ideas, real problem</pre>
       <span></span>
       <span class="task-search-label">search scrap</span>
     </button>
+    <div class="tray-icons" role="group" aria-label="System tray controls">
+      <button class="tray-icon tray-help" type="button" aria-label="Help" data-toast="[?] Help? We are beyond help. We are in God's hands now."><span aria-hidden="true">?</span></button>
+      <button class="tray-icon tray-volume" type="button" aria-label="Volume" data-toast="[!] Stop it, I'm getting a headache.">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 9h4l5-4v14l-5-4H4z"></path>
+          <path d="M16 9.5c1.2 1.4 1.2 3.6 0 5"></path>
+          <path d="M18.8 7c2.4 2.8 2.4 7.2 0 10"></path>
+        </svg>
+      </button>
+      <button class="tray-icon tray-settings" type="button" aria-label="System settings" data-toast="[OOF] Changing settings requires a settings page. We don't have one. Noted.">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9.2 3.5h5.6l.6 2.2 2 1.1 2.2-.7 2.8 4.8-1.7 1.5v2.2l1.7 1.5-2.8 4.8-2.2-.7-2 1.1-.6 2.2H9.2l-.6-2.2-2-1.1-2.2.7-2.8-4.8 1.7-1.5v-2.2L1.6 10.9l2.8-4.8 2.2.7 2-1.1z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      </button>
+    </div>
     <nav class="task-tray" aria-label="GitHub and index shortcuts">
       <p>
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">github</a>
