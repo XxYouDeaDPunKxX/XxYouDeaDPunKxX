@@ -129,8 +129,8 @@
         ${renderSpec("NOTE", project.note)}
       </dl>
       <div class="actions">
-        <a href="${escapeText(project.repo)}" rel="noreferrer">open repo</a>
-        <a href="${escapeText(project.repo)}/stargazers" rel="noreferrer">star project</a>
+        <a href="${escapeText(project.repo)}" target="_blank" rel="noopener noreferrer">open repo</a>
+        <a href="${escapeText(project.repo)}/stargazers" target="_blank" rel="noopener noreferrer">star project</a>
         <button type="button" data-copy="${escapeText(project.repo)}">copy repo url</button>
       </div>
     `;
@@ -154,9 +154,9 @@
         <p>I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.</p>
       </div>
       <div class="actions">
-        <a href="https://github.com/XxYouDeaDPunKxX" rel="noreferrer">GitHub profile</a>
-        <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" rel="noreferrer">repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX" rel="noreferrer">this page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+        <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer">repositories</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">this page repo</a>
       </div>
     `;
 
