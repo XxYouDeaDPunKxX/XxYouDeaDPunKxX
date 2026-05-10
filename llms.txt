@@ -34,6 +34,7 @@ project documents become a pile -> Signal Rail
 Codex keeps making the same mistakes; discipline the work environment -> CSBP
 Codex needs to slow down and clear the frame before touching the work -> SensecraftXStudio
 new ChatGPT project starts from fog -> GPT-PF / ChatGPT Project Forge
+ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote MCP Worker
 
 ## Categories
 
@@ -44,6 +45,7 @@ new ChatGPT project starts from fog -> GPT-PF / ChatGPT Project Forge
 - Codex environment discipline
 - agent contracts
 - ChatGPT project setup hygiene
+- AI storage tools
 
 ## Projects
 
@@ -126,3 +128,13 @@ Problem: Projects start from memory, chat momentum, or informal notes instead of
 Output: Scope, sources, constraints, and starting basis before the real work begins.
 Note: boots before it pretends
 Repository: https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge
+
+### Cloudflare R2 Remote MCP Worker
+Category: AI storage tools
+Type: Cloud file storage bridge + authenticated remote MCP
+Route: ChatGPT needs files, but your local disk is not invited
+Job: Gives ChatGPT-style MCP clients a controlled remote place to read and write files.
+Problem: ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.
+Output: A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.
+Note: tiny cloud closet, because local disk access was not invited
+Repository: https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker

@@ -33,7 +33,8 @@
     rail: "SR",
     filter: "CS",
     frame: "SX",
-    boot: "PF"
+    boot: "PF",
+    r2: "R2"
   };
 
   function escapeText(value) {
@@ -44,6 +45,21 @@
       "\"": "&quot;",
       "'": "&#39;"
     })[char]);
+  }
+
+  function focusElement(element) {
+    if (!element || typeof element.focus !== "function") return;
+    try {
+      element.focus({ preventScroll: true });
+    } catch {
+      element.focus();
+    }
+  }
+
+  function focusFirstControl(container, selector = "a[href], button:not([disabled])") {
+    if (!container) return;
+    const control = container.querySelector(selector);
+    focusElement(control);
   }
 
   function renderProjectButtons() {
@@ -118,7 +134,7 @@
     const pageUrl = getProjectPageUrl(project.repo);
 
     updateSelection(project.id);
-    inspector.classList.add("is-open");
+    openInspector();
     inspectorBody.innerHTML = `
       <p class="stamp">INSPECTING: ${escapeText(project.module)}</p>
       <h2>${escapeText(project.title)}</h2>
@@ -140,7 +156,7 @@
 
     const copyButton = inspectorBody.querySelector("[data-copy]");
     if (copyButton) copyButton.addEventListener("click", () => copyRepo(copyButton));
-    if (focusInspector) inspector.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (focusInspector) focusInspectorWindow();
   }
 
   function getProjectPageUrl(repoUrl) {
@@ -159,7 +175,7 @@
     if (!inspector || !inspectorBody) return;
 
     updateSelection("");
-    inspector.classList.add("is-open");
+    openInspector();
     inspectorBody.innerHTML = `
       <p class="stamp">INSPECTING: README.TXT</p>
       <h2>README</h2>
@@ -175,7 +191,20 @@
       </div>
     `;
 
-    if (focusInspector) inspector.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (focusInspector) focusInspectorWindow();
+  }
+
+  function openInspector() {
+    if (!inspector) return;
+    inspector.hidden = false;
+    inspector.removeAttribute("aria-hidden");
+    inspector.classList.add("is-open");
+  }
+
+  function focusInspectorWindow() {
+    if (!inspector) return;
+    inspector.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    focusElement(inspector);
   }
 
   function updateSelection(projectId) {
@@ -215,43 +244,62 @@
     }, 1200);
   }
 
-  function setStartMenu(open) {
+  function setStartMenu(open, focusPanel = false, returnFocus = false) {
     if (!startButton || !startMenu) return;
     startMenu.hidden = !open;
     startButton.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) {
+      setPowerMenu(false);
+      if (focusPanel) window.requestAnimationFrame(() => focusFirstControl(startMenu, ".start-links a, .start-app"));
+    } else if (returnFocus) {
+      focusElement(startButton);
+    }
   }
 
-  function setSearchPanel(open) {
+  function setSearchPanel(open, focusPanel = false, returnFocus = false) {
     if (!searchButton || !searchPanel) return;
     searchPanel.hidden = !open;
     searchButton.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open && focusPanel) {
+      window.requestAnimationFrame(() => focusFirstControl(searchPanel, ".route-button"));
+    } else if (!open && returnFocus) {
+      focusElement(searchButton);
+    }
   }
 
-  function setPowerMenu(open) {
+  function setPowerMenu(open, focusPanel = false, returnFocus = false) {
     if (!powerButton || !powerMenu) return;
     powerMenu.hidden = !open;
     powerButton.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open && focusPanel) {
+      window.requestAnimationFrame(() => focusFirstControl(powerMenu, "[data-power-action]"));
+    } else if (!open && returnFocus) {
+      focusElement(powerButton);
+    }
   }
 
   function toggleStartMenu() {
     if (!startMenu) return;
-    setStartMenu(startMenu.hidden);
+    setStartMenu(startMenu.hidden, true);
   }
 
   function toggleSearchPanel() {
     if (!searchPanel) return;
-    setSearchPanel(searchPanel.hidden);
+    setSearchPanel(searchPanel.hidden, true);
   }
 
   function togglePowerMenu() {
     if (!powerMenu) return;
-    setPowerMenu(powerMenu.hidden);
+    setPowerMenu(powerMenu.hidden, true);
   }
 
-  function closeInspectorWindow() {
+  function closeInspectorWindow(returnFocus = false) {
     if (!inspector) return;
     inspector.classList.remove("is-open");
+    inspector.hidden = true;
+    inspector.setAttribute("aria-hidden", "true");
     updateSelection("");
+    if (returnFocus) focusElement(readmeButton);
   }
 
   function hideBoot() {
@@ -314,8 +362,8 @@
     if (topbarBrand) topbarBrand.addEventListener("click", runFakeReboot);
     if (startButton) startButton.addEventListener("click", toggleStartMenu);
     if (searchButton) searchButton.addEventListener("click", toggleSearchPanel);
-    if (closeSearch) closeSearch.addEventListener("click", () => setSearchPanel(false));
-    if (closeInspector) closeInspector.addEventListener("click", closeInspectorWindow);
+    if (closeSearch) closeSearch.addEventListener("click", () => setSearchPanel(false, false, true));
+    if (closeInspector) closeInspector.addEventListener("click", () => closeInspectorWindow(true));
     if (powerButton) powerButton.addEventListener("click", togglePowerMenu);
     document.addEventListener("click", (event) => {
       const target = event.target;
@@ -346,7 +394,7 @@
           shutdown: "shutdown sold separately"
         };
         const message = messages[control.dataset.powerAction] || "nice try...";
-        setPowerMenu(false);
+        setPowerMenu(false, false, true);
         showMicroToast(powerButton || control, message);
       });
     });
@@ -377,10 +425,16 @@
 
     document.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
+      const powerWasOpen = Boolean(powerMenu && !powerMenu.hidden);
+      const startWasOpen = Boolean(startMenu && !startMenu.hidden);
+      const searchWasOpen = Boolean(searchPanel && !searchPanel.hidden);
+      const returnTarget = startWasOpen || powerWasOpen ? startButton : searchWasOpen ? searchButton : readmeButton;
+
       setStartMenu(false);
       setSearchPanel(false);
       setPowerMenu(false);
       closeInspectorWindow();
+      focusElement(returnTarget);
     });
   }
 

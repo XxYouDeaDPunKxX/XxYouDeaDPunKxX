@@ -46,6 +46,10 @@
     {
       "trigger": "new ChatGPT project starts from fog",
       "project_id": "project-forge"
+    },
+    {
+      "trigger": "ChatGPT needs files, but your local disk is not invited",
+      "project_id": "cloudflare-r2-remote-mcp-worker"
     }
   ],
   "projects": [
@@ -144,6 +148,18 @@
       "output": "Scope, sources, constraints, and starting basis before the real work begins.",
       "note": "boots before it pretends",
       "repository": "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"
+    },
+    {
+      "id": "cloudflare-r2-remote-mcp-worker",
+      "title": "Cloudflare R2 Remote MCP Worker",
+      "category": "AI storage tools",
+      "type": "Cloud file storage bridge + authenticated remote MCP",
+      "route": "ChatGPT needs files, but your local disk is not invited",
+      "job": "Gives ChatGPT-style MCP clients a controlled remote place to read and write files.",
+      "problem": "ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.",
+      "output": "A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.",
+      "note": "tiny cloud closet, because local disk access was not invited",
+      "repository": "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker"
     }
   ]
 }

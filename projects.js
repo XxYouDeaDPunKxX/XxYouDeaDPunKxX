@@ -118,5 +118,20 @@ window.DEADPUNK_PROJECTS = [
     repo: "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge",
     note: "boots before it pretends",
     icon: "boot"
+  },
+  {
+    id: "cloudflare-r2-remote-mcp-worker",
+    module: "R2_MCP.bucket",
+    title: "Cloudflare R2 Remote MCP Worker",
+    subtitle: "Let ChatGPT fetch files, upload stuff, and then ask: wait, where did that come from?",
+    type: "Cloud file storage bridge + authenticated remote MCP",
+    category: "AI storage tools",
+    route: "ChatGPT needs files, but your local disk is not invited",
+    job: "Gives ChatGPT-style MCP clients a controlled remote place to read and write files.",
+    problem: "ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.",
+    output: "A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.",
+    repo: "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker",
+    note: "tiny cloud closet, because local disk access was not invited",
+    icon: "r2"
   }
 ];
