@@ -190,7 +190,7 @@
       <div class="actions">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
         <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer">repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/gh-pages" target="_blank" rel="noopener noreferrer">this page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/DeadPunk.OS_0.WTH" target="_blank" rel="noopener noreferrer">this page repo</a>
       </div>
     `;
 
