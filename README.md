@@ -2,6 +2,8 @@
 
 Static GitHub Pages branch for the `XxYouDeaDPunKxX` profile.
 
+This branch is the active GitHub Pages source for the classic desktop skin.
+
 DeadPunk OS is a fake classic desktop interface built around real project links, short project descriptions, and public index files.
 
 It is a personal static page. The code was shaped through iteration and AI-assisted edits, so it should be reviewed before being reused.
@@ -10,6 +12,14 @@ Public page:
 
 ```text
 https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
+```
+
+## Branches
+
+```text
+main                         profile README
+DeadPunk.OS_0.WTH            active GitHub Pages source, classic desktop skin
+deadpunk-os-cyberpunk-skin   preserved cyberpunk / terminal skin
 ```
 
 ## 🖥️ What It Contains
@@ -21,7 +31,7 @@ The page includes:
 - a desktop project column;
 - project icons and a separate system icon area;
 - a terminal block;
-- an inspector window;
+- an `EXPLODED.EXE` inspector window;
 - a search route panel;
 - a Start-like menu;
 - a fixed taskbar with tray controls;
@@ -82,7 +92,7 @@ Each project object feeds:
 desktop icon
 Start menu app
 WHAT BROKE? search route
-INSPECTING window
+EXPLODED.EXE inspector window
 ```
 
 Expected fields:

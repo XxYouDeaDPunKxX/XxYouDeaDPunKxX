@@ -327,7 +327,7 @@
         <li><span class="check-warn">[!]</span> DEADPUNK_OS refused to look professional.</li>
         <li><span class="check-cold">[?]</span> system reboot</li>
         <li><span class="check-ok">[OK]</span> i'm joking <b aria-hidden="true">&lt;*&gt;</b></li>
-        <li><span class="check-bad">[NO]</span> reboot denied. it barely started.</li>
+        <li><span class="check-bad">[NO]</span> reboot denied. first boot was like an accident.</li>
       </ol>
     `;
 
