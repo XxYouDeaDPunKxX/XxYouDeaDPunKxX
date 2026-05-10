@@ -1,4 +1,4 @@
-# DeadPunk OS GitHub Page
+# 📟 DeadPunk OS GitHub Page
 
 Static GitHub Pages branch for the `XxYouDeaDPunKxX` profile.
 
@@ -14,7 +14,7 @@ Public page:
 https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
 ```
 
-## Branches
+## 🔀 Branches
 
 ```text
 main                         profile README
@@ -27,7 +27,7 @@ deadpunk-os-cyberpunk-skin   preserved cyberpunk / terminal skin
 The page includes:
 
 - a simulated desktop;
-- a classic OS visual skin inspired by Windows 98 / Windows classic, without copying it directly;
+- a classic OS visual skin inspired by Windows 98 / Windows classic;
 - a desktop project column;
 - project icons and a separate system icon area;
 - a terminal block;
