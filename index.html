@@ -186,7 +186,18 @@
 
   <main class="os-shell" id="desktop">
     <section class="desktop-surface" aria-label="DeadPunk OS desktop">
-      <div class="desktop-grid" id="desktopIcons" role="group" aria-label="Project icons"></div>
+      <div class="desktop-column">
+        <div class="desktop-grid" id="desktopIcons" role="group" aria-label="Project icons"></div>
+
+        <div class="desktop-system-icons" role="group" aria-label="Desktop system icons">
+          <button class="system-trash" type="button" data-toast="[WARN] I like this garbage, it's structural now.">
+            <span class="icon-plate trash-plate" aria-hidden="true">
+              <span class="trash-can"></span>
+            </span>
+            <span class="icon-label">Trash</span>
+          </button>
+        </div>
+      </div>
 
       <section class="terminal-window" aria-labelledby="terminalTitle">
         <div class="window-bar">
@@ -223,13 +234,6 @@ weird ideas, real problem</pre>
           </p>
         </div>
       </section>
-
-      <button class="system-trash" type="button" data-toast="[WARN] I like this garbage, it's structural now.">
-        <span class="icon-plate trash-plate" aria-hidden="true">
-          <span class="trash-can"></span>
-        </span>
-        <span class="icon-label">Trash</span>
-      </button>
 
       <section class="inspector-window is-open" id="inspector" aria-live="polite" aria-label="Inspecting project" tabindex="-1">
         <div class="window-bar">
@@ -276,7 +280,7 @@ weird ideas, real problem</pre>
       <nav class="start-links" aria-label="Profile links">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer"><span class="system-icon system-user" aria-hidden="true"></span>GitHub profile</a>
         <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer"><span class="system-icon system-folder" aria-hidden="true"></span>Repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer"><span class="system-icon system-doc" aria-hidden="true"></span>This page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/gh-pages" target="_blank" rel="noopener noreferrer"><span class="system-icon system-doc" aria-hidden="true"></span>This page repo</a>
       </nav>
     </section>
     <div class="start-apps">

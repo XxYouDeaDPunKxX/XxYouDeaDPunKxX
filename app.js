@@ -139,9 +139,12 @@
       <p class="stamp">INSPECTING: ${escapeText(project.module)}</p>
       <h2>${escapeText(project.title)}</h2>
       <p class="subtitle">${escapeText(project.subtitle || project.type)}</p>
-      <dl class="specs">
+      <p class="route-line">${escapeText(project.route)}</p>
+      <dl class="spec-strip">
         ${renderSpec("CATEGORY", project.category || project.type)}
         ${renderSpec("TYPE", project.type)}
+      </dl>
+      <dl class="specs">
         ${renderSpec("JOB", project.job)}
         ${renderSpec("PROBLEM", project.problem)}
         ${renderSpec("OUTPUT", project.output)}
@@ -187,7 +190,7 @@
       <div class="actions">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
         <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer">repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">this page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/gh-pages" target="_blank" rel="noopener noreferrer">this page repo</a>
       </div>
     `;
 

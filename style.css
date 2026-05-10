@@ -20,6 +20,10 @@
   --shadow: rgba(0, 0, 0, 0.42);
   --topbar: 2.45rem;
   --taskbar: 3.2rem;
+  --phi-1: 0.5rem;
+  --phi-2: 0.8125rem;
+  --phi-3: 1.3125rem;
+  --phi-4: 2.125rem;
   --mono: "Cascadia Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -252,22 +256,35 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  gap: clamp(0.8rem, 2vw, 1.2rem);
+  gap: var(--phi-3);
   min-height: calc(100svh - var(--topbar) - var(--taskbar));
-  padding: clamp(0.75rem, 2vw, 1.4rem);
+  padding: clamp(var(--phi-2), 1.55vw, var(--phi-4));
   background:
     linear-gradient(90deg, rgba(255,255,255,0.035), transparent 12%, rgba(0,0,0,0.16) 14%, transparent 15%),
     linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));
 }
 
-.desktop-grid {
-  display: flex;
+.desktop-column {
   flex: 0 0 18rem;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 0.55rem;
   max-width: 18rem;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--phi-2);
+}
+
+.desktop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--phi-2);
+  min-width: 0;
+}
+
+.desktop-system-icons {
+  display: flex;
+  align-items: flex-start;
+  margin-top: var(--phi-2);
 }
 
 .desktop-icon,
@@ -367,8 +384,8 @@ button {
   align-self: flex-start;
   border-color: rgba(143, 184, 189, 0.38);
   background:
-    radial-gradient(circle at 12% 12%, rgba(155,181,138,0.08), transparent 16rem),
-    repeating-linear-gradient(0deg, rgba(155,181,138,0.035) 0 1px, transparent 1px 4px),
+    radial-gradient(circle at 12% 12%, rgba(155,181,138,0.07), transparent 16rem),
+    repeating-linear-gradient(0deg, rgba(155,181,138,0.022) 0 1px, transparent 1px 4px),
     linear-gradient(180deg, rgba(255,255,255,0.025), transparent 32%),
     #070908;
   box-shadow: 0 1.2rem 2.8rem rgba(0,0,0,0.52), inset 0 0 2rem rgba(0,0,0,0.42);
@@ -505,7 +522,7 @@ button {
 
 .terminal-body pre {
   margin: 0;
-  color: #c7d2b9;
+  color: #d7dfcf;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   line-height: 1.34;
@@ -663,9 +680,11 @@ button {
 }
 
 .inspector-window {
-  flex: 1.05 1 25rem;
+  flex: 1.22 1 27rem;
   min-width: min(100%, 19rem);
-  max-width: 46rem;
+  max-width: 50rem;
+  max-height: calc(100svh - var(--topbar) - var(--taskbar) - var(--phi-4) - var(--phi-2));
+  overflow: auto;
   margin-left: auto;
   align-self: flex-start;
   opacity: 0;
@@ -705,18 +724,19 @@ button {
 }
 
 .inspector-body {
-  padding: clamp(0.85rem, 2vw, 1.25rem);
+  padding: clamp(var(--phi-2), 1.45vw, var(--phi-3));
 }
 
 .stamp {
-  margin: 0 0 0.45rem;
+  margin: 0 0 var(--phi-1);
   color: var(--cyan);
+  font-size: 0.78rem;
 }
 
 .inspector-body h2 {
   margin: 0;
-  font-size: clamp(1.35rem, 2.2vw, 2.15rem);
-  line-height: 1.12;
+  font-size: clamp(1.18rem, 1.65vw, 1.72rem);
+  line-height: 1.14;
   letter-spacing: 0;
   overflow-wrap: anywhere;
   text-wrap: balance;
@@ -725,7 +745,6 @@ button {
 .system-trash {
   width: 5.35rem;
   min-height: 6.35rem;
-  align-self: flex-start;
   padding: 0.38rem;
   text-align: center;
   border-color: rgba(232, 227, 213, 0.12);
@@ -781,25 +800,42 @@ button {
 }
 
 .subtitle {
-  margin: 0.55rem 0 1rem;
-  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  margin: var(--phi-1) 0 var(--phi-2);
+  font-size: clamp(0.92rem, 1.35vw, 1.05rem);
+  line-height: 1.45;
+}
+
+.route-line {
+  margin: 0 0 var(--phi-3);
+  padding: var(--phi-2);
+  border-left: 2px solid var(--cyan);
+  color: var(--text);
+  background: rgba(143, 184, 189, 0.08);
+  line-height: 1.45;
 }
 
 .specs {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  margin: 1rem 0;
+  gap: var(--phi-2);
+  margin: var(--phi-3) 0;
+}
+
+.spec-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--phi-2);
+  margin: 0 0 var(--phi-3);
 }
 
 .spec-row {
-  padding: 0.75rem;
+  padding: var(--phi-2);
   border: 1px solid rgba(232, 227, 213, 0.12);
   background: rgba(0,0,0,0.18);
 }
 
 .spec-row dt {
-  margin-bottom: 0.35rem;
+  margin-bottom: var(--phi-1);
   color: var(--green);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
@@ -808,7 +844,7 @@ button {
 
 .spec-row dd {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.45;
   overflow-wrap: anywhere;
 }
 
@@ -1371,7 +1407,7 @@ button {
     padding-bottom: 1rem;
   }
 
-  .desktop-grid {
+  .desktop-column {
     flex-basis: 100%;
     max-width: none;
   }
@@ -1382,6 +1418,15 @@ button {
     max-width: none;
   }
 
+  .inspector-window {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .spec-strip {
+    grid-template-columns: 1fr;
+  }
+
   .search-panel {
     left: 0.7rem;
   }
@@ -1389,7 +1434,7 @@ button {
 
 @media (max-width: 30rem) {
   .desktop-grid {
-    gap: 0.55rem;
+    gap: var(--phi-2);
   }
 
   .desktop-icon {

@@ -17,6 +17,17 @@ I built these tools to reduce drift, force useful decisions, and keep messy AI-a
 
 text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.
 
+## Interface structure
+
+The page exposes the same project set through desktop icons, Start menu entries, search routes, and inspector views.
+
+Desktop structure:
+top bar -> desktop surface -> desktop project column -> terminal window -> inspector window -> fixed taskbar
+
+The desktop project column contains project icons and a separate system icon area. Trash is a desktop system icon, not a project.
+
+The inspector is the main project-reading surface. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
+
 ## GitHub Pages
 
 Each project repository has a GitHub Page using the standard repository Pages URL pattern:

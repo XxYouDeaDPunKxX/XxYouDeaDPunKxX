@@ -17,10 +17,13 @@ https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
 The page includes:
 
 - a simulated desktop;
-- project icons;
+- a desktop project column;
+- project icons and a separate system icon area;
 - a terminal block;
 - an inspector window;
+- a search route panel;
 - a Start-like menu;
+- a fixed taskbar with tray controls;
 - public files for discovery context.
 
 The project data lives in `projects.js`. The desktop icons, Start menu, inspector, search routes, `llms.txt`, and `raw-manifest.json` should describe the same set of projects.
@@ -122,7 +125,9 @@ The browser loads `index.html`, `style.css`, `projects.js`, and `app.js` directl
 
 `index.html` contains the fixed document shell.
 
-This includes the metadata, JSON-LD block, boot overlay, top bar, desktop area, terminal block, inspector container, search panel, Start menu, taskbar, tray controls, and links to public discovery files.
+This includes the metadata, JSON-LD block, boot overlay, top bar, desktop surface, desktop column, terminal block, inspector container, search panel, Start menu, taskbar, tray controls, and links to public discovery files.
+
+Inside the desktop surface, the project icons live in `desktop-grid`. Desktop-level system icons, such as Trash, live in `desktop-system-icons`. Both are grouped inside `desktop-column` so they stay visually related without treating Trash as a project.
 
 Project-specific repeated UI is not written one item at a time in the HTML. Those parts are filled by `app.js` from `projects.js`.
 
@@ -130,9 +135,13 @@ Project-specific repeated UI is not written one item at a time in the HTML. Thos
 
 `style.css` defines the simulated OS surface.
 
-It controls the desktop background, responsive layout, terminal styling, icon grid, inspector window, Start menu, search panel, taskbar, tray icons, toast messages, boot overlay, and mobile states.
+It controls the desktop background, responsive layout, terminal styling, icon grid, desktop system icons, inspector window, Start menu, search panel, taskbar, tray icons, toast messages, boot overlay, and mobile states.
 
 The CSS provides presentation and layout. It does not store project data or select projects.
+
+The main desktop spacing uses a small `8 / 13 / 21 / 34` scale through `--phi-*` variables. The taskbar is fixed to the viewport bottom, while the desktop shell reserves bottom space so content is not hidden behind it.
+
+On desktop and laptop widths, long inspector content scrolls inside the inspector window. On mobile, the inspector returns to the normal document flow.
 
 ### 🗃️ Project Registry
 
@@ -180,7 +189,13 @@ The inspector is a reusable window, not a separate block for every project.
 
 When a project is selected, the inspector body is replaced with markup generated from that project object.
 
-The rendered project view contains module, title, subtitle, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
+The rendered project view contains module, title, subtitle, route, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
+
+The route is rendered as its own line because it is the fastest human entry point into the project: it explains when that project is useful.
+
+Category and type are rendered together in a compact `spec-strip`. Job, problem, output, and note are rendered below in the main `specs` list.
+
+The inspector is allowed to scroll internally on desktop and laptop when a project description is longer than the available viewport. This keeps the desktop layout stable without cutting project information.
 
 ### 🗂️ Start Menu
 
@@ -233,6 +248,8 @@ The branch includes static discovery files next to the page.
 `llms.txt` is a plain-text project index. `raw-manifest.json` is a structured project manifest. `robots.txt` contains crawler rules and points to the sitemap. `sitemap.xml` exposes the public page URL.
 
 These files are not generated in the browser at runtime. They are separate static files served with the page.
+
+`llms.txt` and `raw-manifest.json` also include a short interface-structure note so readers can understand how the page exposes the same project set through desktop icons, Start entries, search routes, and inspector views.
 
 ### 🧾 Project Description Surfaces
 
