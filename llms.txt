@@ -9,6 +9,8 @@ License URL: https://creativecommons.org/licenses/by-sa/4.0/
 
 DeadPunk OS is a small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.
 
+The visual skin is a simple fake classic desktop: blue desktop surface, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.
+
 Not a portfolio.
 
 I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.
@@ -26,7 +28,7 @@ top bar -> desktop surface -> desktop project column -> terminal window -> inspe
 
 The desktop project column contains project icons and a separate system icon area. Trash is a desktop system icon, not a project.
 
-The inspector is the main project-reading surface. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
+The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
 
 ## GitHub Pages
 

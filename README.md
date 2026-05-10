@@ -2,7 +2,7 @@
 
 Static GitHub Pages branch for the `XxYouDeaDPunKxX` profile.
 
-DeadPunk OS is a fake broken desktop interface built around real project links, short project descriptions, and public index files.
+DeadPunk OS is a fake classic desktop interface built around real project links, short project descriptions, and public index files.
 
 It is a personal static page. The code was shaped through iteration and AI-assisted edits, so it should be reviewed before being reused.
 
@@ -17,6 +17,7 @@ https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
 The page includes:
 
 - a simulated desktop;
+- a classic OS visual skin inspired by Windows 98 / Windows classic, without copying it directly;
 - a desktop project column;
 - project icons and a separate system icon area;
 - a terminal block;
@@ -139,6 +140,8 @@ It controls the desktop background, responsive layout, terminal styling, icon gr
 
 The CSS provides presentation and layout. It does not store project data or select projects.
 
+The visual direction is a simple fake OS skin: blue desktop, gray classic windows, bevel borders, blue title bars, black CMD-like terminal area, and a pale system-style toast. Green is kept only for the topbar status LED.
+
 The main desktop spacing uses a small `8 / 13 / 21 / 34` scale through `--phi-*` variables. The taskbar is fixed to the viewport bottom, while the desktop shell reserves bottom space so content is not hidden behind it.
 
 On desktop and laptop widths, long inspector content scrolls inside the inspector window. On mobile, the inspector returns to the normal document flow.
@@ -190,6 +193,8 @@ The inspector is a reusable window, not a separate block for every project.
 When a project is selected, the inspector body is replaced with markup generated from that project object.
 
 The rendered project view contains module, title, subtitle, route, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
+
+The inspector window is labeled `EXPLODED.EXE` in the title bar. The label is visual chrome; the inspector still performs the same project-reading function.
 
 The route is rendered as its own line because it is the fastest human entry point into the project: it explains when that project is useful.
 
