@@ -766,7 +766,7 @@ button {
 .inspector-body {
   padding: clamp(var(--phi-2), 1.45vw, var(--phi-3));
   color: #111111;
-  background: #f4f1e6;
+  background: #e6e1d3;
 }
 
 .stamp {
@@ -853,7 +853,7 @@ button {
   padding: var(--phi-2);
   border-left: 2px solid var(--cyan);
   color: #111111;
-  background: #fbfaf3;
+  background: #f0ede3;
   box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #c9c6ba;
   line-height: 1.45;
 }
@@ -875,7 +875,7 @@ button {
 .spec-row {
   padding: var(--phi-2);
   border: 1px solid #b0b0b0;
-  background: #fbfaf3;
+  background: #f0ede3;
   box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #d6d2c5;
 }
 
@@ -916,7 +916,7 @@ button {
   padding: 0.8rem;
   border: 1px solid #b0b0b0;
   color: #111111;
-  background: #fbfaf3;
+  background: #f0ede3;
   line-height: 1.55;
 }
 
