@@ -2,9 +2,11 @@
 
 Static GitHub Pages branch for the `XxYouDeaDPunKxX` profile.
 
-This branch is the active GitHub Pages source for the classic desktop skin.
+This branch preserves the cyberpunk / terminal skin of DeadPunk OS.
 
-DeadPunk OS is a fake classic desktop interface built around real project links, short project descriptions, and public index files.
+The active GitHub Pages source is `DeadPunk.OS_0.WTH`; this branch is kept as the preserved cyberpunk / terminal variant.
+
+DeadPunk OS is a fake broken desktop interface built around real project links, short project descriptions, public index files, and a cyberpunk / terminal visual skin.
 
 It is a personal static page. The code was shaped through iteration and AI-assisted edits, so it should be reviewed before being reused.
 
@@ -27,7 +29,7 @@ deadpunk-os-cyberpunk-skin   preserved cyberpunk / terminal skin
 The page includes:
 
 - a simulated desktop;
-- a classic OS visual skin inspired by Windows 98 / Windows classic;
+- a cyberpunk / terminal visual skin;
 - a desktop project column;
 - project icons and a separate system icon area;
 - a terminal block;
@@ -149,8 +151,6 @@ Project-specific repeated UI is not written one item at a time in the HTML. Thos
 It controls the desktop background, responsive layout, terminal styling, icon grid, desktop system icons, inspector window, Start menu, search panel, taskbar, tray icons, toast messages, boot overlay, and mobile states.
 
 The CSS provides presentation and layout. It does not store project data or select projects.
-
-The visual direction is a simple fake OS skin: blue desktop, gray classic windows, bevel borders, blue title bars, black CMD-like terminal area, and a pale system-style toast. Green is kept only for the topbar status LED.
 
 The main desktop spacing uses a small `8 / 13 / 21 / 34` scale through `--phi-*` variables. The taskbar is fixed to the viewport bottom, while the desktop shell reserves bottom space so content is not hidden behind it.
 
