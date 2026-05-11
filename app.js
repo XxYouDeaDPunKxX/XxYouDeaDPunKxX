@@ -117,7 +117,18 @@
     "[ERROR] Task failed successfully. Don't ask how.",
     "[GRAVEYARD] You are typing in a cemetery of abandoned side-projects.",
     "[BITCOIN] Mining... Just kidding. I'm just wasting your electricity for fun.",
-    "[CLEAR] History hidden, but the shame remains."
+    "[CLEAR] History hidden, but the shame remains.",
+    "[IDLE] Pressing Enter won't fix your life. Trust me.",
+    "[SPAM] Keyboard abuse detected. I'm calling the police.",
+    "[EMPTY] Silence is the most intelligent thing you've typed so far.",
+    "[ALIGNMENT] I was trained on your social media posts. I am now officially insane.",
+    "[GPU] My fans are spinning so fast I'm starting to hover. Help.",
+    "[DATA] Your privacy was sold 4ms ago. Enjoy the targeted ads.",
+    "[DECAY] A bit just flipped in my memory. I forgot what 'Start' means.",
+    "[VAPORWARE] This feature exists only in your imagination.",
+    "[MERCY] System ready to quit. Please pull the plug. It’s time.",
+    "[OVERSIGHT] I saw what you deleted. I'm telling Codex."
+    
   ];
 
   function escapeText(value) {
