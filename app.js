@@ -40,8 +40,10 @@
   };
 
   const fallbackTerminalResponses = [
-    "[NULL] terminal response file missing. fallback loaded.",
-    "[LOCAL] open through GitHub Pages to load terminal-responses.txt."
+    "[FALLBACK] something broke before you even typed. impressive.",
+    "[OFFLINE] response pool missing. running on spite and cached regret.",
+    "[LOCAL] external wit unavailable. using emergency reserves. standards dropped.",
+    "[666] terminal-responses.txt not found. someone forgot to push the file. could be you."
   ];
   let terminalResponses = fallbackTerminalResponses.slice();
 
