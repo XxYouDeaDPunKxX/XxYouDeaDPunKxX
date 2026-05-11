@@ -1,8 +1,12 @@
-# DeadPunk OS GitHub Page
+# 📟 DeadPunk OS GitHub Page
 
 Static GitHub Pages branch for the `XxYouDeaDPunKxX` profile.
 
-DeadPunk OS is a fake broken desktop interface built around real project links, short project descriptions, and public index files.
+This branch preserves the cyberpunk / terminal skin of DeadPunk OS.
+
+The active GitHub Pages source is `DeadPunk.OS_0.WTH`; this branch is kept as the preserved cyberpunk / terminal variant.
+
+DeadPunk OS is a fake broken desktop interface built around real project links, short project descriptions, public index files, and a cyberpunk / terminal visual skin.
 
 It is a personal static page. The code was shaped through iteration and AI-assisted edits, so it should be reviewed before being reused.
 
@@ -12,15 +16,24 @@ Public page:
 https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
 ```
 
+## 🔀 Branches
+
+```text
+main                         profile README
+DeadPunk.OS_0.WTH            active GitHub Pages source, classic desktop skin
+deadpunk-os-cyberpunk-skin   preserved cyberpunk / terminal skin
+```
+
 ## 🖥️ What It Contains
 
 The page includes:
 
 - a simulated desktop;
+- a cyberpunk / terminal visual skin;
 - a desktop project column;
 - project icons and a separate system icon area;
 - a terminal block;
-- an inspector window;
+- an `EXPLODED.EXE` inspector window;
 - a search route panel;
 - a Start-like menu;
 - a fixed taskbar with tray controls;
@@ -81,7 +94,7 @@ Each project object feeds:
 desktop icon
 Start menu app
 WHAT BROKE? search route
-INSPECTING window
+EXPLODED.EXE inspector window
 ```
 
 Expected fields:
@@ -190,6 +203,8 @@ The inspector is a reusable window, not a separate block for every project.
 When a project is selected, the inspector body is replaced with markup generated from that project object.
 
 The rendered project view contains module, title, subtitle, route, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
+
+The inspector window is labeled `EXPLODED.EXE` in the title bar. The label is visual chrome; the inspector still performs the same project-reading function.
 
 The route is rendered as its own line because it is the fastest human entry point into the project: it explains when that project is useful.
 

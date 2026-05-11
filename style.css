@@ -1457,6 +1457,118 @@ button {
   }
 }
 
+
+/* Cyberpunk OS interaction polish */
+.status-dot {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0.22rem rgba(155, 181, 138, 0.28), inset 0 0 0.12rem rgba(0,0,0,0.48);
+  animation: status-sensor-attention 13s ease-in-out infinite;
+}
+
+.status-dot::before {
+  content: "";
+  position: absolute;
+  inset: 0.18rem;
+  border-radius: 50%;
+  background: rgba(8, 9, 9, 0.62);
+  box-shadow: inset 0 0 0.12rem rgba(255,255,255,0.16);
+}
+
+.status-dot::after {
+  content: "";
+  position: absolute;
+  inset: -0.08rem;
+  border-radius: 50%;
+  background: #060807;
+  transform: scaleY(0);
+  transform-origin: center;
+  animation: status-sensor-shutter 13s ease-in-out infinite;
+}
+
+.desktop-icon:active,
+.system-trash:active,
+.route-button:active,
+.start-button:active,
+.task-search:active,
+.terminal-actions button:active,
+.actions a:active,
+.actions button:active,
+.start-links a:active,
+.start-app:active,
+.power-button:active,
+.power-menu button:active,
+.tray-icon:active {
+  transform: translate(1px, 1px);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.16), transparent),
+    rgba(0,0,0,0.32);
+  box-shadow: inset 0.12rem 0.12rem 0 rgba(0,0,0,0.42), 0 0 0.18rem rgba(143, 184, 189, 0.12);
+}
+
+.start-button[aria-expanded="true"],
+.start-button:hover,
+.task-search[aria-expanded="true"],
+.task-search:hover,
+.terminal-actions button:hover,
+.actions a:hover,
+.actions button:hover,
+.start-links a:hover,
+.start-app:hover,
+.start-app[aria-current="true"],
+.power-button[aria-expanded="true"],
+.power-button:hover,
+.power-menu button:hover,
+.route-button:hover,
+.route-button[aria-pressed="true"] {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.075), transparent),
+    rgba(143, 184, 189, 0.105);
+  box-shadow: 0 0 0.7rem rgba(143,184,189,0.12), inset 0 0 0 1px rgba(255,255,255,0.035);
+}
+
+.actions a:first-child:hover {
+  color: #101211;
+  border-color: var(--cyan);
+  background: var(--cyan);
+}
+
+.task-search:hover > span:first-child,
+.task-search[aria-expanded="true"] > span:first-child {
+  border-color: var(--cyan);
+  box-shadow: 0.32rem 0.32rem 0 -0.25rem var(--cyan), 0 0 0.45rem rgba(143,184,189,0.22);
+}
+
+.tray-icon:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 0.45rem rgba(143,184,189,0.12), inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+
+@keyframes status-sensor-shutter {
+  0%, 90.8%, 93.1%, 95.6%, 100% {
+    transform: scaleY(0);
+  }
+
+  91.5%, 92.1%, 94.0%, 94.7% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes status-sensor-attention {
+  0%, 90.8%, 95.6%, 100% {
+    opacity: 0.92;
+    box-shadow: 0 0 0.22rem rgba(155, 181, 138, 0.28), inset 0 0 0.12rem rgba(0,0,0,0.48);
+  }
+
+  91.2%, 92.3%, 94.2%, 95.0% {
+    opacity: 1;
+    box-shadow: 0 0 0.78rem rgba(155,181,138,0.52), inset 0 0 0.18rem rgba(0,0,0,0.42);
+  }
+}
+
 @keyframes boot-line {
   to {
     opacity: 1;
