@@ -30,7 +30,7 @@ The page includes:
 - a classic OS visual skin inspired by Windows 98 / Windows classic;
 - a desktop project column;
 - project icons and a separate system icon area;
-- a terminal block;
+- an interactive terminal block with local fake input responses;
 - an `EXPLODED.EXE` inspector window;
 - a search route panel;
 - a Start-like menu;
@@ -65,6 +65,7 @@ If you reuse this branch:
 - test mobile layout;
 - test keyboard navigation;
 - test every external link;
+- test the fake terminal input;
 - keep the license notice.
 
 No build step is required.
@@ -75,7 +76,7 @@ No build step is required.
 index.html          page shell, metadata, JSON-LD, OS layout
 style.css           visual system, responsive layout, UI states
 projects.js         project data used by icons, Start, search routes, inspector
-app.js              rendering, window interactions, fake reboot, micro-toast
+app.js              rendering, window interactions, fake reboot, fake terminal input, micro-toast
 llms.txt            LLM-readable project index
 raw-manifest.json   machine-readable project manifest
 robots.txt          crawler rules and sitemap pointer
@@ -146,7 +147,7 @@ Project-specific repeated UI is not written one item at a time in the HTML. Thos
 
 `style.css` defines the simulated OS surface.
 
-It controls the desktop background, responsive layout, terminal styling, icon grid, desktop system icons, inspector window, Start menu, search panel, taskbar, tray icons, toast messages, boot overlay, and mobile states.
+It controls the desktop background, responsive layout, terminal styling, terminal input states, icon grid, desktop system icons, inspector window, Start menu, search panel, taskbar, tray icons, toast messages, boot overlay, and mobile states.
 
 The CSS provides presentation and layout. It does not store project data or select projects.
 
@@ -172,7 +173,7 @@ The `icon` field is resolved through the `glyphs` map in `app.js`. If an icon ke
 
 On load, it reads the project list, creates desktop icons, creates Start menu app entries, creates search routes, and prepares the inspector behavior.
 
-It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, and fake reboot animation.
+It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, fake reboot animation, and local fake terminal input.
 
 It derives each project GitHub Pages URL from the project repository URL when rendering the inspector action links.
 
@@ -186,7 +187,7 @@ No project is selected by default. The README state is rendered by `app.js` into
 
 The README inspector state is inline markup rendered by `app.js`. It is not loaded from `README.md`.
 
-The terminal is independent from project selection. It keeps its static status/control text unless the fake reboot interaction temporarily replaces it.
+The terminal is independent from project selection. It keeps its static status/control text, exposes a local fake input row, and can temporarily be replaced by the fake reboot interaction.
 
 ### 🧭 Project Selection
 
@@ -245,6 +246,32 @@ The `DEADPUNK_OS` label in the top bar is also an interactive control.
 When it is clicked, `app.js` stores the current terminal markup, replaces the terminal content with a short fake reboot sequence, waits for the sequence timeout, then writes the original terminal markup back into the terminal.
 
 This does not reload the page and does not reset project state. It only changes the terminal block temporarily.
+
+### ⌨️ Fake Terminal Input
+
+The terminal includes a local fake input row below the static status text.
+
+The idle state is split into two visible rows: a status line (`> waiting for input`) and a separate editable prompt line. The prompt line keeps a blinking cursor visible so the terminal reads as writable instead of decorative text.
+
+Input is handled entirely in the browser by `app.js`. The editable prompt is a `contenteditable` element, not a real shell, command runner, remote prompt, or AI call.
+
+When the user presses Enter, the script:
+
+```text
+reads the current prompt text
+accepts empty input as valid input
+prints the submitted text as a temporary echo
+selects one response from a local hardcoded response array
+shows the response for 5 seconds
+hides the echo and response
+resets the prompt to the idle state
+```
+
+The response picker is intentionally random. It does not parse the command, infer intent, match keywords, execute commands, fetch data, store history, or preserve a conversation log.
+
+The input is capped client-side before submission so long pasted text does not expand the terminal indefinitely. While a response is visible, the prompt is temporarily locked to keep the terminal from becoming a chat surface.
+
+The fake terminal input is part of the interface behavior. It is not a developer console, not a search feature, and not a command API.
 
 ### ⏳ Boot Overlay
 
