@@ -563,6 +563,85 @@ button {
   border-color: var(--green);
 }
 
+
+.terminal-command-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+  margin-top: 0.62rem;
+  color: var(--green);
+  font-family: var(--mono);
+}
+
+.terminal-idle,
+.terminal-echo,
+.terminal-response {
+  min-height: 1.34rem;
+  line-height: 1.34;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.terminal-idle,
+.terminal-echo {
+  color: var(--green);
+}
+
+.terminal-response {
+  color: var(--text);
+  text-shadow: 0 0 0.65rem rgba(143, 184, 189, 0.24);
+}
+
+.terminal-response.is-visible {
+  animation: terminal-response-in 180ms steps(2, end) forwards;
+}
+
+.terminal-response.is-fading,
+.terminal-echo.is-fading {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.terminal-input-form {
+  display: flex;
+  align-items: center;
+  gap: 0.18rem;
+  min-height: 1.5rem;
+  color: var(--green);
+}
+
+.terminal-input-form.is-locked {
+  display: none;
+}
+
+.terminal-input-prefix {
+  flex: 0 0 auto;
+}
+
+.terminal-editable {
+  display: inline-block;
+  min-width: 0.2rem;
+  max-width: 100%;
+  color: var(--green);
+  outline: 0;
+  text-shadow: 0 0 0.55rem rgba(155, 181, 138, 0.28);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.terminal-editable:empty {
+  min-width: 0.2rem;
+}
+
+.terminal-fake-cursor {
+  width: 0.55rem;
+  height: 1rem;
+  margin-left: 0.08rem;
+  background: var(--green);
+  box-shadow: 0 0 0.65rem rgba(155, 181, 138, 0.42);
+  animation: cursor-blink 1s steps(2, start) infinite;
+}
+
 .fake-reboot {
   min-height: 15rem;
   display: flex;
@@ -1545,6 +1624,26 @@ button {
   color: var(--cyan);
   border-color: var(--cyan);
   box-shadow: 0 0 0.45rem rgba(143,184,189,0.12), inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+
+
+@keyframes terminal-response-in {
+  0% {
+    opacity: 0;
+    transform: translateY(0.22rem);
+    filter: blur(1px);
+  }
+  35% {
+    opacity: 0.35;
+  }
+  52% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 @keyframes status-sensor-shutter {

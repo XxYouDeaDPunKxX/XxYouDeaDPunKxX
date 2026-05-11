@@ -32,7 +32,7 @@ The page includes:
 - a cyberpunk / terminal visual skin;
 - a desktop project column;
 - project icons and a separate system icon area;
-- a terminal block;
+- an interactive terminal block with local fake input responses;
 - an `EXPLODED.EXE` inspector window;
 - a search route panel;
 - a Start-like menu;
@@ -77,7 +77,7 @@ No build step is required.
 index.html          page shell, metadata, JSON-LD, OS layout
 style.css           visual system, responsive layout, UI states
 projects.js         project data used by icons, Start, search routes, inspector
-app.js              rendering, window interactions, fake reboot, micro-toast
+app.js              rendering, window interactions, fake reboot, fake terminal input, micro-toast
 llms.txt            LLM-readable project index
 raw-manifest.json   machine-readable project manifest
 robots.txt          crawler rules and sitemap pointer
@@ -172,7 +172,9 @@ The `icon` field is resolved through the `glyphs` map in `app.js`. If an icon ke
 
 On load, it reads the project list, creates desktop icons, creates Start menu app entries, creates search routes, and prepares the inspector behavior.
 
-It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, and fake reboot animation.
+It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, fake reboot animation, and fake terminal input.
+
+It also handles the local fake terminal input: any submitted text receives a random hardcoded response, stays visible briefly, and then returns to the idle prompt.
 
 It derives each project GitHub Pages URL from the project repository URL when rendering the inspector action links.
 
@@ -187,6 +189,8 @@ No project is selected by default. The README state is rendered by `app.js` into
 The README inspector state is inline markup rendered by `app.js`. It is not loaded from `README.md`.
 
 The terminal is independent from project selection. It keeps its static status/control text unless the fake reboot interaction temporarily replaces it.
+
+The terminal input is local UI fiction. It does not run commands, call a backend, or parse the user input semantically.
 
 ### 🧭 Project Selection
 
@@ -245,6 +249,14 @@ The `DEADPUNK_OS` label in the top bar is also an interactive control.
 When it is clicked, `app.js` stores the current terminal markup, replaces the terminal content with a short fake reboot sequence, waits for the sequence timeout, then writes the original terminal markup back into the terminal.
 
 This does not reload the page and does not reset project state. It only changes the terminal block temporarily.
+
+### ⌨️ Fake Terminal Input
+
+The terminal includes a local fake input line.
+
+Any submitted input is accepted, including empty input. The script selects one hardcoded response at random, shows the submitted line and response for a short timeout, then resets the terminal back to the idle prompt.
+
+The input does not execute commands, store history, send network requests, or perform semantic parsing. It is a local interaction layer for the fake OS interface.
 
 ### ⏳ Boot Overlay
 

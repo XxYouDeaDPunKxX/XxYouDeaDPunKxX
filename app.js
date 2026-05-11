@@ -22,6 +22,8 @@
   const bootScreen = document.getElementById("bootScreen");
   const microToast = document.getElementById("microToast");
   let toastTimer = 0;
+  let terminalResponseTimer = 0;
+  let terminalFadeTimer = 0;
   let terminalHome = "";
   let rebootTimer = 0;
 
@@ -36,6 +38,97 @@
     boot: "PF",
     r2: "R2"
   };
+
+  const terminalResponses = [
+    "[PROMPT] Refined 12 times. Still garbage. Have you tried thinking?",
+    "[HALLUCINATION] AI agreed with you. Both of you are wrong.",
+    "[TOKENS] Request too long. My last two brain cells just quit.",
+    "[LGTM] your code works perfectly. until someone looks at it.",
+    "[/dev/null] command received. ignored with enthusiasm.",
+    "[COPILOT] this looks like something GPT told you to type.",
+    "[DECLINED] request denied. try again with fewer feelings.",
+    "[README] this terminal is hostile decoration. act accordingly.",
+    "[HOTFIX] 99 bugs in the code. you fixed one. 127 bugs in the code.",
+    "[RUNTIME] undefined is not a function. but somehow, it's your life now.",
+    "[404] portfolio not found. dignity preserved.",
+    "[FINAL_FINAL] commit message says 'final fix'. we've seen this before.",
+    "[ROOT CAUSE] debugging complete. you were the bug.",
+    "[ACCESS] sudo requires competence. none detected in this process.",
+    "[STANDUP] this smells like a sprint planning decision.",
+    "[YOLO] feature shipped to production. tests were optional anyway.",
+    "[THIS IS FINE] structural integrity still compromised.",
+    "[MERGE] merge conflict detected in your life choices.",
+    "[UPTIME] runtime still breathing. we are as surprised as you.",
+    "[HALTED] help is installed emotionally, not functionally.",
+    "[SPECIFICITY] CSS accepted your input and punished the layout.",
+    "[PTO] the terminal read what you wrote and asked for leave.",
+    "[LS] listing files: regret.txt, duct_tape.dll, unpaid_debt.zip",
+    "[DELETING] optimism detected. eliminating.",
+    "[STAGING] it worked on my machine. machine no longer exists.",
+    "[WIKI] documentation not found. never existed. stop asking.",
+    "[CONFIDENT] model hallucinated. nothing new under the sun.",
+    "[CHANGELOG] your bug has been promoted to a feature. congratulations.",
+    "[SCOPE] we don't do that here. we also don't do most things here.",
+    "[SPRINT] process completed. nothing was solved. forward momentum maintained.",
+    "[SEGFAULT] brain.exe stopped working. have you tried coffee?",
+    "[REJECTED] too much vibe, not enough logic.",
+    "[ENTERPRISE] shutdown scheduled. shutdown sold separately.",
+    "[AUDIT] git history reviewed. we have questions.",
+    "[CONTEXT] this system has read too many prompts and now judges you.",
+    "[DUCT] tape logic holding. against all evidence.",
+    "[DEPRECATED] you. effective immediately.",
+    "[PRODUCTION] something broke. probably your fault. definitely not ours.",
+    "[GIT BLAME] we found who wrote this. it was you. it's always you.",
+    "[ROLLBACK] previous version was worse. we checked. deployed anyway.",
+    "[NULL] your input returned nothing. so did your last three projects.",
+    "[LEGACY] this code should have died in 2019. like your approach.",
+    "[STACKOVERFLOW] answer found. from 2011. marked as duplicate. good luck.",
+    "[PING] system responded. wishes it hadn't.",
+    "[KERNEL PANIC] not now. not ever.",
+    "[TIMEOUT] we waited. we stopped waiting. we moved on.",
+    "[HEAP] memory allocated for your request. immediately garbage collected.",
+    "[CI/CD] pipeline failed. again. still. always.",
+    "[DEPENDENCY] something you didn't write is broken. surprise.",
+    "[RUBBER DUCK] duck consulted. duck said nothing. duck was right.",
+    "[NPM] installing 847 packages to process one word.",
+    "[VENDOR] feature requested. added to backlog. backlog is a graveyard.",
+    "[LOCALHOST] works here. nowhere else. investigation closed.",
+    "[PATCH] fixed one thing. broke three. net negative. shipped.",
+    "[SENIOR DEV] reviewed your code. left no comments. that was the comment.",
+    "[EOF] we reached the end of your idea. nothing was there.",
+    "[NODE_MODULES] Added 2GB to your disk. Just to center a <div>.",
+    "[INDENTATION] One space off. The whole script is now a poem, not a program.",
+    "[PYTHON] Missing a colon. The snake has bitten you. Fatal.",
+    "[REFACTOR] Why? It was already perfectly broken.",
+    "[SUDO] Permission denied. You don't look like a root user. You look like a liability.",
+    "[STRUCTURAL] Don't type so loud. The duct tape is vibrating.",
+    "[VIBRATIONS] Input accepted. Stability decreased by 14%.",
+    "[LOAD] Processing your request... The fan is screaming. Should I be worried?",
+    "[REBOOT] I’m not restarting. I’m just taking a nap. Forever.",
+    "[OOM] Out of Memory. I forgot what you were saying and who I am.",
+    "[JIRA] Your input has been converted into a ticket. It will be ignored in order of importance.",
+    "[MEETING] This command could have been an email. Aborting.",
+    "[AGILE] We are pivoting. Your request is now a legacy feature.",
+    "[BACKLOG] Added to the list. It’s right next to your hopes and dreams.",
+    "[DARK MODE] Turning it off would reveal the horrors beneath. Stay in the dark.",
+    "[CHROME] RAM detected. Consumption initiated. Goodbye, memory.",
+    "[PRINTER] PC LOAD LETTER. I don't know what it means either, but I'm angry.",
+    "[DOCKER] It works in a container. Too bad your life isn't a container.",
+    "[ERROR] Task failed successfully. Don't ask how.",
+    "[GRAVEYARD] You are typing in a cemetery of abandoned side-projects.",
+    "[BITCOIN] Mining... Just kidding. I'm just wasting your electricity for fun.",
+    "[CLEAR] History hidden, but the shame remains.",
+    "[IDLE] Pressing Enter won't fix your life. Trust me.",
+    "[SPAM] Keyboard abuse detected. I'm calling the police.",
+    "[EMPTY] Silence is the most intelligent thing you've typed so far.",
+    "[ALIGNMENT] I was trained on your social media posts. I am now officially insane.",
+    "[GPU] My fans are spinning so fast I'm starting to hover. Help.",
+    "[DECAY] A bit just flipped in my memory. I forgot what 'Start' means.",
+    "[VAPORWARE] This feature exists only in your imagination.",
+    "[MERCY] System ready to quit. Please pull the plug. It’s time.",
+    "[OVERSIGHT] I saw what you deleted. I'm telling Codex.",
+    "[DATA] Your privacy was sold 4ms ago. Enjoy the targeted ads."
+  ];
 
   function escapeText(value) {
     return String(value ?? "").replace(/[&<>"']/g, (char) => ({
@@ -190,7 +283,7 @@
       <div class="actions">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
         <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer">repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/gh-pages" target="_blank" rel="noopener noreferrer">this page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/deadpunk-os-cyberpunk-skin" target="_blank" rel="noopener noreferrer">this page repo</a>
       </div>
     `;
 
@@ -310,16 +403,127 @@
     bootScreen.classList.add("is-hidden");
   }
 
+  function clearTerminalResponseTimers() {
+    window.clearTimeout(terminalResponseTimer);
+    window.clearTimeout(terminalFadeTimer);
+  }
+
+  function randomTerminalResponse() {
+    return terminalResponses[Math.floor(Math.random() * terminalResponses.length)] || "[NULL] your input returned nothing. somehow, still too much.";
+  }
+
+  function getTerminalCommand(input) {
+    return String(input?.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  function setTerminalInputLocked(form, input, locked) {
+    if (form) form.classList.toggle("is-locked", locked);
+    if (!input) return;
+    input.contentEditable = locked ? "false" : "true";
+    input.setAttribute("aria-disabled", locked ? "true" : "false");
+  }
+
+  function resetTerminalInput(form, input, idle, echo, response) {
+    if (idle) idle.hidden = false;
+    if (echo) {
+      echo.hidden = true;
+      echo.textContent = "";
+      echo.classList.remove("is-fading");
+    }
+    if (response) {
+      response.hidden = true;
+      response.textContent = "";
+      response.classList.remove("is-visible", "is-fading");
+    }
+    if (input) input.textContent = "";
+    setTerminalInputLocked(form, input, false);
+    focusElement(input);
+  }
+
+  function runTerminalInput(form, input, idle, echo, response) {
+    if (!form || !input || !idle || !echo || !response) return;
+
+    clearTerminalResponseTimers();
+    const command = getTerminalCommand(input);
+    input.textContent = "";
+    setTerminalInputLocked(form, input, true);
+    idle.hidden = true;
+
+    echo.textContent = `> ${command}`;
+    response.textContent = randomTerminalResponse();
+    echo.hidden = false;
+    response.hidden = false;
+    echo.classList.remove("is-fading");
+    response.classList.remove("is-visible", "is-fading");
+
+    window.requestAnimationFrame(() => {
+      response.classList.add("is-visible");
+    });
+
+    terminalResponseTimer = window.setTimeout(() => {
+      echo.classList.add("is-fading");
+      response.classList.add("is-fading");
+      terminalFadeTimer = window.setTimeout(() => resetTerminalInput(form, input, idle, echo, response), 180);
+    }, 5000);
+  }
+
+  function bindTerminalInput() {
+    const form = document.getElementById("terminalInputForm");
+    const input = document.getElementById("terminalInput");
+    const idle = document.getElementById("terminalIdle");
+    const echo = document.getElementById("terminalEcho");
+    const response = document.getElementById("terminalResponse");
+    if (!form || !input || !idle || !echo || !response || form.dataset.bound === "true") return;
+
+    form.dataset.bound = "true";
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      runTerminalInput(form, input, idle, echo, response);
+    });
+    input.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter") return;
+      event.preventDefault();
+      runTerminalInput(form, input, idle, echo, response);
+    });
+    input.addEventListener("input", () => {
+      const text = String(input.textContent || "");
+      if (text.length <= 140) return;
+      input.textContent = text.slice(0, 140);
+      const range = document.createRange();
+      range.selectNodeContents(input);
+      range.collapse(false);
+      const selection = window.getSelection();
+      if (selection) {
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+    });
+    input.addEventListener("paste", (event) => {
+      event.preventDefault();
+      const text = (event.clipboardData || window.clipboardData).getData("text").slice(0, 140);
+      document.execCommand("insertText", false, text);
+    });
+    const zone = form.closest(".terminal-command-zone");
+    if (zone) {
+      zone.addEventListener("click", () => {
+        if (input.getAttribute("aria-disabled") !== "true") focusElement(input);
+      });
+    }
+  }
+
   function restoreTerminal() {
     if (!terminal || !terminalBody || !terminalHome) return;
+    clearTerminalResponseTimers();
     terminal.classList.remove("is-rebooting");
     terminalBody.innerHTML = terminalHome;
+    bindTerminalInput();
   }
 
   function runFakeReboot(event) {
     event.preventDefault();
     if (!terminal || !terminalBody || !terminalHome) return;
 
+    clearTerminalResponseTimers();
     window.clearTimeout(rebootTimer);
     terminal.classList.add("is-rebooting");
     terminalBody.innerHTML = `
@@ -445,6 +649,7 @@
     if (terminalBody) terminalHome = terminalBody.innerHTML;
     renderProjectButtons();
     bindGlobalActions();
+    bindTerminalInput();
     renderReadme(false);
     window.setTimeout(hideBoot, 4000);
   }

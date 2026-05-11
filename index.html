@@ -15,7 +15,7 @@
   <link rel="icon" href="favicon.svg?v=20260508f" type="image/svg+xml">
   <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable profile index">
   <link rel="alternate" type="application/json" href="raw-manifest.json" title="Raw project manifest">
-  <link rel="stylesheet" href="style.css?v=cyberpunk-001">
+  <link rel="stylesheet" href="style.css?v=cyberpunk-003">
   <noscript>
     <style>
       .boot-screen { display: none !important; }
@@ -229,9 +229,16 @@ weird ideas, real problem</pre>
           <div class="terminal-actions">
             <button type="button" id="readmeButton">&gt; readme.txt</button>
           </div>
-          <p class="terminal-prompt">
-            <span>&gt; waiting for input</span><span class="idle-dots" aria-hidden="true"></span><span class="cursor" aria-hidden="true"></span>
-          </p>
+          <div class="terminal-command-zone" aria-live="polite">
+            <div class="terminal-idle" id="terminalIdle">&gt; waiting for input</div>
+            <div class="terminal-echo" id="terminalEcho" hidden></div>
+            <div class="terminal-response" id="terminalResponse" hidden></div>
+            <form class="terminal-input-form" id="terminalInputForm" autocomplete="off">
+              <span class="terminal-input-prefix" aria-hidden="true">&gt;</span>
+              <span class="terminal-editable" id="terminalInput" role="textbox" aria-label="DeadPunk OS terminal input" contenteditable="true" spellcheck="false" data-placeholder=""></span>
+              <span class="terminal-fake-cursor" aria-hidden="true"></span>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -280,7 +287,7 @@ weird ideas, real problem</pre>
       <nav class="start-links" aria-label="Profile links">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer"><span class="system-icon system-user" aria-hidden="true"></span>GitHub profile</a>
         <a href="https://github.com/XxYouDeaDPunKxX?tab=repositories" target="_blank" rel="noopener noreferrer"><span class="system-icon system-folder" aria-hidden="true"></span>Repositories</a>
-        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/gh-pages" target="_blank" rel="noopener noreferrer"><span class="system-icon system-doc" aria-hidden="true"></span>This page repo</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/XxYouDeaDPunKxX/tree/deadpunk-os-cyberpunk-skin" target="_blank" rel="noopener noreferrer"><span class="system-icon system-doc" aria-hidden="true"></span>This page repo</a>
       </nav>
     </section>
     <div class="start-apps">
@@ -350,6 +357,6 @@ weird ideas, real problem</pre>
   </noscript>
 
   <script src="projects.js?v=rebuild-003"></script>
-  <script src="app.js?v=cyberpunk-001"></script>
+  <script src="app.js?v=cyberpunk-003"></script>
 </body>
 </html>
