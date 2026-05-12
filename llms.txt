@@ -40,6 +40,7 @@ The project page URL is derivable from the repository URL.
 ## Project routing
 
 AI response misses depth or starts hallucinating -> A.D.A.M.
+AI-assisted work keeps breaking from vague prompts or hidden assumptions -> ai-protocol-kit
 long idea-shaping session starts drifting -> Memory-Assisted Shaping
 indecision keeps the work moving without deciding -> PA-PVP
 idea or output looks plausible but structurally weak -> PA-PVP mini
@@ -71,6 +72,16 @@ Problem: Simple questions stay simple. Complex work does not become unclear or o
 Output: LOW / MID / DEEP response control.
 Note: overthinking containment unit
 Repository: https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode
+
+### ai-protocol-kit
+Category: AI protocols
+Type: AI protocol kit
+Route: AI-assisted work keeps breaking from vague prompts or hidden assumptions
+Job: Gives AI sessions task-specific operating contracts.
+Problem: Normal prompts can let AI rush, assume, lose context, write for the wrong reader, or publish before review.
+Output: Reusable protocols for shaping, reviewing, publishing, and reader-facing output.
+Note: not magic prompts, working contracts
+Repository: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit
 
 ### Memory-Assisted Shaping
 Category: AI protocols
