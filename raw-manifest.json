@@ -1,1 +1,225 @@
-{"name":"DeadPunk OS","url":"https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/","github":"https://github.com/XxYouDeaDPunKxX","license":"CC-BY-SA-4.0","license_url":"https://creativecommons.org/licenses/by-sa/4.0/","description":"A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.","identity":"text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.","not_a_portfolio":true,"github_pages_pattern":"https://xxyoudeadpunkxx.github.io/{repository-name}/","github_pages_derivation":"Each project GitHub Page uses the standard repository Pages URL derived from its GitHub repository URL.","readme":["Not a portfolio.","A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.","I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable."],"interface":{"visual_direction":"Simple fake classic desktop inspired by Windows 98 / Windows classic: blue desktop, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.","structure":["topbar","desktop-surface","desktop-column","desktop-grid","desktop-system-icons","terminal-window","inspector-window","search-panel","start-menu","fixed-taskbar"],"project_surfaces":["desktop icons","Start menu installed apps","search routes","inspector project views"],"inspector_order":["module","title","subtitle","route","category","type","job","problem","output","note","repository actions","derived GitHub Pages link"],"layout_notes":["Project icons and desktop system icons are separated inside the desktop column.","Trash is a desktop system icon, not a project.","The inspector title bar is labeled EXPLODED.EXE in the UI.","The terminal remains visually CMD-like and black.","Green is reserved for the topbar status LED.","Desktop and laptop layouts keep long project views scrollable inside the inspector.","Mobile layout keeps the inspector in the normal document flow."]},"routing":[{"trigger":"AI response misses depth or starts hallucinating","project_id":"adam"},{"trigger":"AI-assisted work keeps breaking from vague prompts or hidden assumptions","project_id":"ai-protocol-kit"},{"trigger":"long idea-shaping session starts drifting","project_id":"memory-assisted-shaping"},{"trigger":"indecision keeps the work moving without deciding","project_id":"pa-pvp"},{"trigger":"idea or output looks plausible but structurally weak","project_id":"pa-pvp-mini"},{"trigger":"project documents become a pile","project_id":"signal-rail"},{"trigger":"Codex keeps making the same mistakes; discipline the work environment","project_id":"csbp"},{"trigger":"Codex needs to slow down and clear the frame before touching the work","project_id":"sensecraftxstudio"},{"trigger":"new ChatGPT project starts from fog","project_id":"project-forge"},{"trigger":"ChatGPT needs files, but your local disk is not invited","project_id":"cloudflare-r2-remote-mcp-worker"}],"projects":[{"id":"adam","title":"A.D.A.M.","category":"AI protocols","type":"AI control protocol","route":"AI response misses depth or starts hallucinating","job":"Keeps AI chats at the right depth.","problem":"Simple questions stay simple. Complex work does not become unclear or overloaded.","output":"LOW / MID / DEEP response control.","note":"overthinking containment unit","repository":"https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode"},{"id":"ai-protocol-kit","title":"ai-protocol-kit","category":"AI protocols","type":"AI protocol kit","route":"AI-assisted work keeps breaking from vague prompts or hidden assumptions","job":"Gives AI sessions task-specific operating contracts.","problem":"Normal prompts can let AI rush, assume, lose context, write for the wrong reader, or publish before review.","output":"Reusable protocols for shaping, reviewing, publishing, and reader-facing output.","note":"not magic prompts, working contracts","repository":"https://github.com/XxYouDeaDPunKxX/ai-protocol-kit"},{"id":"memory-assisted-shaping","title":"Memory-Assisted Shaping","category":"AI protocols","type":"AI continuity protocol","route":"long idea-shaping session starts drifting","job":"Keeps long idea-shaping sessions coherent.","problem":"Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.","output":"Cleaner final artifacts after controlled shaping.","note":"drift repellent, probably flammable","repository":"https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping"},{"id":"pa-pvp","title":"PA-PVP","category":"decision systems","type":"Decision protocol","route":"indecision keeps the work moving without deciding","job":"Turns vague plans, artifacts, or stuck decisions into an operational next move.","problem":"Open-ended discussion keeps replacing closure.","output":"Verdict, one next action, and a continuation point.","note":"argues so you do not have to","repository":"https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol"},{"id":"pa-pvp-mini","title":"PA-PVP mini","category":"review systems","type":"Adversarial review protocol","route":"idea or output looks plausible but structurally weak","job":"Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.","problem":"Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.","output":"Concrete findings and structural fixes.","note":"small, sharp, mildly annoying","repository":"https://github.com/XxYouDeaDPunKxX/PA-PVP-mini"},{"id":"signal-rail","title":"Signal Rail","category":"document governance","type":"Document routing system","route":"project documents become a pile","job":"Keeps live project material in the right place.","problem":"Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.","output":"Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.","note":"keeps mess on tracks","repository":"https://github.com/XxYouDeaDPunKxX/Signal-Rail"},{"id":"csbp","title":"CSBP","category":"Codex environment discipline","type":"Practice governance","route":"Codex keeps making the same mistakes; discipline the work environment","job":"Keeps reusable Codex practices explicit, reviewed, and controlled.","problem":"Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.","output":"A small companion layer for practices worth reusing, but not strong enough to become project rules.","note":"not a rule, not a vibe","repository":"https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice"},{"id":"sensecraftxstudio","title":"SensecraftXStudio","category":"agent contracts","type":"Agent behavior contract","route":"Codex needs to slow down and clear the frame before touching the work","job":"Keeps AI-assisted technical work grounded before the assistant acts.","problem":"The assistant can stay plausible after the frame has drifted.","output":"Visible target, context, assumptions, action boundary, and final state.","note":"confidence not trusted here","repository":"https://github.com/XxYouDeaDPunKxX/SensecraftXStudio"},{"id":"project-forge","title":"GPT-PF / ChatGPT Project Forge","category":"ChatGPT project setup hygiene","type":"ChatGPT project bootloader","route":"new ChatGPT project starts from fog","job":"Prepares starting files for a ChatGPT Project.","problem":"Projects start from memory, chat momentum, or informal notes instead of explicit files.","output":"Scope, sources, constraints, and starting basis before the real work begins.","note":"boots before it pretends","repository":"https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"},{"id":"cloudflare-r2-remote-mcp-worker","title":"Cloudflare R2 Remote MCP Worker","category":"AI storage tools","type":"Cloud file storage bridge + authenticated remote MCP","route":"ChatGPT needs files, but your local disk is not invited","job":"Gives ChatGPT-style MCP clients a controlled remote place to read and write files.","problem":"ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.","output":"A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.","note":"tiny cloud closet, because local disk access was not invited","repository":"https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker"}]}
+{
+  "name": "DeadPunk OS",
+  "url": "https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/",
+  "github": "https://github.com/XxYouDeaDPunKxX",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
+  "identity": "text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.",
+  "not_a_portfolio": true,
+  "github_pages_pattern": "https://xxyoudeadpunkxx.github.io/{repository-name}/",
+  "github_pages_derivation": "Each project GitHub Page uses the standard repository Pages URL derived from its GitHub repository URL.",
+  "readme": [
+    "Not a portfolio.",
+    "A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
+    "I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable."
+  ],
+  "interface": {
+    "visual_direction": "Simple fake classic desktop inspired by Windows 98 / Windows classic: blue desktop, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.",
+    "structure": [
+      "topbar",
+      "desktop-surface",
+      "desktop-column",
+      "desktop-grid",
+      "desktop-system-icons",
+      "terminal-window",
+      "inspector-window",
+      "search-panel",
+      "start-menu",
+      "fixed-taskbar"
+    ],
+    "project_surfaces": [
+      "desktop icons",
+      "Start menu installed apps",
+      "search routes",
+      "inspector project views"
+    ],
+    "inspector_order": [
+      "module",
+      "title",
+      "subtitle",
+      "route",
+      "category",
+      "type",
+      "job",
+      "problem",
+      "output",
+      "note",
+      "repository actions",
+      "derived GitHub Pages link"
+    ],
+    "layout_notes": [
+      "Project icons and desktop system icons are separated inside the desktop column.",
+      "Trash is a desktop system icon, not a project.",
+      "The inspector title bar is labeled EXPLODED.EXE in the UI.",
+      "The terminal remains visually CMD-like and black.",
+      "Green is reserved for the topbar status LED.",
+      "Desktop and laptop layouts keep long project views scrollable inside the inspector.",
+      "Mobile layout keeps the inspector in the normal document flow."
+    ]
+  },
+  "routing": [
+    {
+      "trigger": "AI response misses depth or starts hallucinating",
+      "project_id": "adam"
+    },
+    {
+      "trigger": "AI-assisted work keeps breaking from vague prompts or hidden assumptions",
+      "project_id": "ai-protocol-kit"
+    },
+    {
+      "trigger": "long idea-shaping session starts drifting",
+      "project_id": "memory-assisted-shaping"
+    },
+    {
+      "trigger": "indecision keeps the work moving without deciding",
+      "project_id": "pa-pvp"
+    },
+    {
+      "trigger": "idea or output looks plausible but structurally weak",
+      "project_id": "pa-pvp-mini"
+    },
+    {
+      "trigger": "project documents become a pile",
+      "project_id": "signal-rail"
+    },
+    {
+      "trigger": "Codex keeps making the same mistakes; discipline the work environment",
+      "project_id": "csbp"
+    },
+    {
+      "trigger": "Codex needs to slow down and clear the frame before touching the work",
+      "project_id": "sensecraftxstudio"
+    },
+    {
+      "trigger": "new ChatGPT project starts from fog",
+      "project_id": "project-forge"
+    },
+    {
+      "trigger": "ChatGPT needs files, but your local disk is not invited",
+      "project_id": "cloudflare-r2-remote-mcp-worker"
+    }
+  ],
+  "projects": [
+    {
+      "id": "adam",
+      "title": "A.D.A.M.",
+      "category": "AI protocols",
+      "type": "AI control protocol",
+      "route": "AI response misses depth or starts hallucinating",
+      "job": "Keeps AI chats at the right depth.",
+      "problem": "Simple questions stay simple. Complex work does not become unclear or overloaded.",
+      "output": "LOW / MID / DEEP response control.",
+      "note": "overthinking containment unit",
+      "repository": "https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode"
+    },
+    {
+      "id": "ai-protocol-kit",
+      "title": "ai-protocol-kit",
+      "category": "AI protocols",
+      "type": "AI protocol kit",
+      "route": "AI-assisted work keeps breaking from vague prompts or hidden assumptions",
+      "job": "Gives AI sessions task-specific operating contracts.",
+      "problem": "Normal prompts can let AI rush, assume, lose context, write for the wrong reader, or publish before review.",
+      "output": "Reusable protocols for shaping, reviewing, publishing, and reader-facing output.",
+      "note": "not magic prompts, working contracts",
+      "repository": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit"
+    },
+    {
+      "id": "memory-assisted-shaping",
+      "title": "Memory-Assisted Shaping",
+      "category": "AI protocols",
+      "type": "AI continuity protocol",
+      "route": "long idea-shaping session starts drifting",
+      "job": "Keeps long idea-shaping sessions coherent.",
+      "problem": "Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.",
+      "output": "Cleaner final artifacts after controlled shaping.",
+      "note": "drift repellent, probably flammable",
+      "repository": "https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping"
+    },
+    {
+      "id": "pa-pvp",
+      "title": "PA-PVP",
+      "category": "decision systems",
+      "type": "Decision protocol",
+      "route": "indecision keeps the work moving without deciding",
+      "job": "Turns vague plans, artifacts, or stuck decisions into an operational next move.",
+      "problem": "Open-ended discussion keeps replacing closure.",
+      "output": "Verdict, one next action, and a continuation point.",
+      "note": "argues so you do not have to",
+      "repository": "https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol"
+    },
+    {
+      "id": "pa-pvp-mini",
+      "title": "PA-PVP mini",
+      "category": "review systems",
+      "type": "Adversarial review protocol",
+      "route": "idea or output looks plausible but structurally weak",
+      "job": "Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.",
+      "problem": "Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.",
+      "output": "Concrete findings and structural fixes.",
+      "note": "small, sharp, mildly annoying",
+      "repository": "https://github.com/XxYouDeaDPunKxX/PA-PVP-mini"
+    },
+    {
+      "id": "signal-rail",
+      "title": "Signal Rail",
+      "category": "document governance",
+      "type": "Document routing system",
+      "route": "project documents become a pile",
+      "job": "Keeps live project material in the right place.",
+      "problem": "Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.",
+      "output": "Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.",
+      "note": "keeps mess on tracks",
+      "repository": "https://github.com/XxYouDeaDPunKxX/Signal-Rail"
+    },
+    {
+      "id": "csbp",
+      "title": "CSBP",
+      "category": "Codex environment discipline",
+      "type": "Practice governance",
+      "route": "Codex keeps making the same mistakes; discipline the work environment",
+      "job": "Keeps reusable Codex practices explicit, reviewed, and controlled.",
+      "problem": "Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.",
+      "output": "A small companion layer for practices worth reusing, but not strong enough to become project rules.",
+      "note": "not a rule, not a vibe",
+      "repository": "https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice"
+    },
+    {
+      "id": "sensecraftxstudio",
+      "title": "SensecraftXStudio",
+      "category": "agent contracts",
+      "type": "Agent behavior contract",
+      "route": "Codex needs to slow down and clear the frame before touching the work",
+      "job": "Keeps AI-assisted technical work grounded before the assistant acts.",
+      "problem": "The assistant can stay plausible after the frame has drifted.",
+      "output": "Visible target, context, assumptions, action boundary, and final state.",
+      "note": "confidence not trusted here",
+      "repository": "https://github.com/XxYouDeaDPunKxX/SensecraftXStudio"
+    },
+    {
+      "id": "project-forge",
+      "title": "GPT-PF / ChatGPT Project Forge",
+      "category": "ChatGPT project setup hygiene",
+      "type": "ChatGPT project bootloader",
+      "route": "new ChatGPT project starts from fog",
+      "job": "Prepares starting files for a ChatGPT Project.",
+      "problem": "Projects start from memory, chat momentum, or informal notes instead of explicit files.",
+      "output": "Scope, sources, constraints, and starting basis before the real work begins.",
+      "note": "boots before it pretends",
+      "repository": "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"
+    },
+    {
+      "id": "cloudflare-r2-remote-mcp-worker",
+      "title": "Cloudflare R2 Remote MCP Worker",
+      "category": "AI storage tools",
+      "type": "Cloud file storage bridge + authenticated remote MCP",
+      "route": "ChatGPT needs files, but your local disk is not invited",
+      "job": "Gives ChatGPT-style MCP clients a controlled remote place to read and write files.",
+      "problem": "ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.",
+      "output": "A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.",
+      "note": "tiny cloud closet, because local disk access was not invited",
+      "repository": "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker"
+    }
+  ]
+}
