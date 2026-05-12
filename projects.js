@@ -15,6 +15,21 @@ window.DEADPUNK_PROJECTS = [
     icon: "dial"
   },
   {
+    id: "ai-protocol-kit",
+    module: "AI_PROTOCOL_KIT.contracts",
+    title: "ai-protocol-kit",
+    subtitle: "AI behavior contracts and operational protocols",
+    type: "AI protocol kit",
+    category: "AI protocols",
+    route: "AI-assisted work keeps breaking from vague prompts or hidden assumptions",
+    job: "Gives AI sessions task-specific operating contracts.",
+    problem: "Normal prompts can let AI rush, assume, lose context, write for the wrong reader, or publish before review.",
+    output: "Reusable protocols for shaping, reviewing, publishing, and reader-facing output.",
+    repo: "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit",
+    note: "not magic prompts, working contracts",
+    icon: "kit"
+  },
+  {
     id: "memory-assisted-shaping",
     module: "MEMORY_SHAPER.session",
     title: "Memory-Assisted Shaping",
