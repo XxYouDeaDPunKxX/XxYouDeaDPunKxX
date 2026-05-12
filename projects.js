@@ -27,7 +27,7 @@ window.DEADPUNK_PROJECTS = [
     output: "Reusable protocols for shaping, reviewing, publishing, and reader-facing output.",
     repo: "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit",
     note: "not magic prompts, working contracts",
-    icon: "kit"
+    icon: "filter"
   },
   {
     id: "memory-assisted-shaping",
