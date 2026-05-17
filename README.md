@@ -1,5 +1,6 @@
 <img src="./assets/profile-banner.png" alt="GitHub profile banner" width="100%" />
-# Hello, i' m MaRCoRe.
+
+## Hello, i' m MaRCoRe.
 
 I’m not a professional programmer, but I’m a lifelong geek and gamer.
 
