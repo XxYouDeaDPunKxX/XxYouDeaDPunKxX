@@ -1,27 +1,27 @@
 <img src="./assets/profile-banner.png" alt="GitHub profile banner" width="100%" />
 
 ---
-## Hello, i am MaRCoRe.
 
-I’m not a professional programmer, but I’m a lifelong geek and gamer.
+## Hello, I’m MaRCoRe.
 
-I usually have too many ideas in my head. When I can, I try to turn some of them into something real and share them for free. Most of my projects start as solutions to problems I actually have, which is exactly why they can sometimes be useful to other people too.
+I’m not a software developer. I’m a lifelong geek and gamer who somehow uses AI to shape messy ideas, workflows, and personal problems into practical tools and protocols.
+
+I usually have too many ideas in my head. When I can, I try to turn some of them into something real and share the result freely. Most of my projects start as solutions to problems I actually run into, which is why they can sometimes be useful to other people too.
 
 I don’t build things just to have a portfolio. I build when an idea feels real, when it solves something for me, and when it seems worth shaping into something other people can try, inspect, or reuse.
 
-Usually i create Personal tools, AI protocols, and practical systems built from real use.
-
+Most of what I create falls into personal tools, AI protocols, and practical systems shaped by real use.
 
 ## 🛠️ What I build
 
-- ideas shaped into usable things
+- ideas shaped into usable tools
 - practical systems for real problems
 - experiments that try to become tools
 - projects made first for my own needs, then shared for others
 
 ## 📌 Featured projects
- 
- # Try [DeadPunk OS](https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/) — it’s not broken, it’s ‘avant-garde’.
+
+### Try [DeadPunk OS](https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/) — it’s not broken, it’s "avant-garde".
 
 A few projects I use, test, or keep shaping:
 
@@ -38,18 +38,25 @@ A few projects I use, test, or keep shaping:
 | [`SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | SensecraftXStudio helps keep AI-assisted technical work grounded before the assistant acts, so the target, context, assumptions, and final state stay visible for the operator and clear for the agent. |
 | [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge prepares the starting files for a ChatGPT Project, so scope, sources, constraints, and starting basis are clear before the real work begins. |
 
-
 ## 🤖 How to use these projects with AI
 
-Most of these projects are meant to be used with an AI assistant, not only read like static documentation.
+Most of these projects are meant to be used with an AI assistant, not just read as static documentation.
 
 If a repo is unclear, paste the repository link into your AI chat and ask:
 
 > What is this project for, how does it work, and what could I use it for in my own workflow?
 
-Then ask for practical examples, limits, first files to read, and whether it actually fits your problem.
+Then ask for practical examples, limits, which files to read first, and whether it actually fits your problem.
 
-That is often the fastest way to understand these projects, because many of them are not just documents. They are working frames, protocols, or small systems built from real use.
+That is often the fastest way to understand these projects, because many of them are not just documents. They are practical frameworks, protocols, or small systems shaped by real use.
+
+## 👨‍💻📝🤖 Human-directed, AI-assisted work
+
+These projects were created with AI assistance.
+
+The ideas, documentation, repository materials, and practical structure were shaped through human-directed work supported by AI tools during drafting, structuring, review, testing, and refinement.
+
+AI assistance does not make any project automatically correct, complete, or suitable for every use case. Read it, test it, and adapt it to your own context.
 
 ## 📡 Why I share my work
 
@@ -59,7 +66,7 @@ Some projects are rough.
 Some are weird.
 Some are more serious than they look at first glance.
 
-But they are real, and they come from use, not from posing.
+But they are real, and they come from use, not from trying to look impressive.
 
 ---
 
