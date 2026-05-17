@@ -1,5 +1,6 @@
 <img src="./assets/profile-banner.png" alt="GitHub profile banner" width="100%" />
 
+---
 ## Hello, i' m MaRCoRe.
 
 I’m not a professional programmer, but I’m a lifelong geek and gamer.
@@ -10,7 +11,6 @@ I don’t build things just to have a portfolio. I build when an idea feels real
 
 Usually i create Personal tools, AI protocols, and practical systems built from real use.
 
----
 
 ## 🛠️ What I build
 
@@ -60,3 +60,7 @@ Some are weird.
 Some are more serious than they look at first glance.
 
 But they are real, and they come from use, not from posing.
+
+---
+
+<img src="./assets/footer-banner.png" alt="GitHub profile banner" width="100%" />
