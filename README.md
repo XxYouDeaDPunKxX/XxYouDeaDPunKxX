@@ -37,6 +37,17 @@ A few projects I use, test, or keep shaping:
 | [`GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge prepares the starting files for a ChatGPT Project, so scope, sources, constraints, and starting basis are clear before the real work begins. |
 
 
+## 🤖 How to use these projects with AI
+
+Most of these projects are meant to be used with an AI assistant, not only read like static documentation.
+
+If a repo is unclear, paste the repository link into your AI chat and ask:
+
+> What is this project for, how does it work, and what could I use it for in my own workflow?
+
+Then ask for practical examples, limits, first files to read, and whether it actually fits your problem.
+
+That is often the fastest way to understand these projects, because many of them are not just documents. They are working frames, protocols, or small systems built from real use.
 
 ## 📡 Why I share my work
 
