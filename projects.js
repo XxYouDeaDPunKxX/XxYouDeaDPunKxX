@@ -148,5 +148,20 @@ window.DEADPUNK_PROJECTS = [
     repo: "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker",
     note: "tiny cloud closet, because local disk access was not invited",
     icon: "r2"
+  },
+  {
+    id: "canon-boundary-guard",
+    module: "CANON_BOUNDARY.guard",
+    title: "Canon Boundary Guard",
+    subtitle: "Codex provenance boundary skill",
+    type: "Codex skill",
+    category: "Codex environment discipline",
+    route: "Codex must keep project evidence, chat context, instructions, hypotheses, and model assumptions separate",
+    job: "Keeps Codex source layers separated during long or consequential sessions.",
+    problem: "Project evidence, temporary chat, agent-control instructions, working hypotheses, and model priors can collapse into one authority layer.",
+    output: "A Codex skill folder with a classification frame, compact injected frame, and highly recommended PreToolUse hook.",
+    repo: "https://github.com/XxYouDeaDPunKxX/canon-boundary-guard-codex",
+    note: "keeps the voices in their lanes",
+    icon: "canon"
   }
 ];

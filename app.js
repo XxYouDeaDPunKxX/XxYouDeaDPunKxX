@@ -35,6 +35,7 @@
     rail: "SR",
     filter: "CS",
     frame: "SX",
+    canon: "CB",
     boot: "PF",
     r2: "R2"
   };
