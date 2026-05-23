@@ -114,7 +114,30 @@ note
 icon
 ```
 
+`category` is the problem or operating area. `type` is the concrete artifact
+form. They should not collapse into the same wording.
+
 Adding a normal project should not require layout edits.
+
+## Project Registry Snapshot
+
+Current project count: 13.
+
+| Project | Category | Type |
+|---|---|---|
+| A.D.A.M. | response depth control | Plain-text AI protocol |
+| ai-protocol-kit | AI work governance | Protocol collection |
+| Memory-Assisted Shaping for GPT Project | long-session continuity | ChatGPT Project protocol |
+| PA-PVP | decision closure | Adversarial decision protocol |
+| PA-PVP mini | adversarial review | Lightweight review protocol |
+| Signal Rail | document state control | Plain-text routing system |
+| CSBP | Codex practice memory | Three-file governance layer |
+| SensecraftXStudio | technical work framing | Agent behavior contract |
+| GPT-PF / ChatGPT Project Forge | ChatGPT Project bootstrap | Project starter package |
+| Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
+| Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
+| Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
+| Shaping Frame for Claude | Claude epistemic framing | Claude skill package |
 
 ## 🛰️ Discovery Files
 
@@ -209,7 +232,9 @@ The inspector window is labeled `EXPLODED.EXE` in the title bar. The label is vi
 
 The route is rendered as its own line because it is the fastest human entry point into the project: it explains when that project is useful.
 
-Category and type are rendered together in a compact `spec-strip`. Job, problem, output, and note are rendered below in the main `specs` list.
+Category and type are rendered together in a compact `spec-strip`. Category is
+the problem or operating area. Type is the artifact form. Job, problem, output,
+and note are rendered below in the main `specs` list.
 
 The inspector is allowed to scroll internally on desktop and laptop when a project description is longer than the available viewport. This keeps the desktop layout stable without cutting project information.
 

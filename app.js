@@ -36,6 +36,8 @@
     filter: "CS",
     frame: "SX",
     canon: "CB",
+    gpt: "GP",
+    claude: "CL",
     boot: "PF",
     r2: "R2"
   };
@@ -218,9 +220,9 @@
       <p class="stamp">INSPECTING: README.TXT</p>
       <h2>README</h2>
       <div class="readme-copy">
-        <p>Not a portfolio.</p>
-        <p>A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.</p>
-        <p>I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.</p>
+        <p>Not a portfolio. More like a desktop drawer full of tools that survived repeated impact with reality.</p>
+        <p>DeadPunk OS indexes text systems, behavioral contracts, AI protocols, decision tools, document rails, and small machines built after something broke often enough to earn a name.</p>
+        <p>Everything here exists to keep work from drifting, decisions from evaporating, notes from rotting, and automation from smiling while it ruins the room.</p>
       </div>
       <div class="actions">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>

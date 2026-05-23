@@ -60,39 +60,39 @@
   },
   "routing": [
     {
-      "trigger": "AI response misses depth or starts hallucinating",
+      "trigger": "AI response either hallucinates or brings a forklift to a teaspoon job",
       "project_id": "adam"
     },
     {
-      "trigger": "AI-assisted work keeps breaking from vague prompts or hidden assumptions",
+      "trigger": "AI-assisted work keeps dying from vague prompts, hidden assumptions, and optimism",
       "project_id": "ai-protocol-kit"
     },
     {
-      "trigger": "long idea-shaping session starts drifting",
+      "trigger": "long GPT Project session starts forgetting which corpse was the original idea",
       "project_id": "memory-assisted-shaping"
     },
     {
-      "trigger": "indecision keeps the work moving without deciding",
+      "trigger": "indecision keeps the work moving without deciding, like a meeting with a pulse",
       "project_id": "pa-pvp"
     },
     {
-      "trigger": "idea or output looks plausible but structurally weak",
+      "trigger": "idea looks plausible, which is how most bad ideas enter the building",
       "project_id": "pa-pvp-mini"
     },
     {
-      "trigger": "project documents become a pile",
+      "trigger": "project documents become a pile and start breeding in the corner",
       "project_id": "signal-rail"
     },
     {
-      "trigger": "Codex keeps making the same mistakes; discipline the work environment",
+      "trigger": "Codex keeps making the same mistake until it becomes office furniture",
       "project_id": "csbp"
     },
     {
-      "trigger": "Codex needs to slow down and clear the frame before touching the work",
+      "trigger": "Codex is about to touch the work while the frame is already smoking",
       "project_id": "sensecraftxstudio"
     },
     {
-      "trigger": "new ChatGPT project starts from fog",
+      "trigger": "new ChatGPT Project starts from fog, vibes, and a folder named final_final",
       "project_id": "project-forge"
     },
     {
@@ -100,115 +100,123 @@
       "project_id": "cloudflare-r2-remote-mcp-worker"
     },
     {
-      "trigger": "Codex must keep project evidence, chat context, instructions, hypotheses, and model assumptions separate",
-      "project_id": "canon-boundary-guard"
+      "trigger": "Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes",
+      "project_id": "canon-boundary-guard-codex"
+    },
+    {
+      "trigger": "ChatGPT Project turns uploads, chat, and assumptions into one cursed soup",
+      "project_id": "canon-boundary-guard-gpt-project"
+    },
+    {
+      "trigger": "Claude chat starts treating a fresh guess like a signed death certificate",
+      "project_id": "shaping-frame-for-claude"
     }
   ],
   "projects": [
     {
       "id": "adam",
       "title": "A.D.A.M.",
-      "category": "AI protocols",
-      "type": "AI control protocol",
-      "route": "AI response misses depth or starts hallucinating",
-      "job": "Keeps AI chats at the right depth.",
-      "problem": "Simple questions stay simple. Complex work does not become unclear or overloaded.",
-      "output": "LOW / MID / DEEP response control.",
-      "note": "overthinking containment unit",
+      "category": "response depth control",
+      "type": "Plain-text AI protocol",
+      "route": "AI response either hallucinates or brings a forklift to a teaspoon job",
+      "job": "Sets the answer depth before the chat starts digging its own grave.",
+      "problem": "Tiny questions get autopsied. Hard ones get waved through with a smile and a missing organ.",
+      "output": "LOW / MID / DEEP response control, with fewer theatrical collapses.",
+      "note": "overthinking containment unit, lid not included",
       "repository": "https://github.com/XxYouDeaDPunKxX/A.D.A.M.-Adaptive-Depth-and-Mode"
     },
     {
       "id": "ai-protocol-kit",
       "title": "ai-protocol-kit",
-      "category": "AI protocols",
-      "type": "AI protocol kit",
-      "route": "AI-assisted work keeps breaking from vague prompts or hidden assumptions",
-      "job": "Gives AI sessions task-specific operating contracts.",
-      "problem": "Normal prompts can let AI rush, assume, lose context, write for the wrong reader, or publish before review.",
+      "category": "AI work governance",
+      "type": "Protocol collection",
+      "route": "AI-assisted work keeps dying from vague prompts, hidden assumptions, and optimism",
+      "job": "Hands the session a contract before it starts renovating the crime scene.",
+      "problem": "Without rails, AI rushes, assumes, publishes, and calls the debris a workflow.",
       "output": "Reusable protocols for shaping, reviewing, publishing, and reader-facing output.",
-      "note": "not magic prompts, working contracts",
+      "note": "not magic prompts; paperwork with teeth",
       "repository": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit"
     },
     {
       "id": "memory-assisted-shaping",
-      "title": "Memory-Assisted Shaping",
-      "category": "AI protocols",
-      "type": "AI continuity protocol",
-      "route": "long idea-shaping session starts drifting",
-      "job": "Keeps long idea-shaping sessions coherent.",
-      "problem": "Decisions, gates, discarded paths, and source boundaries get lost before the final artifact is ready.",
-      "output": "Cleaner final artifacts after controlled shaping.",
+      "title": "Memory-Assisted Shaping for GPT Project",
+      "category": "long-session continuity",
+      "type": "ChatGPT Project protocol",
+      "route": "long GPT Project session starts forgetting which corpse was the original idea",
+      "job": "Keeps long shaping sessions from wandering off with the wrong decision.",
+      "problem": "Gates, discarded paths, and source boundaries vanish; the final artifact inherits the whole crime scene.",
+      "output": "Cleaner final artifacts after controlled shaping, with fewer ghosts in the walls.",
       "note": "drift repellent, probably flammable",
       "repository": "https://github.com/XxYouDeaDPunKxX/Memory-Assisted-Shaping"
     },
     {
       "id": "pa-pvp",
       "title": "PA-PVP",
-      "category": "decision systems",
-      "type": "Decision protocol",
-      "route": "indecision keeps the work moving without deciding",
-      "job": "Turns vague plans, artifacts, or stuck decisions into an operational next move.",
-      "problem": "Open-ended discussion keeps replacing closure.",
-      "output": "Verdict, one next action, and a continuation point.",
-      "note": "argues so you do not have to",
+      "category": "decision closure",
+      "type": "Adversarial decision protocol",
+      "route": "indecision keeps the work moving without deciding, like a meeting with a pulse",
+      "job": "Turns vague plans, artifacts, and stuck decisions into one executable next move.",
+      "problem": "Open-ended discussion keeps wearing different hats and pretending one of them is closure.",
+      "output": "Verdict, next action, probes, debt, and a continuation point.",
+      "note": "argues so you do not have to, then invoices your certainty",
       "repository": "https://github.com/XxYouDeaDPunKxX/PA_PVP-a-PLUTONIUM-like-Adversarial-Peer-Validation-Protocol"
     },
     {
       "id": "pa-pvp-mini",
       "title": "PA-PVP mini",
-      "category": "review systems",
-      "type": "Adversarial review protocol",
-      "route": "idea or output looks plausible but structurally weak",
+      "category": "adversarial review",
+      "type": "Lightweight review protocol",
+      "route": "idea looks plausible, which is how most bad ideas enter the building",
       "job": "Stress-tests ideas, plans, prompts, procedures, code, and AI outputs.",
-      "problem": "Plausible material can hide gaps, weak logic, missing constraints, and shaky fixes.",
-      "output": "Concrete findings and structural fixes.",
+      "problem": "Plausible material hides weak logic, missing constraints, and dead batteries under a clean shirt.",
+      "output": "Concrete findings and structural fixes before the corpse reaches production.",
       "note": "small, sharp, mildly annoying",
       "repository": "https://github.com/XxYouDeaDPunKxX/PA-PVP-mini"
     },
     {
       "id": "signal-rail",
       "title": "Signal Rail",
-      "category": "document governance",
-      "type": "Document routing system",
-      "route": "project documents become a pile",
-      "job": "Keeps live project material in the right place.",
-      "problem": "Decisions, open work, ideas, constraints, and handoff notes collapse into one messy document.",
+      "category": "document state control",
+      "type": "Plain-text routing system",
+      "route": "project documents become a pile and start breeding in the corner",
+      "job": "Keeps live project material in the right place before the notes turn into landfill.",
+      "problem": "Decisions, open work, ideas, constraints, handoff notes, and archive dust collapse into one document-shaped swamp.",
       "output": "Separated rails for state, decisions, ideas, constraints, handoff, parking, and archive.",
-      "note": "keeps mess on tracks",
+      "note": "keeps mess on tracks; still smells like work",
       "repository": "https://github.com/XxYouDeaDPunKxX/Signal-Rail"
     },
     {
       "id": "csbp",
       "title": "CSBP",
-      "category": "Codex environment discipline",
-      "type": "Practice governance",
-      "route": "Codex keeps making the same mistakes; discipline the work environment",
+      "category": "Codex practice memory",
+      "type": "Three-file governance layer",
+      "route": "Codex keeps making the same mistake until it becomes office furniture",
       "job": "Keeps reusable Codex practices explicit, reviewed, and controlled.",
-      "problem": "Useful guidance either stays buried in chat history or gets promoted too quickly into project rules.",
-      "output": "A small companion layer for practices worth reusing, but not strong enough to become project rules.",
-      "note": "not a rule, not a vibe",
+      "problem": "Useful guidance either rots in chat history or gets promoted too fast into project law.",
+      "output": "A companion layer for practices worth reusing, but not strong enough to become project rules.",
+      "note": "not a rule, not a vibe, not another sacred sticky note",
       "repository": "https://github.com/XxYouDeaDPunKxX/CSBP-Codex-Shared-Best-Practice"
     },
     {
       "id": "sensecraftxstudio",
       "title": "SensecraftXStudio",
-      "category": "agent contracts",
+      "category": "technical work framing",
       "type": "Agent behavior contract",
-      "route": "Codex needs to slow down and clear the frame before touching the work",
-      "job": "Keeps AI-assisted technical work grounded before the assistant acts.",
-      "problem": "The assistant can stay plausible after the frame has drifted.",
+      "route": "Codex is about to touch the work while the frame is already smoking",
+      "job": "Forces AI-assisted technical work to clear target, context, assumptions, and action boundary before touching files.",
+      "problem": "The assistant can stay confident long after the frame has quietly died under the desk.",
       "output": "Visible target, context, assumptions, action boundary, and final state.",
-      "note": "confidence not trusted here",
+      "note": "confidence not trusted here; bring evidence or a shovel",
       "repository": "https://github.com/XxYouDeaDPunKxX/SensecraftXStudio"
     },
     {
       "id": "project-forge",
       "title": "GPT-PF / ChatGPT Project Forge",
-      "category": "ChatGPT project setup hygiene",
-      "type": "ChatGPT project bootloader",
-      "route": "new ChatGPT project starts from fog",
-      "job": "Prepares starting files for a ChatGPT Project.",
-      "problem": "Projects start from memory, chat momentum, or informal notes instead of explicit files.",
+      "category": "ChatGPT Project bootstrap",
+      "type": "Project starter package",
+      "route": "new ChatGPT Project starts from fog, vibes, and a folder named final_final",
+      "job": "Prepares explicit starting files before the Project pretends memory is a plan.",
+      "problem": "Projects start from chat momentum, loose notes, or mystical continuity and then act surprised when the walls move.",
       "output": "Scope, sources, constraints, and starting basis before the real work begins.",
       "note": "boots before it pretends",
       "repository": "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"
@@ -216,8 +224,8 @@
     {
       "id": "cloudflare-r2-remote-mcp-worker",
       "title": "Cloudflare R2 Remote MCP Worker",
-      "category": "AI storage tools",
-      "type": "Cloud file storage bridge + authenticated remote MCP",
+      "category": "remote file access",
+      "type": "Cloudflare Worker MCP server",
       "route": "ChatGPT needs files, but your local disk is not invited",
       "job": "Gives ChatGPT-style MCP clients a controlled remote place to read and write files.",
       "problem": "ChatGPT does not work like a local desktop app with direct disk access. If it needs files through MCP, the endpoint has to be reachable remotely.",
@@ -226,16 +234,55 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker"
     },
     {
-      "id": "canon-boundary-guard",
-      "title": "Canon Boundary Guard",
-      "category": "Codex environment discipline",
-      "type": "Codex skill",
-      "route": "Codex must keep project evidence, chat context, instructions, hypotheses, and model assumptions separate",
-      "job": "Keeps Codex source layers separated during long or consequential sessions.",
-      "problem": "Project evidence, temporary chat, agent-control instructions, working hypotheses, and model priors can collapse into one authority layer.",
-      "output": "A Codex skill folder with a classification frame, compact injected frame, and highly recommended PreToolUse hook.",
-      "note": "keeps the voices in their lanes",
+      "id": "canon-boundary-guard-codex",
+      "title": "Canon Boundary Guard for Codex",
+      "category": "Codex provenance control",
+      "type": "Codex plugin and skill",
+      "route": "Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes",
+      "job": "Keeps Codex source layers separated before it edits the repo like a haunted intern.",
+      "problem": "Project evidence, chat context, agent-control instructions, working hypotheses, and model priors collapse into one authority soup.",
+      "output": "A Codex plugin/skill with a compact frame and highly recommended PreToolUse hook.",
+      "note": "keeps the voices in their lanes, with a clipboard and a warning label",
       "repository": "https://github.com/XxYouDeaDPunKxX/canon-boundary-guard-codex"
+    },
+    {
+      "id": "canon-boundary-guard-gpt-project",
+      "title": "Canon Boundary Guard for GPT Projects",
+      "category": "ChatGPT provenance control",
+      "type": "Project source bundle",
+      "route": "ChatGPT Project turns uploads, chat, and assumptions into one cursed soup",
+      "job": "Keeps files, chat, instructions, drafts, and assumptions in separate lanes.",
+      "problem": "A Project can start treating files, old chat, fresh drafts, and model guesses as the same authority wearing different shoes.",
+      "output": "A zipped source bundle and Project Instructions for long ChatGPT sessions.",
+      "note": "source separation for chats that keep adopting every stray thought",
+      "repository": "https://github.com/XxYouDeaDPunKxX/canon-boundary-guard-for-gpt-project"
+    },
+    {
+      "id": "shaping-frame-for-claude",
+      "title": "Shaping Frame for Claude",
+      "category": "Claude epistemic framing",
+      "type": "Claude skill package",
+      "route": "Claude chat starts treating a fresh guess like a signed death certificate",
+      "job": "Keeps Claude aware of what is hypothesis, decision, or unvalidated generated material.",
+      "problem": "Normal Claude chats can smooth over uncertainty until everything sounds already settled and ready for burial.",
+      "output": "A Claude skill plus custom instructions for epistemic weight in long sessions.",
+      "note": "polite uncertainty cage for a model with good manners",
+      "repository": "https://github.com/XxYouDeaDPunKxX/shaping-frame-for-claude"
     }
+  ],
+  "categories": [
+    "response depth control",
+    "AI work governance",
+    "long-session continuity",
+    "decision closure",
+    "adversarial review",
+    "document state control",
+    "Codex practice memory",
+    "technical work framing",
+    "ChatGPT Project bootstrap",
+    "remote file access",
+    "Codex provenance control",
+    "ChatGPT provenance control",
+    "Claude epistemic framing"
   ]
 }
