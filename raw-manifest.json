@@ -96,6 +96,10 @@
       "project_id": "project-forge"
     },
     {
+      "trigger": "ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall",
+      "project_id": "chatgpt-skill-system"
+    },
+    {
       "trigger": "ChatGPT needs files, but your local disk is not invited",
       "project_id": "cloudflare-r2-remote-mcp-worker"
     },
@@ -222,6 +226,18 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge"
     },
     {
+      "id": "chatgpt-skill-system",
+      "title": "GPT Project Skill System",
+      "category": "ChatGPT capability extension",
+      "type": "Session skill loader",
+      "route": "ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall",
+      "job": "Gives a ChatGPT Project a controlled way to unpack, validate, and load only the skill needed for the current session.",
+      "problem": "ChatGPT Projects can hold files, but not native skills. This adds a controlled session workflow for loading skill-like packages without dumping everything into context.",
+      "output": "A Project-ready skill workflow: core boot, explicit skill loading, and adapter reports for checking whether external skills can run inside ChatGPT.",
+      "note": "skill slot sold separately; this bolts one on without pretending it is magic",
+      "repository": "https://github.com/XxYouDeaDPunKxX/ChatGPT-SKILL-SYSTEM"
+    },
+    {
       "id": "cloudflare-r2-remote-mcp-worker",
       "title": "Cloudflare R2 Remote MCP Worker",
       "category": "remote file access",
@@ -280,6 +296,7 @@
     "Codex practice memory",
     "technical work framing",
     "ChatGPT Project bootstrap",
+    "ChatGPT capability extension",
     "remote file access",
     "Codex provenance control",
     "ChatGPT provenance control",

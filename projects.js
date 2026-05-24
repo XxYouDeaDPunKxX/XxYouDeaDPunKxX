@@ -135,6 +135,21 @@ window.DEADPUNK_PROJECTS = [
     icon: "boot"
   },
   {
+    id: "chatgpt-skill-system",
+    module: "GPT_SKILLS.session_loader",
+    title: "GPT Project Skill System",
+    subtitle: "Skill-style capability loading for ChatGPT Projects",
+    type: "Session skill loader",
+    category: "ChatGPT capability extension",
+    route: "ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall",
+    job: "Gives a ChatGPT Project a controlled way to unpack, validate, and load only the skill needed for the current session.",
+    problem: "ChatGPT Projects can hold files, but not native skills. This adds a controlled session workflow for loading skill-like packages without dumping everything into context.",
+    output: "A Project-ready skill workflow: core boot, explicit skill loading, and adapter reports for checking whether external skills can run inside ChatGPT.",
+    repo: "https://github.com/XxYouDeaDPunKxX/ChatGPT-SKILL-SYSTEM",
+    note: "skill slot sold separately; this bolts one on without pretending it is magic",
+    icon: "gpt"
+  },
+  {
     id: "cloudflare-r2-remote-mcp-worker",
     module: "R2_MCP.bucket",
     title: "Cloudflare R2 Remote MCP Worker",

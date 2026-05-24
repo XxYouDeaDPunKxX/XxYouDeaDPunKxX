@@ -121,7 +121,7 @@ Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
 
-Current project count: 13.
+Current project count: 14.
 
 | Project | Category | Type |
 |---|---|---|
@@ -134,6 +134,7 @@ Current project count: 13.
 | CSBP | Codex practice memory | Three-file governance layer |
 | SensecraftXStudio | technical work framing | Agent behavior contract |
 | GPT-PF / ChatGPT Project Forge | ChatGPT Project bootstrap | Project starter package |
+| GPT Project Skill System | ChatGPT capability extension | Session skill loader |
 | Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |

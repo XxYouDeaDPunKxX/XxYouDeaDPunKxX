@@ -46,6 +46,7 @@ project documents become a pile and start breeding in the corner -> Signal Rail
 Codex keeps making the same mistake until it becomes office furniture -> CSBP
 Codex is about to touch the work while the frame is already smoking -> SensecraftXStudio
 new ChatGPT Project starts from fog, vibes, and a folder named final_final -> GPT-PF / ChatGPT Project Forge
+ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall -> GPT Project Skill System
 ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote MCP Worker
 Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes -> Canon Boundary Guard for Codex
 ChatGPT Project turns uploads, chat, and assumptions into one cursed soup -> Canon Boundary Guard for GPT Projects
@@ -62,6 +63,7 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - Codex practice memory
 - technical work framing
 - ChatGPT Project bootstrap
+- ChatGPT capability extension
 - remote file access
 - Codex provenance control
 - ChatGPT provenance control
@@ -158,6 +160,16 @@ Problem: Projects start from chat momentum, loose notes, or mystical continuity 
 Output: Scope, sources, constraints, and starting basis before the real work begins.
 Note: boots before it pretends
 Repository: https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge
+
+### GPT Project Skill System
+Category: ChatGPT capability extension
+Type: Session skill loader
+Route: ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall
+Job: Gives a ChatGPT Project a controlled way to unpack, validate, and load only the skill needed for the current session.
+Problem: ChatGPT Projects can hold files, but not native skills. This adds a controlled session workflow for loading skill-like packages without dumping everything into context.
+Output: A Project-ready skill workflow: core boot, explicit skill loading, and adapter reports for checking whether external skills can run inside ChatGPT.
+Note: skill slot sold separately; this bolts one on without pretending it is magic
+Repository: https://github.com/XxYouDeaDPunKxX/ChatGPT-SKILL-SYSTEM
 
 ### Cloudflare R2 Remote MCP Worker
 Category: remote file access
