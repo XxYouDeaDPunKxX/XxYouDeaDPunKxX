@@ -175,7 +175,9 @@ It controls the desktop background, responsive layout, terminal styling, termina
 
 The CSS provides presentation and layout. It does not store project data or select projects.
 
-The visual direction is a simple fake OS skin: blue desktop, gray classic windows, bevel borders, blue title bars, black CMD-like terminal area, and a pale system-style toast. Green is kept only for the topbar status LED.
+The visual direction is a fake classic OS skin: blue desktop, gray classic windows, bevel borders, blue title bars, black CMD-like terminal area, custom CSS desktop icon art, and a pale system-style toast. Green is kept mostly for status/terminal accents rather than as a general brand color.
+
+Desktop project icons are drawn in CSS from icon classes, not loaded as image assets. The Start button also uses a custom warning-window mark rather than copying a platform logo.
 
 The main desktop spacing uses a small `8 / 13 / 21 / 34` scale through `--phi-*` variables. The taskbar is fixed to the viewport bottom, while the desktop shell reserves bottom space so content is not hidden behind it.
 
@@ -189,7 +191,7 @@ Each project is a plain object with fields used by the interface: `id`, `module`
 
 At runtime, this file is the source used for project icons, Start menu app entries, search routes, and inspector project views.
 
-The `icon` field is resolved through the `glyphs` map in `app.js`. If an icon key is not present in that map, the UI falls back to `OS`.
+The `icon` field is still used by the Start menu `glyphs` map in `app.js`. Desktop icons also receive CSS classes derived from both `icon` and `id`, allowing shared icon types to get project-specific visual variants.
 
 ### ⚙️ Runtime Script
 
@@ -197,7 +199,7 @@ The `icon` field is resolved through the `glyphs` map in `app.js`. If an icon ke
 
 On load, it reads the project list, creates desktop icons, creates Start menu app entries, creates search routes, and prepares the inspector behavior.
 
-It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, fake reboot animation, and local fake terminal input.
+It also handles local interactions such as Start menu opening, search panel opening, copy-repo feedback, toast messages, boot hiding, fake reboot animation, Trash terminal animation, and local fake terminal input.
 
 It derives each project GitHub Pages URL from the project repository URL when rendering the inspector action links.
 
@@ -211,7 +213,7 @@ No project is selected by default. The README state is rendered by `app.js` into
 
 The README inspector state is inline markup rendered by `app.js`. It is not loaded from `README.md`.
 
-The terminal is independent from project selection. It keeps its static status/control text, exposes a local fake input row, and can temporarily be replaced by the fake reboot interaction.
+The terminal is independent from project selection. It keeps its static status/control text, exposes a local fake input row, and can temporarily be replaced by local terminal takeover sequences such as fake reboot or Trash inventory.
 
 ### 🧭 Project Selection
 
@@ -263,7 +265,7 @@ They do not change persistent page state. When clicked, they pass a message to t
 
 The toast is positioned near the clicked control, shown temporarily, then hidden again.
 
-The same toast function is also used by fake window controls, Trash, and the Start power menu.
+The same toast function is also used by fake window controls and the Start power menu. Trash is handled separately as a terminal animation.
 
 ### 🔁 Fake Reboot
 
@@ -272,6 +274,8 @@ The `DEADPUNK_OS` label in the top bar is also an interactive control.
 When it is clicked, `app.js` stores the current terminal markup, replaces the terminal content with a short fake reboot sequence, waits for the sequence timeout, then writes the original terminal markup back into the terminal.
 
 This does not reload the page and does not reset project state. It only changes the terminal block temporarily.
+
+The Trash desktop icon uses the same temporary terminal replacement pattern. It renders a themed Trash inventory sequence, then restores the original terminal markup after its timeout.
 
 ### ⌨️ Fake Terminal Input
 

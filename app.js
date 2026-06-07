@@ -21,6 +21,7 @@
   const powerMenu = document.getElementById("powerMenu");
   const bootScreen = document.getElementById("bootScreen");
   const microToast = document.getElementById("microToast");
+  const trashButton = document.getElementById("trashButton");
   let toastTimer = 0;
   let terminalHome = "";
   let rebootTimer = 0;
@@ -59,6 +60,7 @@
 
   function loadTerminalResponses() {
     if (typeof fetch !== "function") return Promise.resolve();
+    if (window.location && window.location.protocol === "file:") return Promise.resolve();
 
     return fetch("terminal-responses.txt", { cache: "no-store" })
       .then((response) => {
@@ -82,6 +84,10 @@
       "\"": "&quot;",
       "'": "&#39;"
     })[char]);
+  }
+
+  function classToken(value) {
+    return String(value || "os").toLowerCase().replace(/[^a-z0-9_-]/g, "-");
   }
 
   function focusElement(element) {
@@ -115,13 +121,15 @@
 
   function createDesktopIcon(project) {
     const button = document.createElement("button");
+    const iconKey = classToken(project.icon);
+    const projectKey = classToken(project.id);
     button.type = "button";
     button.className = "desktop-icon";
     button.dataset.id = project.id;
     button.setAttribute("aria-pressed", "false");
     button.innerHTML = `
-      <span class="icon-plate" aria-hidden="true">
-        <span class="icon-glyph">${escapeText(glyphs[project.icon] || "OS")}</span>
+      <span class="icon-plate icon-plate-${iconKey} icon-project-${projectKey}" aria-hidden="true">
+        <span class="icon-art icon-art-${iconKey} icon-art-project-${projectKey}"><span></span></span>
       </span>
       <span class="icon-label">${escapeText(project.title)}</span>
     `;
@@ -482,6 +490,29 @@
     rebootTimer = window.setTimeout(restoreTerminal, 5200);
   }
 
+  function runTrashInventory(event) {
+    event.preventDefault();
+    if (!terminal || !terminalBody || !terminalHome) return;
+
+    clearTerminalResponseTimers();
+    window.clearTimeout(rebootTimer);
+    terminal.classList.add("is-rebooting");
+    terminalBody.innerHTML = `
+      <ol class="fake-reboot trash-inventory" aria-label="DeadPunk OS trash inventory">
+        <li><span class="check-warn">[TRASH]</span> /Trash/final_final_REALLY_FINAL_v9.txt</li>
+        <li><span class="check-cold">[GHOST]</span> /Trash/optimism.dll - dependency missing since first boot</li>
+        <li class="trash-purged"><span>[PURGED]</span> /Trash/portfolio_cards.exe - deleted for everyone's safety</li>
+        <li><span class="check-warn">[LEAK]</span> /Trash/meeting-that-could-have-been-a-line.md</li>
+        <li><span class="check-bad">[OOF]</span> /Trash/prompt_with_no_scope_and_full_confidence.log</li>
+        <li><span class="check-cold">[EGG]</span> /Trash/easter_egg_do_not_open.bat - already opened itself</li>
+        <li><span class="check-warn">[WARN]</span> /Trash/deadpunk_os_manual_clean_version.pdf</li>
+        <li><span class="check-ok">[KEEP]</span> structural_garbage.sys restored. removing it would void the curse.</li>
+      </ol>
+    `;
+
+    rebootTimer = window.setTimeout(restoreTerminal, 16200);
+  }
+
   function showMicroToast(target, message = "nice try...") {
     if (!microToast) return;
 
@@ -511,6 +542,7 @@
 
   function bindGlobalActions() {
     if (topbarBrand) topbarBrand.addEventListener("click", runFakeReboot);
+    if (trashButton) trashButton.addEventListener("click", runTrashInventory);
     if (startButton) startButton.addEventListener("click", toggleStartMenu);
     if (searchButton) searchButton.addEventListener("click", toggleSearchPanel);
     if (closeSearch) closeSearch.addEventListener("click", () => setSearchPanel(false, false, true));
