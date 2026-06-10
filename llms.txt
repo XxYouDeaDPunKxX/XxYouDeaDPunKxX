@@ -1,4 +1,4 @@
-# DeadPunk OS
+# DeadPunk OS GitHub Page
 
 URL: https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
 GitHub: https://github.com/XxYouDeaDPunKxX
@@ -7,11 +7,11 @@ License URL: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## What this is
 
-DeadPunk OS is a small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.
+DeadPunk OS is the active GitHub Pages source for the XxYouDeaDPunKxX project index.
 
-The visual skin is a fake classic desktop: blue desktop surface, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.
+It is a fake classic desktop interface around real project links, short descriptions, routing cues, and public discovery files.
 
-Not a portfolio.
+Use it as a map of AI protocols, text systems, behavioral contracts, and project-control tools, not as a single code library or portfolio.
 
 I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.
 
