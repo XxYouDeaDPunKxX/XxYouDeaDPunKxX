@@ -47,13 +47,7 @@ A few projects I use, test, or keep shaping:
 
 Most of these projects are meant to be used with an AI assistant, not just read as static documentation.
 
-You can:
-
-- give the repository or README to an AI assistant
-- ask it to explain the workflow in plain language
-- ask it to adapt the project to your own case
-- ask it to generate starter files, checklists, prompts, or examples from the project
-- ask it to compare the project with your current workflow and identify what is worth using
+They work best when you give the assistant the repository or relevant files, then ask it to apply the protocol, template, or workflow to a concrete task.
 
 That is usually the best way to understand these projects, because many of them are not just documents. They are practical frameworks, protocols, or small systems shaped by real use.
 
