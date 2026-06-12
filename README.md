@@ -41,6 +41,7 @@ A few projects I use, test, or keep shaping:
 | [`🛠️ SensecraftXStudio`](https://github.com/XxYouDeaDPunKxX/SensecraftXStudio) | SensecraftXStudio helps keep AI-assisted technical work grounded before the assistant acts, so the target, context, assumptions, and final state stay visible for the operator and clear for the agent. |
 | [`🚀 GPT-PF / ChatGPT Project Forge`](https://github.com/XxYouDeaDPunKxX/GPT-PF-Chat-GPT-Project-Forge) | Project Forge prepares the starting files for a ChatGPT Project, so scope, sources, constraints, and starting basis are clear before the real work begins. |
 | [`🧩 ChatGPT-SKILL-SYSTEM`](https://github.com/XxYouDeaDPunKxX/ChatGPT-SKILL-SYSTEM) | GPT Project Skill System gives ChatGPT Projects a controlled session workflow for using skill-like packages: boot the core, load named skills, and check external skills before putting them into context. |
+| [`🌧️ Decision Rain Library Project`](https://github.com/XxYouDeaDPunKxX/decision-rain-library-project) | Decision Rain Library Project is a lightweight decision-library template for organizing reviewed links, tools, repos, and research signals so they stay usable after discovery. |
 
 ## 🤖 How to use these projects with AI
 
