@@ -47,9 +47,13 @@ A few projects I use, test, or keep shaping:
 
 Most of these projects are meant to be used with an AI assistant, not just read as static documentation.
 
-They work best when you give the assistant the repository or relevant files, then ask it to apply the protocol, template, or workflow to a concrete task.
+If a repo is unclear, paste the repository link into your AI chat and ask:
 
-That is usually the best way to understand these projects, because many of them are not just documents. They are practical frameworks, protocols, or small systems shaped by real use.
+> What is this project for, how does it work, and what could I use it for in my own workflow?
+
+Then ask for practical examples, limits, which files to read first, and whether it actually fits your problem.
+
+That is often the fastest way to understand these projects, because many of them are not just documents. They are practical frameworks, protocols, or small systems shaped by real use.
 
 ## 👨‍💻📝🤖 Human-directed, AI-assisted work
 
