@@ -27,6 +27,62 @@ function loadProjects() {
   return projects;
 }
 
+const VALID_SCHEMA_TYPES = new Set(["CreativeWork", "SoftwareSourceCode"]);
+const REQUIRED_FIELDS = [
+  "id",
+  "schemaType",
+  "module",
+  "title",
+  "type",
+  "category",
+  "route",
+  "job",
+  "problem",
+  "output",
+  "repo",
+  "note",
+  "icon",
+];
+
+function validateProjects(projects) {
+  const errors = [];
+  const seenIds = new Map();
+  const seenRoutes = new Map();
+
+  projects.forEach((p, index) => {
+    const label = p.id ? `project "${p.id}"` : `project at index ${index}`;
+
+    for (const field of REQUIRED_FIELDS) {
+      if (typeof p[field] !== "string" || p[field].trim() === "") {
+        errors.push(`${label} is missing required field: ${field}`);
+      }
+    }
+
+    if (p.schemaType && !VALID_SCHEMA_TYPES.has(p.schemaType)) {
+      errors.push(
+        `${label} has invalid schemaType "${p.schemaType}" ` +
+          `(expected one of: ${[...VALID_SCHEMA_TYPES].join(", ")})`,
+      );
+    }
+
+    if (p.id) {
+      if (seenIds.has(p.id)) errors.push(`duplicate id: ${p.id}`);
+      seenIds.set(p.id, true);
+    }
+    if (p.route) {
+      if (seenRoutes.has(p.route)) errors.push(`duplicate route: ${p.route}`);
+      seenRoutes.set(p.route, true);
+    }
+  });
+
+  if (errors.length) {
+    throw new Error(
+      `Invalid projects.js (the single source of truth):\n` +
+        errors.map((e) => `  - ${e}`).join("\n"),
+    );
+  }
+}
+
 function uniqueCategories(projects) {
   return [...new Set(projects.map((p) => p.category))];
 }
@@ -121,6 +177,7 @@ const targets = (projects) => [
 function main() {
   const check = process.argv.includes("--check");
   const projects = loadProjects();
+  validateProjects(projects);
   const outputs = targets(projects);
   const stale = [];
 

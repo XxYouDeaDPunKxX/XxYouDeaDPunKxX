@@ -82,6 +82,11 @@ npm run generate     rebuild the discovery surfaces from projects.js
 npm run check:sync    fail if any surface is out of sync (used in CI)
 ```
 
+Both commands first validate `projects.js`: every project must have all required
+fields and a `schemaType` of `CreativeWork` or `SoftwareSourceCode`, with no
+duplicate `id` or `route`. Bad input fails fast instead of generating a broken
+surface.
+
 Static prose and page metadata live in `tools/templates/`. Only the
 project-derived sections are generated, so editing project data in one place can
 never silently drift from the others. The `check-sync` GitHub Actions workflow
