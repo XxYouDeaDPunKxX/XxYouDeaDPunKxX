@@ -1,0 +1,11 @@
+{
+  "name": "deadpunk-os",
+  "version": "0.0.0",
+  "private": true,
+  "description": "DeadPunk OS GitHub Pages site. projects.js is the single source of truth for the project index; discovery surfaces are generated from it.",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "generate": "node tools/generate.mjs",
+    "check:sync": "node tools/generate.mjs --check"
+  }
+}

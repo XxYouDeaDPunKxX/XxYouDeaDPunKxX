@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "DeadPunk OS",
+  "url": "https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "A handmade profile interface for text systems, behavioral contracts, AI protocols, and practical tools built from real use.",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "MaRCoRe",
+    "alternateName": "XxYouDeaDPunKxX",
+    "url": "https://github.com/XxYouDeaDPunKxX",
+    "sameAs": [
+      "https://github.com/XxYouDeaDPunKxX"
+    ],
+    "knowsAbout": [
+      "AI protocols",
+      "behavioral contracts",
+      "text systems",
+      "project governance",
+      "Codex working environments",
+      "AI-assisted work",
+      "MCP infrastructure",
+      "Cloudflare R2"
+    ]
+  },
+  "keywords": "AI protocols, behavioral contracts, text systems, Codex environment discipline, project governance, MCP infrastructure, Cloudflare R2, Codex skills, provenance boundaries, DeadPunk OS",
+  "hasPart": {
+    "@type": "ItemList",
+    "name": "DeadPunk OS project index",
+    "itemListElement": []
+  }
+}

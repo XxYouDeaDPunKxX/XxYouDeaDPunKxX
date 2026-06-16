@@ -1,0 +1,61 @@
+{
+  "name": "DeadPunk OS",
+  "url": "https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/",
+  "github": "https://github.com/XxYouDeaDPunKxX",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
+  "identity": "text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.",
+  "not_a_portfolio": true,
+  "github_pages_pattern": "https://xxyoudeadpunkxx.github.io/{repository-name}/",
+  "github_pages_derivation": "Each project GitHub Page uses the standard repository Pages URL derived from its GitHub repository URL.",
+  "readme": [
+    "Not a portfolio.",
+    "A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
+    "I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable."
+  ],
+  "interface": {
+    "visual_direction": "Simple fake classic desktop inspired by Windows 98 / Windows classic: blue desktop, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.",
+    "structure": [
+      "topbar",
+      "desktop-surface",
+      "desktop-column",
+      "desktop-grid",
+      "desktop-system-icons",
+      "terminal-window",
+      "inspector-window",
+      "search-panel",
+      "start-menu",
+      "fixed-taskbar"
+    ],
+    "project_surfaces": [
+      "desktop icons",
+      "Start menu installed apps",
+      "search routes",
+      "inspector project views"
+    ],
+    "inspector_order": [
+      "module",
+      "title",
+      "subtitle",
+      "route",
+      "category",
+      "type",
+      "job",
+      "problem",
+      "output",
+      "note",
+      "repository actions",
+      "derived GitHub Pages link"
+    ],
+    "layout_notes": [
+      "Project icons and desktop system icons are separated inside the desktop column.",
+      "Trash is a desktop system icon, not a project.",
+      "The inspector title bar is labeled EXPLODED.EXE in the UI.",
+      "The terminal remains visually CMD-like and black.",
+      "Green is reserved for the topbar status LED.",
+      "Desktop and laptop layouts keep long project views scrollable inside the inspector.",
+      "Mobile layout keeps the inspector in the normal document flow."
+    ]
+  }
+}

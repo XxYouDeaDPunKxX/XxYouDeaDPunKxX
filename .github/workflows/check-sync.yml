@@ -1,0 +1,17 @@
+name: check-sync
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  check-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Verify discovery files match projects.js
+        run: npm run check:sync

@@ -58,8 +58,8 @@ If you reuse this branch:
 
 - replace profile and repository links;
 - replace project data in `projects.js`;
-- update `llms.txt`;
-- update `raw-manifest.json`;
+- run `npm run generate` to rebuild `llms.txt`, `raw-manifest.json`, and the
+  `index.html` JSON-LD from `projects.js`;
 - update `robots.txt`;
 - update `sitemap.xml`;
 - test mobile layout;
@@ -68,7 +68,29 @@ If you reuse this branch:
 - test the fake terminal input;
 - keep the license notice.
 
-No build step is required.
+The deployed page needs no build step. The generator is a local/CI helper only:
+the browser still loads the static files directly.
+
+## 🔄 Keeping Surfaces In Sync
+
+`projects.js` is the single source of truth for the project index. The project
+list also appears in `llms.txt`, `raw-manifest.json`, and the JSON-LD block in
+`index.html`. These are generated, not hand-edited:
+
+```text
+npm run generate     rebuild the discovery surfaces from projects.js
+npm run check:sync    fail if any surface is out of sync (used in CI)
+```
+
+Both commands first validate `projects.js`: every project must have all required
+fields and a `schemaType` of `CreativeWork` or `SoftwareSourceCode`, with no
+duplicate `id` or `route`. Bad input fails fast instead of generating a broken
+surface.
+
+Static prose and page metadata live in `tools/templates/`. Only the
+project-derived sections are generated, so editing project data in one place can
+never silently drift from the others. The `check-sync` GitHub Actions workflow
+runs `npm run check:sync` on every push and pull request.
 
 ## 📁 Files
 
@@ -77,10 +99,12 @@ index.html          page shell, metadata, JSON-LD, OS layout
 style.css           visual system, responsive layout, UI states
 projects.js         project data used by icons, Start, search routes, inspector
 app.js              rendering, window interactions, fake reboot, fake terminal input, micro-toast
-llms.txt            LLM-readable project index
-raw-manifest.json   machine-readable project manifest
+llms.txt            LLM-readable project index (generated)
+raw-manifest.json   machine-readable project manifest (generated)
 robots.txt          crawler rules and sitemap pointer
 sitemap.xml         public page discovery
+tools/generate.mjs  regenerates discovery surfaces from projects.js
+tools/templates/    static prose and metadata used by the generator
 ```
 
 ## 🧩 Project Data
@@ -100,6 +124,7 @@ Expected fields:
 
 ```text
 id
+schemaType
 module
 title
 subtitle
@@ -142,7 +167,7 @@ Current project count: 14.
 
 ## 🛰️ Discovery Files
 
-Keep `llms.txt` and `raw-manifest.json` aligned with `projects.js` when project descriptions, routing, or categories change.
+`llms.txt` and `raw-manifest.json` are generated from `projects.js`. After changing project descriptions, routing, or categories, run `npm run generate` to rebuild them (CI enforces this with `npm run check:sync`).
 
 The GitHub Pages derivation rule is also exposed in `llms.txt` and `raw-manifest.json`.
 
@@ -187,7 +212,7 @@ On desktop and laptop widths, long inspector content scrolls inside the inspecto
 
 `projects.js` contains the runtime project list.
 
-Each project is a plain object with fields used by the interface: `id`, `module`, `title`, `subtitle`, `category`, `type`, `route`, `job`, `problem`, `output`, `repo`, `note`, and `icon`.
+Each project is a plain object with fields used by the interface: `id`, `schemaType`, `module`, `title`, `subtitle`, `category`, `type`, `route`, `job`, `problem`, `output`, `repo`, `note`, and `icon`. `schemaType` selects the schema.org type used for that project in the `index.html` JSON-LD (`CreativeWork` or `SoftwareSourceCode`).
 
 At runtime, this file is the source used for project icons, Start menu app entries, search routes, and inspector project views.
 
@@ -329,7 +354,7 @@ The project set appears in multiple places.
 
 The interactive page renders project views from `projects.js`. `llms.txt` describes the projects in plain text. `raw-manifest.json` describes them as structured JSON. The JSON-LD block in `index.html` provides page-level structured metadata.
 
-These surfaces exist in parallel; they are not automatically synchronized by the browser.
+These surfaces are not synchronized by the browser at runtime. Instead, `llms.txt`, `raw-manifest.json`, and the `index.html` JSON-LD are generated from `projects.js` by `tools/generate.mjs`, and `npm run check:sync` (run in CI) fails the build if any of them drifts.
 
 </details>
 

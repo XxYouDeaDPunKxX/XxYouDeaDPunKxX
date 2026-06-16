@@ -1,0 +1,39 @@
+# DeadPunk OS GitHub Page
+
+URL: https://xxyoudeadpunkxx.github.io/XxYouDeaDPunKxX/
+GitHub: https://github.com/XxYouDeaDPunKxX
+License: CC-BY-SA-4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+## What this is
+
+DeadPunk OS is the active GitHub Pages source for the XxYouDeaDPunKxX project index.
+
+It is a fake classic desktop interface around real project links, short descriptions, routing cues, and public discovery files.
+
+Use it as a map of AI protocols, text systems, behavioral contracts, and project-control tools, not as a single code library or portfolio.
+
+I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.
+
+## Operating line
+
+text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.
+
+## Interface structure
+
+The page exposes the same project set through desktop icons, Start menu entries, search routes, and inspector views.
+
+Desktop structure:
+top bar -> desktop surface -> desktop project column -> terminal window -> inspector window -> fixed taskbar
+
+The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
+
+## GitHub Pages
+
+Each project repository has a GitHub Page using the standard repository Pages URL pattern:
+https://xxyoudeadpunkxx.github.io/{repository-name}/
+
+The project page URL is derivable from the repository URL.
+
+## Project routing
+

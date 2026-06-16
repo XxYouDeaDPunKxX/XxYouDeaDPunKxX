@@ -1,6 +1,7 @@
 window.DEADPUNK_PROJECTS = [
   {
     id: "adam",
+    schemaType: "CreativeWork",
     module: "ADAM.depth",
     title: "A.D.A.M.",
     subtitle: "Adaptive Depth and Mode",
@@ -16,6 +17,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "ai-protocol-kit",
+    schemaType: "CreativeWork",
     module: "AI_PROTOCOL_KIT.contracts",
     title: "ai-protocol-kit",
     subtitle: "AI behavior contracts and operational protocols",
@@ -31,6 +33,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "memory-assisted-shaping",
+    schemaType: "CreativeWork",
     module: "MEMORY_SHAPER.gpt_project",
     title: "Memory-Assisted Shaping for GPT Project",
     subtitle: "Long-session shaping protocol for GPT Projects",
@@ -46,6 +49,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "pa-pvp",
+    schemaType: "CreativeWork",
     module: "PA_PVP.decision",
     title: "PA-PVP",
     subtitle: "Adversarial Peer Validation Protocol",
@@ -61,6 +65,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "pa-pvp-mini",
+    schemaType: "CreativeWork",
     module: "PA_PVP_MINI.review",
     title: "PA-PVP mini",
     subtitle: "Lightweight adversarial review",
@@ -76,6 +81,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "signal-rail",
+    schemaType: "CreativeWork",
     module: "SIGNAL_RAIL.routing",
     title: "Signal Rail",
     subtitle: "Plain-text document governance",
@@ -91,6 +97,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "csbp",
+    schemaType: "CreativeWork",
     module: "CSBP.practice_filter",
     title: "CSBP",
     subtitle: "Codex Shared Best Practice",
@@ -106,6 +113,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "sensecraftxstudio",
+    schemaType: "CreativeWork",
     module: "SENSECRAFT.frame",
     title: "SensecraftXStudio",
     subtitle: "AI-assisted technical work frame",
@@ -121,6 +129,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "project-forge",
+    schemaType: "SoftwareSourceCode",
     module: "PROJECT_FORGE.bootloader",
     title: "GPT-PF / ChatGPT Project Forge",
     subtitle: "Project opening package builder",
@@ -136,6 +145,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "chatgpt-skill-system",
+    schemaType: "SoftwareSourceCode",
     module: "GPT_SKILLS.session_loader",
     title: "GPT Project Skill System",
     subtitle: "Skill-style capability loading for ChatGPT Projects",
@@ -151,6 +161,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "cloudflare-r2-remote-mcp-worker",
+    schemaType: "SoftwareSourceCode",
     module: "R2_MCP.bucket",
     title: "Cloudflare R2 Remote MCP Worker",
     subtitle: "Let ChatGPT fetch files, upload stuff, and then ask: wait, where did that come from?",
@@ -166,6 +177,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "canon-boundary-guard-codex",
+    schemaType: "SoftwareSourceCode",
     module: "CANON_BOUNDARY.codex",
     title: "Canon Boundary Guard for Codex",
     subtitle: "Codex provenance boundary plugin and skill",
@@ -181,6 +193,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "canon-boundary-guard-gpt-project",
+    schemaType: "SoftwareSourceCode",
     module: "CANON_BOUNDARY.gpt_project",
     title: "Canon Boundary Guard for GPT Projects",
     subtitle: "ChatGPT Project provenance boundary frame",
@@ -196,6 +209,7 @@ window.DEADPUNK_PROJECTS = [
   },
   {
     id: "shaping-frame-for-claude",
+    schemaType: "SoftwareSourceCode",
     module: "SHAPING_FRAME.claude",
     title: "Shaping Frame for Claude",
     subtitle: "Cognitive layer for Claude chats",
