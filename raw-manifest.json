@@ -84,6 +84,10 @@
       "project_id": "signal-rail"
     },
     {
+      "trigger": "links, tools, and research signals start falling from the ceiling and calling it knowledge",
+      "project_id": "decision-rain-library-project"
+    },
+    {
       "trigger": "Codex keeps making the same mistake until it becomes office furniture",
       "project_id": "csbp"
     },
@@ -102,6 +106,10 @@
     {
       "trigger": "ChatGPT needs files, but your local disk is not invited",
       "project_id": "cloudflare-r2-remote-mcp-worker"
+    },
+    {
+      "trigger": "ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building",
+      "project_id": "chatgpt-local-agent-mcp"
     },
     {
       "trigger": "Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes",
@@ -190,6 +198,18 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/Signal-Rail"
     },
     {
+      "id": "decision-rain-library-project",
+      "title": "Decision Rain Library Project",
+      "category": "research signal control",
+      "type": "Decision library template",
+      "route": "links, tools, and research signals start falling from the ceiling and calling it knowledge",
+      "job": "Keeps reviewed links, tools, repos, and research signals in a library that can still be used after the storm stops.",
+      "problem": "Discovery turns into a wet pile of maybe-useful tabs, half-decisions, and suspiciously confident bookmarks.",
+      "output": "A lightweight library structure for reviewed material, decisions, usefulness, limits, and follow-up context.",
+      "note": "umbrella not included; labels strongly recommended",
+      "repository": "https://github.com/XxYouDeaDPunKxX/decision-rain-library-project"
+    },
+    {
       "id": "csbp",
       "title": "CSBP",
       "category": "Codex practice memory",
@@ -250,6 +270,18 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker"
     },
     {
+      "id": "chatgpt-local-agent-mcp",
+      "title": "ChatGPT Local Agent MCP",
+      "category": "local workstation access",
+      "type": "Local MCP server",
+      "route": "ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building",
+      "job": "Connects ChatGPT to a Windows PC through a local MCP server so it can inspect files, run commands, use browser sessions, and see the desktop under supervision.",
+      "problem": "The work is on the machine, but the assistant is stuck outside asking you to ferry snippets, screenshots, logs, and terminal output like a tired courier.",
+      "output": "A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.",
+      "note": "gives ChatGPT hands; keep your eyes on the hands",
+      "repository": "https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp"
+    },
+    {
       "id": "canon-boundary-guard-codex",
       "title": "Canon Boundary Guard for Codex",
       "category": "Codex provenance control",
@@ -293,11 +325,13 @@
     "decision closure",
     "adversarial review",
     "document state control",
+    "research signal control",
     "Codex practice memory",
     "technical work framing",
     "ChatGPT Project bootstrap",
     "ChatGPT capability extension",
     "remote file access",
+    "local workstation access",
     "Codex provenance control",
     "ChatGPT provenance control",
     "Claude epistemic framing"

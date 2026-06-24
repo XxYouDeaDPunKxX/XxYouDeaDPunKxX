@@ -146,7 +146,7 @@ Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
 
-Current project count: 14.
+Current project count: 16.
 
 | Project | Category | Type |
 |---|---|---|
@@ -156,11 +156,13 @@ Current project count: 14.
 | PA-PVP | decision closure | Adversarial decision protocol |
 | PA-PVP mini | adversarial review | Lightweight review protocol |
 | Signal Rail | document state control | Plain-text routing system |
+| Decision Rain Library Project | research signal control | Decision library template |
 | CSBP | Codex practice memory | Three-file governance layer |
 | SensecraftXStudio | technical work framing | Agent behavior contract |
 | GPT-PF / ChatGPT Project Forge | ChatGPT Project bootstrap | Project starter package |
 | GPT Project Skill System | ChatGPT capability extension | Session skill loader |
 | Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
+| ChatGPT Local Agent MCP | local workstation access | Local MCP server |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
 | Shaping Frame for Claude | Claude epistemic framing | Claude skill package |

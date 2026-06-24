@@ -43,11 +43,13 @@ long GPT Project session starts forgetting which corpse was the original idea ->
 indecision keeps the work moving without deciding, like a meeting with a pulse -> PA-PVP
 idea looks plausible, which is how most bad ideas enter the building -> PA-PVP mini
 project documents become a pile and start breeding in the corner -> Signal Rail
+links, tools, and research signals start falling from the ceiling and calling it knowledge -> Decision Rain Library Project
 Codex keeps making the same mistake until it becomes office furniture -> CSBP
 Codex is about to touch the work while the frame is already smoking -> SensecraftXStudio
 new ChatGPT Project starts from fog, vibes, and a folder named final_final -> GPT-PF / ChatGPT Project Forge
 ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall -> GPT Project Skill System
 ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote MCP Worker
+ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building -> ChatGPT Local Agent MCP
 Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes -> Canon Boundary Guard for Codex
 ChatGPT Project turns uploads, chat, and assumptions into one cursed soup -> Canon Boundary Guard for GPT Projects
 Claude chat starts treating a fresh guess like a signed death certificate -> Shaping Frame for Claude
@@ -60,11 +62,13 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - decision closure
 - adversarial review
 - document state control
+- research signal control
 - Codex practice memory
 - technical work framing
 - ChatGPT Project bootstrap
 - ChatGPT capability extension
 - remote file access
+- local workstation access
 - Codex provenance control
 - ChatGPT provenance control
 - Claude epistemic framing
@@ -131,6 +135,16 @@ Output: Separated rails for state, decisions, ideas, constraints, handoff, parki
 Note: keeps mess on tracks; still smells like work
 Repository: https://github.com/XxYouDeaDPunKxX/Signal-Rail
 
+### Decision Rain Library Project
+Category: research signal control
+Type: Decision library template
+Route: links, tools, and research signals start falling from the ceiling and calling it knowledge
+Job: Keeps reviewed links, tools, repos, and research signals in a library that can still be used after the storm stops.
+Problem: Discovery turns into a wet pile of maybe-useful tabs, half-decisions, and suspiciously confident bookmarks.
+Output: A lightweight library structure for reviewed material, decisions, usefulness, limits, and follow-up context.
+Note: umbrella not included; labels strongly recommended
+Repository: https://github.com/XxYouDeaDPunKxX/decision-rain-library-project
+
 ### CSBP
 Category: Codex practice memory
 Type: Three-file governance layer
@@ -180,6 +194,16 @@ Problem: ChatGPT does not work like a local desktop app with direct disk access.
 Output: A Cloudflare Worker that connects ChatGPT to Cloudflare R2 storage through remote MCP tools, protected by GitHub OAuth.
 Note: tiny cloud closet, because local disk access was not invited
 Repository: https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker
+
+### ChatGPT Local Agent MCP
+Category: local workstation access
+Type: Local MCP server
+Route: ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building
+Job: Connects ChatGPT to a Windows PC through a local MCP server so it can inspect files, run commands, use browser sessions, and see the desktop under supervision.
+Problem: The work is on the machine, but the assistant is stuck outside asking you to ferry snippets, screenshots, logs, and terminal output like a tired courier.
+Output: A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.
+Note: gives ChatGPT hands; keep your eyes on the hands
+Repository: https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp
 
 ### Canon Boundary Guard for Codex
 Category: Codex provenance control

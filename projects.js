@@ -96,6 +96,22 @@ window.DEADPUNK_PROJECTS = [
     icon: "rail"
   },
   {
+    id: "decision-rain-library-project",
+    schemaType: "CreativeWork",
+    module: "DECISION_RAIN.library",
+    title: "Decision Rain Library Project",
+    subtitle: "Reviewed discovery and decision library",
+    type: "Decision library template",
+    category: "research signal control",
+    route: "links, tools, and research signals start falling from the ceiling and calling it knowledge",
+    job: "Keeps reviewed links, tools, repos, and research signals in a library that can still be used after the storm stops.",
+    problem: "Discovery turns into a wet pile of maybe-useful tabs, half-decisions, and suspiciously confident bookmarks.",
+    output: "A lightweight library structure for reviewed material, decisions, usefulness, limits, and follow-up context.",
+    repo: "https://github.com/XxYouDeaDPunKxX/decision-rain-library-project",
+    note: "umbrella not included; labels strongly recommended",
+    icon: "lens"
+  },
+  {
     id: "csbp",
     schemaType: "CreativeWork",
     module: "CSBP.practice_filter",
@@ -174,6 +190,22 @@ window.DEADPUNK_PROJECTS = [
     repo: "https://github.com/XxYouDeaDPunKxX/cloudflare-r2-remote-mcp-worker",
     note: "tiny cloud closet, because local disk access was not invited",
     icon: "r2"
+  },
+  {
+    id: "chatgpt-local-agent-mcp",
+    schemaType: "SoftwareSourceCode",
+    module: "LOCAL_AGENT.workstation",
+    title: "ChatGPT Local Agent MCP",
+    subtitle: "Controlled hands on your Windows PC",
+    type: "Local MCP server",
+    category: "local workstation access",
+    route: "ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building",
+    job: "Connects ChatGPT to a Windows PC through a local MCP server so it can inspect files, run commands, use browser sessions, and see the desktop under supervision.",
+    problem: "The work is on the machine, but the assistant is stuck outside asking you to ferry snippets, screenshots, logs, and terminal output like a tired courier.",
+    output: "A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.",
+    repo: "https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp",
+    note: "gives ChatGPT hands; keep your eyes on the hands",
+    icon: "gpt"
   },
   {
     id: "canon-boundary-guard-codex",
