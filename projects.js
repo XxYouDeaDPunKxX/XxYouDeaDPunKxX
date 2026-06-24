@@ -109,7 +109,7 @@ window.DEADPUNK_PROJECTS = [
     output: "A lightweight library structure for reviewed material, decisions, usefulness, limits, and follow-up context.",
     repo: "https://github.com/XxYouDeaDPunKxX/decision-rain-library-project",
     note: "umbrella not included; labels strongly recommended",
-    icon: "lens"
+    icon: "rain"
   },
   {
     id: "csbp",
@@ -205,7 +205,7 @@ window.DEADPUNK_PROJECTS = [
     output: "A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.",
     repo: "https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp",
     note: "gives ChatGPT hands; keep your eyes on the hands",
-    icon: "gpt"
+    icon: "workstation"
   },
   {
     id: "canon-boundary-guard-codex",

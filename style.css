@@ -678,6 +678,45 @@ button {
   border-left: 2px solid var(--icon-red);
 }
 
+.icon-art-rain::before {
+  left: 0.2rem;
+  top: 0.2rem;
+  width: 1.76rem;
+  height: 1.64rem;
+  border: 2px solid var(--icon-dark);
+  background:
+    linear-gradient(180deg, #ffffff 0 0.26rem, transparent 0.27rem),
+    linear-gradient(90deg, transparent 0 0.5rem, var(--icon-dark) 0.51rem 0.62rem, transparent 0.63rem 1.12rem, var(--icon-dark) 1.13rem 1.24rem, transparent 1.25rem),
+    var(--icon-light);
+  box-shadow:
+    inset 2px 2px 0 #ffffff,
+    inset -2px -2px 0 var(--icon-silver);
+}
+
+.icon-art-rain::after {
+  left: 0.42rem;
+  top: 0.58rem;
+  width: 0.22rem;
+  height: 0.22rem;
+  background: var(--icon-blue);
+  box-shadow:
+    0.46rem 0.24rem 0 var(--icon-red),
+    0.92rem -0.02rem 0 #d6c44d,
+    0.22rem 0.66rem 0 var(--icon-red),
+    0.76rem 0.62rem 0 var(--icon-blue),
+    1.12rem 0.44rem 0 #d6c44d;
+}
+
+.icon-art-rain > span {
+  left: 0.36rem;
+  bottom: 0.24rem;
+  width: 1.36rem;
+  height: 0.24rem;
+  border: 2px solid var(--icon-dark);
+  background:
+    linear-gradient(90deg, var(--icon-blue) 0 0.28rem, #ffffff 0.29rem 0.56rem, var(--icon-red) 0.57rem 0.84rem, #ffffff 0.85rem);
+}
+
 .icon-art-rail::before {
   left: 0.32rem;
   top: 0.24rem;
@@ -784,6 +823,43 @@ button {
   width: 0.42rem;
   height: 0.16rem;
   background: #4f8aca;
+}
+
+.icon-art-workstation::before {
+  left: 0.16rem;
+  top: 0.22rem;
+  width: 1.86rem;
+  height: 1.32rem;
+  border: 2px solid var(--icon-dark);
+  background:
+    linear-gradient(180deg, var(--icon-blue) 0 0.24rem, #0b0b0b 0.25rem 100%);
+  box-shadow:
+    inset 2px 2px 0 #4f8aca,
+    inset -2px -2px 0 #000000;
+}
+
+.icon-art-workstation::after {
+  left: 0.56rem;
+  top: 1.52rem;
+  width: 1.02rem;
+  height: 0.18rem;
+  background: var(--icon-dark);
+  box-shadow:
+    0.28rem 0.18rem 0 0 var(--icon-dark),
+    -0.16rem 0.34rem 0 0 var(--icon-dark),
+    0.44rem 0.34rem 0 0 var(--icon-dark);
+}
+
+.icon-art-workstation > span {
+  left: 0.46rem;
+  top: 0.66rem;
+  width: 0.38rem;
+  height: 0.16rem;
+  background: #ffffff;
+  box-shadow:
+    0.42rem 0.26rem 0 #ffffff,
+    0.84rem 0.26rem 0 #ffffff,
+    0.96rem -0.2rem 0 var(--icon-red);
 }
 
 .icon-art-project-canon-boundary-guard-gpt-project::before {

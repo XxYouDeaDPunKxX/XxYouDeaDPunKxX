@@ -40,7 +40,9 @@
     gpt: "GP",
     claude: "CL",
     boot: "PF",
-    r2: "R2"
+    r2: "R2",
+    rain: "DR",
+    workstation: "LA"
   };
 
   const fallbackTerminalResponses = [
