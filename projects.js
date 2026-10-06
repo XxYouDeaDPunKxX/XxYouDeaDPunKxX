@@ -208,6 +208,22 @@ window.DEADPUNK_PROJECTS = [
     icon: "workstation"
   },
   {
+    id: "zx6-display-control",
+    schemaType: "SoftwareSourceCode",
+    module: "ZX6_DISPLAY.holder",
+    title: "Z-X6 Display Control",
+    subtitle: "Portable Windows app for the display built into your GPU holder",
+    type: "Windows display utility (beta)",
+    category: "GPU holder display control",
+    route: "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
+    job: "Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.",
+    problem: "The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.",
+    output: "A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.",
+    repo: "https://github.com/XxYouDeaDPunKxX/zx6-display-control",
+    note: "holds up the GPU; the software needed support too",
+    icon: "workstation"
+  },
+  {
     id: "canon-boundary-guard-codex",
     schemaType: "SoftwareSourceCode",
     module: "CANON_BOUNDARY.codex",

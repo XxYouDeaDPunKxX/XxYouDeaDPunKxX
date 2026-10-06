@@ -146,7 +146,7 @@ Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
 
-Current project count: 16.
+Current project count: 17.
 
 | Project | Category | Type |
 |---|---|---|
@@ -163,6 +163,7 @@ Current project count: 16.
 | GPT Project Skill System | ChatGPT capability extension | Session skill loader |
 | Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
 | ChatGPT Local Agent MCP | local workstation access | Local MCP server |
+| Z-X6 Display Control | GPU holder display control | Windows display utility (beta) |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
 | Shaping Frame for Claude | Claude epistemic framing | Claude skill package |
@@ -190,7 +191,7 @@ The browser loads `index.html`, `style.css`, `projects.js`, and `app.js` directl
 
 This includes the metadata, JSON-LD block, boot overlay, top bar, desktop surface, desktop column, terminal block, inspector container, search panel, Start menu, taskbar, tray controls, and links to public discovery files.
 
-Inside the desktop surface, the project icons live in `desktop-grid`. Desktop-level system icons, such as Trash, live in `desktop-system-icons`. Both are grouped inside `desktop-column` so they stay visually related without treating Trash as a project.
+Inside the desktop surface, project icons live in `desktop-grid` inside `desktop-column`. Trash lives in `desktop-system-icons`, below the terminal window inside `terminal-column`. It stays a desktop system icon, separate from the project registry.
 
 Project-specific repeated UI is not written one item at a time in the HTML. Those parts are filled by `app.js` from `projects.js`.
 
@@ -208,7 +209,7 @@ Desktop project icons are drawn in CSS from icon classes, not loaded as image as
 
 The main desktop spacing uses a small `8 / 13 / 21 / 34` scale through `--phi-*` variables. The taskbar is fixed to the viewport bottom, while the desktop shell reserves bottom space so content is not hidden behind it.
 
-On desktop and laptop widths, long inspector content scrolls inside the inspector window. On mobile, the inspector returns to the normal document flow.
+On desktop and laptop widths, long inspector content scrolls inside the inspector window. The terminal column reserves room for Trash above the taskbar; terminal status text scrolls internally when needed, while the input stays visible. On mobile, these windows return to the normal document flow, with Trash still below the terminal.
 
 ### 🗃️ Project Registry
 

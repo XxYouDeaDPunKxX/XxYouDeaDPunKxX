@@ -4,15 +4,15 @@
   "github": "https://github.com/XxYouDeaDPunKxX",
   "license": "CC-BY-SA-4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": "A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
-  "identity": "text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.",
+  "description": "A handmade OS-shaped index for text systems, behavioral contracts, AI protocols, project-control tools, and hardware utilities.",
+  "identity": "text systems, behavioral contracts, AI protocols, and small tools for keeping work and hardware usable.",
   "not_a_portfolio": true,
   "github_pages_pattern": "https://xxyoudeadpunkxx.github.io/{repository-name}/",
   "github_pages_derivation": "Each project GitHub Page uses the standard repository Pages URL derived from its GitHub repository URL.",
   "readme": [
     "Not a portfolio.",
-    "A small OS-shaped index for text systems, behavioral contracts, AI protocols, and project-control tools.",
-    "I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable."
+    "A small OS-shaped index for text systems, behavioral contracts, AI protocols, project-control tools, and hardware utilities.",
+    "I built these tools to reduce drift, force useful decisions, and keep messy work and hardware usable."
   ],
   "interface": {
     "visual_direction": "Simple fake classic desktop inspired by Windows 98 / Windows classic: blue desktop, gray windows, bevel borders, blue title bars, black CMD-like terminal area, and classic taskbar.",
@@ -21,8 +21,9 @@
       "desktop-surface",
       "desktop-column",
       "desktop-grid",
-      "desktop-system-icons",
+      "terminal-column",
       "terminal-window",
+      "desktop-system-icons",
       "inspector-window",
       "search-panel",
       "start-menu",
@@ -49,10 +50,11 @@
       "derived GitHub Pages link"
     ],
     "layout_notes": [
-      "Project icons and desktop system icons are separated inside the desktop column.",
+      "Project icons live in the desktop column; Trash sits below the terminal window in the terminal column.",
       "Trash is a desktop system icon, not a project.",
       "The inspector title bar is labeled EXPLODED.EXE in the UI.",
       "The terminal remains visually CMD-like and black.",
+      "The terminal column reserves space for Trash above the taskbar on desktop; status text scrolls inside the terminal when needed, while the input stays visible.",
       "Green is reserved for the topbar status LED.",
       "Desktop and laptop layouts keep long project views scrollable inside the inspector.",
       "Mobile layout keeps the inspector in the normal document flow."
@@ -110,6 +112,10 @@
     {
       "trigger": "ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building",
       "project_id": "chatgpt-local-agent-mcp"
+    },
+    {
+      "trigger": "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
+      "project_id": "zx6-display-control"
     },
     {
       "trigger": "Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes",
@@ -282,6 +288,18 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp"
     },
     {
+      "id": "zx6-display-control",
+      "title": "Z-X6 Display Control",
+      "category": "GPU holder display control",
+      "type": "Windows display utility (beta)",
+      "route": "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
+      "job": "Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.",
+      "problem": "The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.",
+      "output": "A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.",
+      "note": "holds up the GPU; the software needed support too",
+      "repository": "https://github.com/XxYouDeaDPunKxX/zx6-display-control"
+    },
+    {
       "id": "canon-boundary-guard-codex",
       "title": "Canon Boundary Guard for Codex",
       "category": "Codex provenance control",
@@ -332,6 +350,7 @@
     "ChatGPT capability extension",
     "remote file access",
     "local workstation access",
+    "GPU holder display control",
     "Codex provenance control",
     "ChatGPT provenance control",
     "Claude epistemic framing"

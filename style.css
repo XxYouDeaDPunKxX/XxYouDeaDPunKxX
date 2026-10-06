@@ -310,7 +310,7 @@ button {
 .desktop-system-icons {
   display: flex;
   align-items: flex-start;
-  margin-top: var(--phi-2);
+  flex: 0 0 auto;
 }
 
 .desktop-icon,
@@ -995,11 +995,22 @@ button {
     0.3rem 0.3rem 0 rgba(0,0,0,0.18);
 }
 
-.terminal-window {
+.terminal-column {
   flex: 1 1 28rem;
   max-width: 40rem;
   min-width: min(100%, 18rem);
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--phi-2);
+  max-height: calc(100svh - var(--topbar) - var(--taskbar) - 2 * clamp(var(--phi-2), 1.55vw, var(--phi-4)) - var(--phi-1));
+}
+
+.terminal-window {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
   border-color: #c0c0c0;
   background: #b8b8b8;
   box-shadow:
@@ -1009,6 +1020,7 @@ button {
 }
 
 .terminal-window .window-bar {
+  flex-shrink: 0;
   color: #ffffff;
   border-bottom-color: #404040;
   background: #1f3f7a;
@@ -1132,6 +1144,11 @@ button {
 }
 
 .terminal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   padding: 0.78rem 0.9rem;
   margin: 0.2rem;
   border: 1px solid #404040;
@@ -1140,6 +1157,9 @@ button {
 }
 
 .terminal-body pre {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
   margin: 0;
   color: #d7dfcf;
   font-family: var(--mono);
@@ -1159,6 +1179,7 @@ button {
 }
 
 .terminal-identity {
+  flex-shrink: 0;
   margin: 0.65rem 0 0;
   padding: 0.55rem 0.7rem;
   border: 1px solid #404040;
@@ -1168,6 +1189,7 @@ button {
 }
 
 .terminal-actions {
+  flex-shrink: 0;
   display: flex;
   margin-top: 0.52rem;
 }
@@ -1181,6 +1203,7 @@ button {
 }
 
 .terminal-command-zone {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 0.32rem;
@@ -2224,9 +2247,14 @@ button {
   }
 
   .search-panel,
-  .terminal-window,
+  .terminal-column,
   .inspector-window {
     max-width: none;
+  }
+
+  .terminal-column {
+    flex-basis: 100%;
+    max-height: none;
   }
 
   .inspector-window {

@@ -15,7 +15,7 @@
   <link rel="icon" href="favicon.svg?v=20260508f" type="image/svg+xml">
   <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable profile index">
   <link rel="alternate" type="application/json" href="raw-manifest.json" title="Raw project manifest">
-  <link rel="stylesheet" href="style.css?v=classic-025">
+  <link rel="stylesheet" href="style.css?v=classic-026">
   <noscript>
     <style>
       .boot-screen { display: none !important; }
@@ -188,6 +188,16 @@
         "position": 14,
         "item": {
           "@type": "SoftwareSourceCode",
+          "name": "Z-X6 Display Control",
+          "description": "The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.",
+          "codeRepository": "https://github.com/XxYouDeaDPunKxX/zx6-display-control"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "item": {
+          "@type": "SoftwareSourceCode",
           "name": "Canon Boundary Guard for Codex",
           "description": "Project evidence, chat context, agent-control instructions, working hypotheses, and model priors collapse into one authority soup.",
           "codeRepository": "https://github.com/XxYouDeaDPunKxX/canon-boundary-guard-codex"
@@ -195,7 +205,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 15,
+        "position": 16,
         "item": {
           "@type": "SoftwareSourceCode",
           "name": "Canon Boundary Guard for GPT Projects",
@@ -205,7 +215,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 16,
+        "position": 17,
         "item": {
           "@type": "SoftwareSourceCode",
           "name": "Shaping Frame for Claude",
@@ -258,17 +268,9 @@
     <section class="desktop-surface" aria-label="DeadPunk OS desktop">
       <div class="desktop-column">
         <div class="desktop-grid" id="desktopIcons" role="group" aria-label="Project icons"></div>
-
-        <div class="desktop-system-icons" role="group" aria-label="Desktop system icons">
-          <button class="system-trash" id="trashButton" type="button">
-            <span class="icon-plate trash-plate" aria-hidden="true">
-              <span class="trash-can"></span>
-            </span>
-            <span class="icon-label">Trash</span>
-          </button>
-        </div>
       </div>
 
+      <div class="terminal-column">
       <section class="terminal-window" aria-labelledby="terminalTitle">
         <div class="window-bar">
           <span class="window-bolts" aria-hidden="true"></span>
@@ -295,7 +297,7 @@ held by duct tape under threat
 
 Mood
 weird ideas, real problem</pre>
-          <p class="terminal-identity">text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.</p>
+          <p class="terminal-identity">text systems, behavioral contracts, AI protocols, and small tools for keeping work and hardware usable.</p>
           <div class="terminal-actions">
             <button type="button" id="readmeButton">&gt; readme.txt</button>
           </div>
@@ -311,6 +313,16 @@ weird ideas, real problem</pre>
           </div>
         </div>
       </section>
+
+        <div class="desktop-system-icons" role="group" aria-label="Desktop system icons">
+          <button class="system-trash" id="trashButton" type="button">
+            <span class="icon-plate trash-plate" aria-hidden="true">
+              <span class="trash-can"></span>
+            </span>
+            <span class="icon-label">Trash</span>
+          </button>
+        </div>
+      </div>
 
       <section class="inspector-window is-open" id="inspector" aria-live="polite" aria-label="Inspecting project" tabindex="-1">
         <div class="window-bar">
@@ -426,7 +438,7 @@ weird ideas, real problem</pre>
     </section>
   </noscript>
 
-  <script src="projects.js?v=rebuild-005"></script>
-  <script src="app.js?v=classic-013"></script>
+  <script src="projects.js?v=rebuild-006"></script>
+  <script src="app.js?v=classic-014"></script>
 </body>
 </html>

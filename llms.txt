@@ -11,20 +11,20 @@ DeadPunk OS is the active GitHub Pages source for the XxYouDeaDPunKxX project in
 
 It is a fake classic desktop interface around real project links, short descriptions, routing cues, and public discovery files.
 
-Use it as a map of AI protocols, text systems, behavioral contracts, and project-control tools, not as a single code library or portfolio.
+Use it as a map of AI protocols, text systems, behavioral contracts, project-control tools, and hardware utilities, not as a single code library or portfolio.
 
-I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.
+I built these tools to reduce drift, force useful decisions, and keep messy work and hardware usable.
 
 ## Operating line
 
-text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.
+text systems, behavioral contracts, AI protocols, and small tools for keeping work and hardware usable.
 
 ## Interface structure
 
 The page exposes the same project set through desktop icons, Start menu entries, search routes, and inspector views.
 
 Desktop structure:
-top bar -> desktop surface -> desktop project column -> terminal window -> inspector window -> fixed taskbar
+top bar -> desktop surface -> desktop project column -> terminal column (terminal window, then Trash) -> inspector window -> fixed taskbar
 
 The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
 
@@ -50,6 +50,7 @@ new ChatGPT Project starts from fog, vibes, and a folder named final_final -> GP
 ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall -> GPT Project Skill System
 ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote MCP Worker
 ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building -> ChatGPT Local Agent MCP
+your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout -> Z-X6 Display Control
 Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes -> Canon Boundary Guard for Codex
 ChatGPT Project turns uploads, chat, and assumptions into one cursed soup -> Canon Boundary Guard for GPT Projects
 Claude chat starts treating a fresh guess like a signed death certificate -> Shaping Frame for Claude
@@ -69,6 +70,7 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - ChatGPT capability extension
 - remote file access
 - local workstation access
+- GPU holder display control
 - Codex provenance control
 - ChatGPT provenance control
 - Claude epistemic framing
@@ -204,6 +206,16 @@ Problem: The work is on the machine, but the assistant is stuck outside asking y
 Output: A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.
 Note: gives ChatGPT hands; keep your eyes on the hands
 Repository: https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp
+
+### Z-X6 Display Control
+Category: GPU holder display control
+Type: Windows display utility (beta)
+Route: your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout
+Job: Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.
+Problem: The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.
+Output: A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.
+Note: holds up the GPU; the software needed support too
+Repository: https://github.com/XxYouDeaDPunKxX/zx6-display-control
 
 ### Canon Boundary Guard for Codex
 Category: Codex provenance control

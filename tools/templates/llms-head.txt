@@ -11,20 +11,20 @@ DeadPunk OS is the active GitHub Pages source for the XxYouDeaDPunKxX project in
 
 It is a fake classic desktop interface around real project links, short descriptions, routing cues, and public discovery files.
 
-Use it as a map of AI protocols, text systems, behavioral contracts, and project-control tools, not as a single code library or portfolio.
+Use it as a map of AI protocols, text systems, behavioral contracts, project-control tools, and hardware utilities, not as a single code library or portfolio.
 
-I built these tools to reduce drift, force useful decisions, and keep messy AI-assisted work usable.
+I built these tools to reduce drift, force useful decisions, and keep messy work and hardware usable.
 
 ## Operating line
 
-text systems, behavioral contracts, AI protocols, and small tools for keeping AI-assisted work operational.
+text systems, behavioral contracts, AI protocols, and small tools for keeping work and hardware usable.
 
 ## Interface structure
 
 The page exposes the same project set through desktop icons, Start menu entries, search routes, and inspector views.
 
 Desktop structure:
-top bar -> desktop surface -> desktop project column -> terminal window -> inspector window -> fixed taskbar
+top bar -> desktop surface -> desktop project column -> terminal column (terminal window, then Trash) -> inspector window -> fixed taskbar
 
 The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
 

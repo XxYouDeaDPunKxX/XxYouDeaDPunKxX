@@ -231,8 +231,8 @@
       <h2>README</h2>
       <div class="readme-copy">
         <p>Not a portfolio. More like a desktop drawer full of tools that survived repeated impact with reality.</p>
-        <p>DeadPunk OS indexes text systems, behavioral contracts, AI protocols, decision tools, document rails, and small machines built after something broke often enough to earn a name.</p>
-        <p>Everything here exists to keep work from drifting, decisions from evaporating, notes from rotting, and automation from smiling while it ruins the room.</p>
+        <p>DeadPunk OS indexes text systems, behavioral contracts, AI protocols, decision tools, document rails, and hardware utilities built after something broke often enough to earn a name.</p>
+        <p>Work drifts, decisions evaporate, notes rot, automation smiles while it ruins the room. Sometimes the GPU holder needs better software. That gets a drawer too.</p>
       </div>
       <div class="actions">
         <a href="https://github.com/XxYouDeaDPunKxX" target="_blank" rel="noopener noreferrer">GitHub profile</a>
