@@ -210,18 +210,19 @@ window.DEADPUNK_PROJECTS = [
   {
     id: "zx6-display-control",
     schemaType: "SoftwareSourceCode",
-    module: "ZX6_DISPLAY.holder",
+    module: "ZX6_DISPLAY.life_support",
     title: "Z-X6 Display Control",
-    subtitle: "Portable Windows app for the display built into your GPU holder",
-    type: "Windows display utility (beta)",
-    category: "GPU holder display control",
+    subtitle: "GPU holder display control, after the original software failed its psych evaluation.",
+    type: "Portable Windows utility (beta; pulse detected)",
+    category: "GPU holder display rehab",
     route: "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
-    job: "Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.",
-    problem: "The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.",
-    output: "A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.",
+    inspectorIntro: "The bracket saved your GPU from sagging. Its software took custody of your remaining will to live.",
+    job: "Lets you pick AIDA64 temperature sensors, boss the bar animations around, and save profiles before your next argument with the display built into your Z-X6 GPU holder.",
+    problem: "Picking sensors and setting animations somehow became a hostage negotiation with a settings window.",
+    output: "Separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings; the app can hide in the tray after questioning.",
     repo: "https://github.com/XxYouDeaDPunKxX/zx6-display-control",
-    note: "holds up the GPU; the software needed support too",
-    icon: "workstation"
+    note: "no RGB exorcism or firmware resurrection included",
+    icon: "zx6"
   },
   {
     id: "canon-boundary-guard-codex",

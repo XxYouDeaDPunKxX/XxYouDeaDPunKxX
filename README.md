@@ -142,6 +142,9 @@ icon
 `category` is the problem or operating area. `type` is the concrete artifact
 form. They should not collapse into the same wording.
 
+Optional `inspectorIntro` gives the inspector its own opening text while `route`
+remains the search entry. If omitted, the inspector uses `route` as before.
+
 Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
@@ -163,7 +166,7 @@ Current project count: 17.
 | GPT Project Skill System | ChatGPT capability extension | Session skill loader |
 | Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
 | ChatGPT Local Agent MCP | local workstation access | Local MCP server |
-| Z-X6 Display Control | GPU holder display control | Windows display utility (beta) |
+| Z-X6 Display Control | GPU holder display rehab | Portable Windows utility (beta; pulse detected) |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
 | Shaping Frame for Claude | Claude epistemic framing | Claude skill package |
@@ -257,11 +260,11 @@ The inspector is a reusable window, not a separate block for every project.
 
 When a project is selected, the inspector body is replaced with markup generated from that project object.
 
-The rendered project view contains module, title, subtitle, route, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
+The rendered project view contains module, title, subtitle, introduction, category, type, job, problem, output, note, repository actions, and a derived GitHub Pages link.
 
 The inspector window is labeled `EXPLODED.EXE` in the title bar. The label is visual chrome; the inspector still performs the same project-reading function.
 
-The route is rendered as its own line because it is the fastest human entry point into the project: it explains when that project is useful.
+The opening line uses `inspectorIntro` when supplied, otherwise `route`. Search always uses `route`, so a project can have separate search and inspector copy.
 
 Category and type are rendered together in a compact `spec-strip`. Category is
 the problem or operating area. Type is the artifact form. Job, problem, output,

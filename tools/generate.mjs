@@ -65,6 +65,11 @@ function validateProjects(projects) {
       );
     }
 
+    if (p.inspectorIntro !== undefined &&
+        (typeof p.inspectorIntro !== "string" || p.inspectorIntro.trim() === "")) {
+      errors.push(`${label} has invalid inspectorIntro (expected a non-empty string)`);
+    }
+
     if (p.id) {
       if (seenIds.has(p.id)) errors.push(`duplicate id: ${p.id}`);
       seenIds.set(p.id, true);
@@ -100,6 +105,7 @@ function buildLlms(projects) {
         `Category: ${p.category}`,
         `Type: ${p.type}`,
         `Route: ${p.route}`,
+        ...(p.inspectorIntro ? [`Inspector intro: ${p.inspectorIntro}`] : []),
         `Job: ${p.job}`,
         `Problem: ${p.problem}`,
         `Output: ${p.output}`,
@@ -122,6 +128,7 @@ function buildManifest(projects) {
     category: p.category,
     type: p.type,
     route: p.route,
+    ...(p.inspectorIntro ? { inspector_intro: p.inspectorIntro } : {}),
     job: p.job,
     problem: p.problem,
     output: p.output,

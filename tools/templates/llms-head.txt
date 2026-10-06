@@ -26,7 +26,7 @@ The page exposes the same project set through desktop icons, Start menu entries,
 Desktop structure:
 top bar -> desktop surface -> desktop project column -> terminal column (terminal window, then Trash) -> inspector window -> fixed taskbar
 
-The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
+The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It opens with inspectorIntro when supplied, otherwise the project route, then category/type, job/problem/output/note, and repository actions. Search uses the route.
 
 ## GitHub Pages
 
@@ -36,4 +36,3 @@ https://xxyoudeadpunkxx.github.io/{repository-name}/
 The project page URL is derivable from the repository URL.
 
 ## Project routing
-

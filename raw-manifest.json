@@ -39,7 +39,7 @@
       "module",
       "title",
       "subtitle",
-      "route",
+      "intro",
       "category",
       "type",
       "job",
@@ -52,6 +52,7 @@
     "layout_notes": [
       "Project icons live in the desktop column; Trash sits below the terminal window in the terminal column.",
       "Trash is a desktop system icon, not a project.",
+      "Search uses the project route; the inspector opens with inspectorIntro when supplied, otherwise the route.",
       "The inspector title bar is labeled EXPLODED.EXE in the UI.",
       "The terminal remains visually CMD-like and black.",
       "The terminal column reserves space for Trash above the taskbar on desktop; status text scrolls inside the terminal when needed, while the input stays visible.",
@@ -290,13 +291,14 @@
     {
       "id": "zx6-display-control",
       "title": "Z-X6 Display Control",
-      "category": "GPU holder display control",
-      "type": "Windows display utility (beta)",
+      "category": "GPU holder display rehab",
+      "type": "Portable Windows utility (beta; pulse detected)",
       "route": "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
-      "job": "Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.",
-      "problem": "The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.",
-      "output": "A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.",
-      "note": "holds up the GPU; the software needed support too",
+      "inspector_intro": "The bracket saved your GPU from sagging. Its software took custody of your remaining will to live.",
+      "job": "Lets you pick AIDA64 temperature sensors, boss the bar animations around, and save profiles before your next argument with the display built into your Z-X6 GPU holder.",
+      "problem": "Picking sensors and setting animations somehow became a hostage negotiation with a settings window.",
+      "output": "Separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings; the app can hide in the tray after questioning.",
+      "note": "no RGB exorcism or firmware resurrection included",
       "repository": "https://github.com/XxYouDeaDPunKxX/zx6-display-control"
     },
     {
@@ -350,7 +352,7 @@
     "ChatGPT capability extension",
     "remote file access",
     "local workstation access",
-    "GPU holder display control",
+    "GPU holder display rehab",
     "Codex provenance control",
     "ChatGPT provenance control",
     "Claude epistemic framing"

@@ -42,7 +42,8 @@
     boot: "PF",
     r2: "R2",
     rain: "DR",
-    workstation: "LA"
+    workstation: "LA",
+    zx6: "Z6"
   };
 
   const fallbackTerminalResponses = [
@@ -186,7 +187,7 @@
       <p class="stamp">INSPECTING: ${escapeText(project.module)}</p>
       <h2>${escapeText(project.title)}</h2>
       <p class="subtitle">${escapeText(project.subtitle || project.type)}</p>
-      <p class="route-line">${escapeText(project.route)}</p>
+      <p class="route-line">${escapeText(project.inspectorIntro || project.route)}</p>
       <dl class="spec-strip">
         ${renderSpec("CATEGORY", project.category || project.type)}
         ${renderSpec("TYPE", project.type)}

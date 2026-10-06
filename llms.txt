@@ -26,7 +26,7 @@ The page exposes the same project set through desktop icons, Start menu entries,
 Desktop structure:
 top bar -> desktop surface -> desktop project column -> terminal column (terminal window, then Trash) -> inspector window -> fixed taskbar
 
-The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It shows the selected project route first, then category/type, then job/problem/output/note and repository actions.
+The inspector is the main project-reading surface. In the UI its title bar is labeled EXPLODED.EXE. It opens with inspectorIntro when supplied, otherwise the project route, then category/type, job/problem/output/note, and repository actions. Search uses the route.
 
 ## GitHub Pages
 
@@ -36,7 +36,6 @@ https://xxyoudeadpunkxx.github.io/{repository-name}/
 The project page URL is derivable from the repository URL.
 
 ## Project routing
-
 AI response either hallucinates or brings a forklift to a teaspoon job -> A.D.A.M.
 AI-assisted work keeps dying from vague prompts, hidden assumptions, and optimism -> ai-protocol-kit
 long GPT Project session starts forgetting which corpse was the original idea -> Memory-Assisted Shaping for GPT Project
@@ -70,7 +69,7 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - ChatGPT capability extension
 - remote file access
 - local workstation access
-- GPU holder display control
+- GPU holder display rehab
 - Codex provenance control
 - ChatGPT provenance control
 - Claude epistemic framing
@@ -208,13 +207,14 @@ Note: gives ChatGPT hands; keep your eyes on the hands
 Repository: https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp
 
 ### Z-X6 Display Control
-Category: GPU holder display control
-Type: Windows display utility (beta)
+Category: GPU holder display rehab
+Type: Portable Windows utility (beta; pulse detected)
 Route: your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout
-Job: Controls the display built into your Z-X6 GPU holder. Pick AIDA64 temperature sensors, customize the bar animations, and save profiles.
-Problem: The bracket holds up the GPU. Choosing what its display shows should not require a hostage negotiator.
-Output: A portable Windows app with separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings. Currently in beta.
-Note: holds up the GPU; the software needed support too
+Inspector intro: The bracket saved your GPU from sagging. Its software took custody of your remaining will to live.
+Job: Lets you pick AIDA64 temperature sensors, boss the bar animations around, and save profiles before your next argument with the display built into your Z-X6 GPU holder.
+Problem: Picking sensors and setting animations somehow became a hostage negotiation with a settings window.
+Output: Separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings; the app can hide in the tray after questioning.
+Note: no RGB exorcism or firmware resurrection included
 Repository: https://github.com/XxYouDeaDPunKxX/zx6-display-control
 
 ### Canon Boundary Guard for Codex

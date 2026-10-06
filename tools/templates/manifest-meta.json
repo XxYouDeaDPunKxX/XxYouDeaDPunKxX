@@ -39,7 +39,7 @@
       "module",
       "title",
       "subtitle",
-      "route",
+      "intro",
       "category",
       "type",
       "job",
@@ -52,6 +52,7 @@
     "layout_notes": [
       "Project icons live in the desktop column; Trash sits below the terminal window in the terminal column.",
       "Trash is a desktop system icon, not a project.",
+      "Search uses the project route; the inspector opens with inspectorIntro when supplied, otherwise the route.",
       "The inspector title bar is labeled EXPLODED.EXE in the UI.",
       "The terminal remains visually CMD-like and black.",
       "The terminal column reserves space for Trash above the taskbar on desktop; status text scrolls inside the terminal when needed, while the input stays visible.",
