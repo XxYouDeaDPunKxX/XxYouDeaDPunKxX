@@ -49,6 +49,7 @@ new ChatGPT Project starts from fog, vibes, and a folder named final_final -> GP
 ChatGPT wants skills, but the native slot is missing and everyone keeps taping instructions to the wall -> GPT Project Skill System
 ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote MCP Worker
 ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building -> ChatGPT Local Agent MCP
+your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius -> OP Adversarial Pressure MCP
 your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout -> Z-X6 Display Control
 Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes -> Canon Boundary Guard for Codex
 ChatGPT Project turns uploads, chat, and assumptions into one cursed soup -> Canon Boundary Guard for GPT Projects
@@ -69,6 +70,7 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - ChatGPT capability extension
 - remote file access
 - local workstation access
+- adversarial task checks
 - GPU holder display rehab
 - Codex provenance control
 - ChatGPT provenance control
@@ -205,6 +207,17 @@ Problem: The work is on the machine, but the assistant is stuck outside asking y
 Output: A controlled local bridge for filesystem, shell, Git, browser, screen, process, and desktop tools behind your own authenticated endpoint.
 Note: gives ChatGPT hands; keep your eyes on the hands
 Repository: https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp
+
+### OP Adversarial Pressure MCP
+Category: adversarial task checks
+Type: Remote HTTPS MCP server
+Route: your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius
+Inspector intro: The author and the reviewer are the same idiot. Somehow, the minutes say unanimous approval.
+Job: Your assistant picks one of eight adversarial tools, supplies the context, then checks the reply before another “looks good” becomes a cleanup bill.
+Problem: The answer sounds finished. So does a smoke alarm with the battery removed.
+Output: Bounded challenges, possible failure paths, structural reviews, or proposed tests. Your assistant checks what holds and discards unsupported results before the model promotes itself to management.
+Note: no bonus for inventing the body
+Repository: https://github.com/XxYouDeaDPunKxX/op-redteam-mcp
 
 ### Z-X6 Display Control
 Category: GPU holder display rehab

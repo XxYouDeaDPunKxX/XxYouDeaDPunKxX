@@ -208,6 +208,23 @@ window.DEADPUNK_PROJECTS = [
     icon: "workstation"
   },
   {
+    id: "op-redteam-mcp",
+    schemaType: "SoftwareSourceCode",
+    module: "OP_ADVERSARIAL.confidence_recall",
+    title: "OP Adversarial Pressure MCP",
+    subtitle: "Second opinions for an AI that has already nominated itself for an award.",
+    type: "Remote HTTPS MCP server",
+    category: "adversarial task checks",
+    route: "your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius",
+    inspectorIntro: "The author and the reviewer are the same idiot. Somehow, the minutes say unanimous approval.",
+    job: "Your assistant picks one of eight adversarial tools, supplies the context, then checks the reply before another “looks good” becomes a cleanup bill.",
+    problem: "The answer sounds finished. So does a smoke alarm with the battery removed.",
+    output: "Bounded challenges, possible failure paths, structural reviews, or proposed tests. Your assistant checks what holds and discards unsupported results before the model promotes itself to management.",
+    repo: "https://github.com/XxYouDeaDPunKxX/op-redteam-mcp",
+    note: "no bonus for inventing the body",
+    icon: "pressure"
+  },
+  {
     id: "zx6-display-control",
     schemaType: "SoftwareSourceCode",
     module: "ZX6_DISPLAY.life_support",

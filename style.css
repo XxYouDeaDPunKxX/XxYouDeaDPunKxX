@@ -862,6 +862,75 @@ button {
     0.96rem -0.2rem 0 var(--icon-red);
 }
 
+.icon-art-pressure {
+  --icon-object: 2.36rem;
+  --icon-dark: #102040;
+  width: var(--icon-object);
+  height: var(--icon-object);
+}
+
+/* Anvil, glove, cuff, and impact marks share the existing CSS icon canvas. */
+.icon-art-pressure::before {
+  left: 0.02rem;
+  top: 1.22rem;
+  width: 2.12rem;
+  height: 0.92rem;
+  background: linear-gradient(180deg, #eeeeee 0 18%, #808080 19% 46%, #c0c0c0 47% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 36%, 73% 36%, 67% 69%, 87% 80%, 87% 100%, 28% 100%, 28% 80%, 49% 69%, 44% 36%, 23% 36%);
+  filter: drop-shadow(0 2px 0 var(--icon-dark));
+}
+
+.icon-art-pressure::after {
+  left: 1.14rem;
+  top: 0.06rem;
+  width: 0.84rem;
+  height: 0.96rem;
+  border: 2px solid #4c1010;
+  border-radius: 0.42rem 0.42rem 0.26rem 0.3rem;
+  background: #c72c2c;
+  box-shadow: inset 2px 2px 0 #ef7777, inset -2px -2px 0 #8b0000;
+  transform: rotate(12deg);
+}
+
+.icon-art-pressure > span {
+  left: 1.22rem;
+  top: 0.77rem;
+  width: 0.64rem;
+  height: 0.38rem;
+  z-index: 1;
+  border: 2px solid #4c1010;
+  background: #eeeeee;
+  transform: rotate(12deg);
+}
+
+.icon-art-pressure > span::before {
+  content: "";
+  position: absolute;
+  left: -0.34rem;
+  top: -0.34rem;
+  width: 0.38rem;
+  height: 0.46rem;
+  border: 2px solid #4c1010;
+  border-radius: 0.2rem 0.14rem 0.12rem 0.2rem;
+  background: #c72c2c;
+}
+
+.icon-art-pressure > span::after {
+  content: "";
+  position: absolute;
+  left: -0.68rem;
+  top: 0.22rem;
+  width: 0.52rem;
+  height: 0.3rem;
+  background: #d6c44d;
+  clip-path: polygon(0 0, 50% 35%, 78% 0, 77% 56%, 100% 100%, 42% 74%, 8% 100%, 25% 44%);
+}
+
+.mini-icon-pressure .icon-art-pressure {
+  flex-shrink: 0;
+  transform: scale(0.58);
+}
+
 .icon-art-zx6 {
   background:
     linear-gradient(var(--icon-dark), var(--icon-dark)) 1.06rem 1.98rem / 1.18rem 0.16rem no-repeat,

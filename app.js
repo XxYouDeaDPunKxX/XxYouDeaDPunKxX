@@ -145,11 +145,14 @@
 
   function createStartApp(project) {
     const button = document.createElement("button");
+    const miniIcon = project.icon === "pressure"
+      ? '<span class="mini-icon mini-icon-pressure" aria-hidden="true"><span class="icon-art icon-art-pressure"><span></span></span></span>'
+      : `<span class="mini-icon" aria-hidden="true">${escapeText(glyphs[project.icon] || "OS")}</span>`;
     button.type = "button";
     button.className = "start-app";
     button.dataset.id = project.id;
     button.innerHTML = `
-      <span class="mini-icon" aria-hidden="true">${escapeText(glyphs[project.icon] || "OS")}</span>
+      ${miniIcon}
       <span>
         <strong>${escapeText(project.title)}</strong>
         <small>${escapeText(project.category || project.type)}</small>

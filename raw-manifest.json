@@ -115,6 +115,10 @@
       "project_id": "chatgpt-local-agent-mcp"
     },
     {
+      "trigger": "your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius",
+      "project_id": "op-redteam-mcp"
+    },
+    {
       "trigger": "your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout",
       "project_id": "zx6-display-control"
     },
@@ -289,6 +293,19 @@
       "repository": "https://github.com/XxYouDeaDPunKxX/chatgpt-local-agent-mcp"
     },
     {
+      "id": "op-redteam-mcp",
+      "title": "OP Adversarial Pressure MCP",
+      "category": "adversarial task checks",
+      "type": "Remote HTTPS MCP server",
+      "route": "your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius",
+      "inspector_intro": "The author and the reviewer are the same idiot. Somehow, the minutes say unanimous approval.",
+      "job": "Your assistant picks one of eight adversarial tools, supplies the context, then checks the reply before another “looks good” becomes a cleanup bill.",
+      "problem": "The answer sounds finished. So does a smoke alarm with the battery removed.",
+      "output": "Bounded challenges, possible failure paths, structural reviews, or proposed tests. Your assistant checks what holds and discards unsupported results before the model promotes itself to management.",
+      "note": "no bonus for inventing the body",
+      "repository": "https://github.com/XxYouDeaDPunKxX/op-redteam-mcp"
+    },
+    {
       "id": "zx6-display-control",
       "title": "Z-X6 Display Control",
       "category": "GPU holder display rehab",
@@ -352,6 +369,7 @@
     "ChatGPT capability extension",
     "remote file access",
     "local workstation access",
+    "adversarial task checks",
     "GPU holder display rehab",
     "Codex provenance control",
     "ChatGPT provenance control",

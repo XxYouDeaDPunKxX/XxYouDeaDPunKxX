@@ -149,7 +149,7 @@ Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
 
-Current project count: 17.
+Current project count: 18.
 
 | Project | Category | Type |
 |---|---|---|
@@ -166,6 +166,7 @@ Current project count: 17.
 | GPT Project Skill System | ChatGPT capability extension | Session skill loader |
 | Cloudflare R2 Remote MCP Worker | remote file access | Cloudflare Worker MCP server |
 | ChatGPT Local Agent MCP | local workstation access | Local MCP server |
+| OP Adversarial Pressure MCP | adversarial task checks | Remote HTTPS MCP server |
 | Z-X6 Display Control | GPU holder display rehab | Portable Windows utility (beta; pulse detected) |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
