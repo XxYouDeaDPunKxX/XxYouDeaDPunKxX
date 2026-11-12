@@ -51,6 +51,7 @@ ChatGPT needs files, but your local disk is not invited -> Cloudflare R2 Remote 
 ChatGPT needs the real files, logs, browser, and terminal, but copy-paste has already left the building -> ChatGPT Local Agent MCP
 your assistant has reviewed its own plan and confirmed that your assistant is a fucking genius -> OP Adversarial Pressure MCP
 your Z-X6 came with software that has the usability of a pissed-off honey badger working a supermarket checkout -> Z-X6 Display Control
+you bought a USB screen the size of a postage stamp and now you have to give the damn thing a job -> Cardputer ADV + WeAct USB Display
 Codex starts mixing repo evidence, chat residue, AGENTS instructions, and vibes -> Canon Boundary Guard for Codex
 ChatGPT Project turns uploads, chat, and assumptions into one cursed soup -> Canon Boundary Guard for GPT Projects
 Claude chat starts treating a fresh guess like a signed death certificate -> Shaping Frame for Claude
@@ -72,6 +73,7 @@ Claude chat starts treating a fresh guess like a signed death certificate -> Sha
 - local workstation access
 - adversarial task checks
 - GPU holder display rehab
+- USB display control
 - Codex provenance control
 - ChatGPT provenance control
 - Claude epistemic framing
@@ -229,6 +231,16 @@ Problem: Picking sensors and setting animations somehow became a hostage negotia
 Output: Separate CPU/GPU settings, saved profiles, and tray controls. AIDA64 supplies the readings; the app can hide in the tray after questioning.
 Note: no RGB exorcism or firmware resurrection included
 Repository: https://github.com/XxYouDeaDPunKxX/zx6-display-control
+
+### Cardputer ADV + WeAct USB Display
+Category: USB display control
+Type: Arduino library, demo and firmware
+Route: you bought a USB screen the size of a postage stamp and now you have to give the damn thing a job
+Job: Drive the WeAct FS V1 over USB-C. Set brightness and rotation from the Cardputer keyboard, then tilt the Cardputer to move the animation.
+Problem: The Cardputer needs a USB host driver to put pixels on the WeAct panel.
+Output: A reusable C++ display library, a motion-reactive RGB565 demo, and a flashable 8 MiB firmware image.
+Note: bring a USB-C data cable. the charging cable can sit this one out.
+Repository: https://github.com/XxYouDeaDPunKxX/cardputer-adv-weact-usb-display
 
 ### Canon Boundary Guard for Codex
 Category: Codex provenance control

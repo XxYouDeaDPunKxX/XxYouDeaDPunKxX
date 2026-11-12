@@ -242,6 +242,22 @@ window.DEADPUNK_PROJECTS = [
     icon: "zx6"
   },
   {
+    id: "cardputer-adv-weact-usb-display",
+    schemaType: "SoftwareSourceCode",
+    module: "CARDPUTER.second_screen",
+    title: "Cardputer ADV + WeAct USB Display",
+    subtitle: "A second screen for a computer you can lose in a jacket.",
+    type: "Arduino library, demo and firmware",
+    category: "USB display control",
+    route: "you bought a USB screen the size of a postage stamp and now you have to give the damn thing a job",
+    job: "Drive the WeAct FS V1 over USB-C. Set brightness and rotation from the Cardputer keyboard, then tilt the Cardputer to move the animation.",
+    problem: "The Cardputer needs a USB host driver to put pixels on the WeAct panel.",
+    output: "A reusable C++ display library, a motion-reactive RGB565 demo, and a flashable 8 MiB firmware image.",
+    repo: "https://github.com/XxYouDeaDPunKxX/cardputer-adv-weact-usb-display",
+    note: "bring a USB-C data cable. the charging cable can sit this one out.",
+    icon: "cardputer"
+  },
+  {
     id: "canon-boundary-guard-codex",
     schemaType: "SoftwareSourceCode",
     module: "CANON_BOUNDARY.codex",

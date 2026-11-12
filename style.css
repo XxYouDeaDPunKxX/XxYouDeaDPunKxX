@@ -989,6 +989,36 @@ button {
   color: #69ccff;
 }
 
+.icon-art-cardputer::before {
+  left: 0.02rem;
+  top: 0.76rem;
+  width: 1.55rem;
+  height: 0.98rem;
+  border: 2px solid var(--icon-dark);
+  background:
+    linear-gradient(#488d92, #183b54) 0.14rem 0.1rem / 0.6rem 0.26rem no-repeat,
+    repeating-linear-gradient(90deg, #a8a8a8 0 0.1rem, #303030 0.1rem 0.16rem) center 0.48rem / 1.1rem 0.25rem no-repeat,
+    #303030;
+  box-shadow: inset 1px 1px 0 #808080;
+}
+
+.icon-art-cardputer::after {
+  left: 1.66rem;
+  top: 0.92rem;
+  width: 0.72rem;
+  height: 0.46rem;
+  border: 2px solid var(--icon-dark);
+  background: linear-gradient(135deg, #356b96, #7cc7ac);
+}
+
+.icon-art-cardputer > span {
+  left: 1.53rem;
+  top: 1.09rem;
+  width: 0.16rem;
+  height: 0.12rem;
+  background: var(--icon-dark);
+}
+
 .icon-art-project-canon-boundary-guard-gpt-project::before {
   left: 0.18rem;
   top: 0.42rem;

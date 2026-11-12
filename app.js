@@ -43,7 +43,8 @@
     r2: "R2",
     rain: "DR",
     workstation: "LA",
-    zx6: "Z6"
+    zx6: "Z6",
+    cardputer: "CP"
   };
 
   const fallbackTerminalResponses = [

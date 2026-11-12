@@ -149,7 +149,7 @@ Adding a normal project should not require layout edits.
 
 ## Project Registry Snapshot
 
-Current project count: 18.
+Current project count: 19.
 
 | Project | Category | Type |
 |---|---|---|
@@ -168,6 +168,7 @@ Current project count: 18.
 | ChatGPT Local Agent MCP | local workstation access | Local MCP server |
 | OP Adversarial Pressure MCP | adversarial task checks | Remote HTTPS MCP server |
 | Z-X6 Display Control | GPU holder display rehab | Portable Windows utility (beta; pulse detected) |
+| Cardputer ADV + WeAct USB Display | USB display control | Arduino library, demo and firmware |
 | Canon Boundary Guard for Codex | Codex provenance control | Codex plugin and skill |
 | Canon Boundary Guard for GPT Projects | ChatGPT provenance control | Project source bundle |
 | Shaping Frame for Claude | Claude epistemic framing | Claude skill package |
